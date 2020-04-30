@@ -12,13 +12,14 @@
 
 [KubeEdge](https://kubeedge.io/en/) is an open source system for extending native containerized application orchestration capabilities to hosts at Edge. It's built upon kubernetes and provides fundamental infrastructure support for network, application deployment and metadata synchronization between cloud and edge.
 
-It aims to resolve three major challenges at edge computing: network reliability and bandwidth limit between cloud and edge, resource constraint at edge, highly distributed and large scalability requirement.
+It aims to resolve three major challenges for edge computing: network reliability and bandwidth limit between cloud and edge, resource constraint at edge, highly distributed and heterogeneous device management.
 
 **KubeEdge provides:**
-- Seamless Compute at Edge : low resource requirements;low latency; decision at edge; improve quality of edge service
-- Simplified Development : regular http or mqtt based applications; containerize and run anywhere at Edge / Cloud
-- Kubernetes Native Edge Platform : Only Kubernetes native Edge Platform in CNCF; Seamless workload orchestration
-- Abundant Applications at Edge : Easy to get and deploy complex applications to edge (like image recognition, ML ..)
+1. Seamless Cloud-Edge Communication for both metadata and data
+2. Edge Autonomy: Autonomous operation of Edge even during disconnection from cloud.
+3. Low Resource Ready: KubeEdge can work in constrained resource situations (low memory, low bandwidth, low compute)
+4. Simplified Device Communication: Easy communication between application and devices for IOT and IIOT
+
 
 **KubeEdge was accepted as a CNCF Sandbox project on Mar 18, 2019.**
 - [KubeEdge Sandbox Proposal](https://github.com/cncf/toc/blob/master/proposals/sandbox/kubeedge.adoc)
@@ -36,12 +37,11 @@ KubeEdge falls in the scope of [CNCF Runtime SIG](https://github.com/cncf/sig-ru
   - seamless development, deployment and run complex workloads at edge with optimized resources
 
 ## Highlights of Last Year
-- Major, Stable releases (1.x.x ; currently 1.3.x) started
-- Total 11 releases including major and minor
+- Moved to 1.0
 - 1400+ commits; 2400+ stars; 600+ forks; 300+ contributors
 - 25+ Contributing organizations
 - 5 User Adoptions and more under discussions
-- Key Features Added : Device Management at Edge, Bluetooth Device Mapper, containerd support, QUIC as alternative to websocket, EdgeMesh, EdgeSite, CSI at Edge, AutoRegistration of Edge Nodes, Device CRD Validation, Reliable Message delivery to Cloud
+- Key Features Added: Device Management at Edge, Bluetooth Device Mapper, containerd support, QUIC as alternative to websocket, EdgeMesh, EdgeSite, CSI at Edge, Auto Registration of Edge Nodes, Device CRD Validation, Reliable Message delivery to Cloud
 
 ## Annual Review Contents
 
@@ -67,7 +67,7 @@ KubeEdge falls in the scope of [CNCF Runtime SIG](https://github.com/cncf/sig-ru
       - Github Stars: 400+ => **2400+**
       - Github Forks: 100+ => **600+**
       - Contributing member organizations: 1 => **25+**
-      - Contributing member organizations
+      - Contributing organizations including:
         - __Cloud__: Huawei Cloud, DaoCloud, TenxCloud, EasyStack
         - __Carriers/Telco__: China Unicom, China Telecom, China Mobile
         - __IT__: inovex, Infoblox, SpanIdea
