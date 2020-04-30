@@ -1,15 +1,27 @@
 # KubeEdge Sandbox Annual Review
 
+## Table of Contents
+
+- [Background](#background)
+- [Alignment with Cloud Native](#alignment-with-cloud-native)  
+- [Highlights of Last Year](#highlights-of-last-year)  
+- [Annual Review Contents](#annual-review-contents)
 
 ## Background
 
-KubeEdge is an open source system for extending native containerized application orchestration capabilities to hosts at Edge. It's built upon kubernetes and provides fundamental infrastructure support for network, application deployment and metadata synchronization between cloud and edge.
+[KubeEdge](https://kubeedge.io/en/) is an open source system for extending native containerized application orchestration capabilities to hosts at Edge. It's built upon kubernetes and provides fundamental infrastructure support for network, application deployment and metadata synchronization between cloud and edge.
 
+It aims to resolve three major challenges at edge computing: network reliability and bandwidth limit between cloud and edge, resource constraint at edge, highly distributed and large scalability requirement.
+
+KubeEdge provides:
+- Seamless Compute at Edge : low resource requirements;low latency; decision at edge; improve quality of edge service
+- Simplified Development : regular http or mqtt based applications; containerize and run anywhere at Edge / Cloud
+- Kubernetes Native Edge Platform : Only Kubernetes native Edge Platform in CNCF; Seamless workload orchestration
+- Abundant Applications at Edge : Easy to get and deploy complex applications to edge (like image recognition, ML ..)
 
 KubeEdge was accepted as a CNCF Sandbox project on Mar 18, 2019.
 - [KubeEdge Sandbox Proposal](https://github.com/cncf/toc/blob/master/proposals/sandbox/kubeedge.adoc)
 - [Original CNCF TOC meeting slides](https://docs.google.com/presentation/d/1e1ahun91Abn2xvX7Z8PVgGBz6c7Q7iO027XVzVuffDg/edit#slide=id.g25ca91f87f_0_0)
-
 
 ## Alignment with Cloud Native
 
@@ -21,7 +33,10 @@ KubeEdge targets on:
   - implementing extensible architecture based on Kubernetes
   - integration with CNCF projects, including (but not limited to) containerd, cri-o, Prometheus, etc.
 
-## Annual review contents
+## Highlights of Last Year
+
+
+## Annual Review Contents
 
 * Include a link to your project’s devstats page. We will be looking for signs of consistent or increasing contribution activity. Please feel free to add commentary to add colour to the numbers and graphs we will see on devstats.
 
