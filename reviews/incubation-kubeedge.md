@@ -20,14 +20,15 @@ It aims to resolve three major challenges for edge computing: network reliabilit
 **KubeEdge provides:**
 1. Seamless Cloud-Edge Communication for both metadata and data
 2. Edge Autonomy: Autonomous operation of Edge even when disconnected from cloud.
-3. Low Resource: KubeEdge can work in constrained resource situations (low memory, low bandwidth, low compute)
-4. Simplified Device Communication: Easy communication between applications and devices for IOT and IIOT
+3. Low Resource Requirement: KubeEdge can work in constrained resource situations (low memory, low bandwidth, low compute)
+4. Simplified Device Communication: Easy communication between applications and devices for IOT and Industrial Internet of Things (*IIoT*) 
 
 **KubeEdge was accepted as a CNCF Sandbox project on Mar 18, 2019.**
 - [KubeEdge Sandbox Proposal](https://github.com/cncf/toc/blob/master/proposals/sandbox/kubeedge.adoc)
 - [Original CNCF TOC meeting slides](https://docs.google.com/presentation/d/1e1ahun91Abn2xvX7Z8PVgGBz6c7Q7iO027XVzVuffDg/edit#slide=id.g25ca91f87f_0_0)
 
 **Continuous Momentum**
+
 - Least Release: v1.3
 - Num of Contributors: 30 => **300+**
 - Github Stars: 400+ => **2500+**
@@ -35,13 +36,13 @@ It aims to resolve three major challenges for edge computing: network reliabilit
 - Contributing member organizations: 1 => **25+**
 - Maintainers (Approvers): 7 (1 company) => **14** (5 companies)
 - Notable improvements since sandbox include:
-  + Added Device Management framework on the Edge to simplify edge application development.
-  + Provided Bluetooth and Modbus protocol support for industrial devices
-  + Introduced EdgeMesh to simplify service communication on the edge
-  + More container runtime integration support: containerd, cri-o, kata containers
-  + Highly Availability of CloudCore
-  + CSI integration support on the Edge
-  + Support fetching logs in cloud from pods on the edge
+  + Added Device Management framework to simplify edge application development.
+  + Provided Bluetooth and Modbus protocol support for Industrial Internet of Things (*IIoT*) 
+  + Introduced EdgeMesh to simplify service communication between edge nodes
+  + More container runtime integration supports: containerd, cri-o, kata containers
+  + Added high availability of cloud component CloudCore
+  + Added CSI integration support on the Edge
+  + Support fetching edge pods' logs in the cloud 
 
 
 ## Alignment with Cloud Native
@@ -51,7 +52,7 @@ KubeEdge falls in the scope of [CNCF Runtime SIG](https://github.com/cncf/sig-ru
 **KubeEdge targets on:**
   - Building an open edge computing platform with cloud native technologies
   - Helping users extending their business architecture, applications, services, etc. from cloud to edge in same experience
-  - Implementing extensible architecture based on Kubernetes
+  - Implementing extensible cloud-edge architecture based on Kubernetes
   - Integration with CNCF projects, including (but not limited to) containerd, cri-o, Prometheus, Envoy, etc.
   - Seamless development, deployment and execution of complex workloads at edge with optimized resources
 ## Incubation State Requirements
@@ -63,10 +64,10 @@ We have the list of public adopters in the repo, some notable users include [her
 - [Xinghai IoT](https://github.com/kubeedge/kubeedge/blob/master/ADOPTERS.md#xinghai-iot), is using KubeEdge in its smart campus platform.
 - KubeSphere, is using to offer a commercial on-prem edge computing service.
 - [HUAWEI CLOUD](https://huaweicloud.com), is using to offer a commercial hosted edge computing service.
-- User A (name under confirmation), is using KubeEdge in its highway electronic tolling system.
-- User B (name under confirmation), is using KubeEdge in its Mine Brain solution and served 1000+ coal mines.
+- User A (awaiting confirmation to publish name), is using KubeEdge in its highway electronic tolling system.
+- User B (awaiting confirmation to publish name), is using KubeEdge in its Mine Brain solution and served 1000+ coal mines.
 
-Others under confirmation to publish name
+There are a few other adopters we are waiting for confirmation to publish name.
 
 2. _Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project._
 
@@ -84,9 +85,9 @@ We are seeing a constant stream of improvements and features from the maintainer
 
 4. _A clear versioning scheme._
 
-KubeEdge follows the [semantic versioning spec](https://semver.org/), and now under every 3 months release cadence.
+KubeEdge follows the [semantic versioning spec](https://semver.org/), and now is under every 3 months release cadence.
 
-We now have regular releases documented at: https://github.com/kubeedge/kubeedge
+We have releases documented at: https://github.com/kubeedge/kubeedge
 
 The latest 4 releases are:
 
@@ -97,10 +98,11 @@ The latest 4 releases are:
 
 5. _Roadmap_
 
-We have a lot of plans for future development, and our [roadmap](https://github.com/kubeedge/kubeedge/blob/master/docs/roadmap.md) currently includes:
+We have a lot of plans for future development, and major items in our [roadmap](https://github.com/kubeedge/kubeedge/blob/master/docs/roadmap.md) are:
 
 - Support edge pod metrics collection in the cloud and integrate with Prometheus.
 - Gateway based cross subnet communication on the edge.
 - Support edge-cloud communication using EdgeMesh.
 - Improve edge device management extensibility, support to define/integrate custom device protocol.
 - Decentralized Security for applications on the edge.
+
