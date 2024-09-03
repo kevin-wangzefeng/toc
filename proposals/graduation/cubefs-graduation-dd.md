@@ -85,7 +85,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
   - Added Steering Committee in Apr. 2024: <https://github.com/cubefs/cubefs/pull/3312>
   - Update maintainer list according to activity and add steering commitee member: <https://github.com/cubefs/cubefs/pull/3311>
   - Update the Governance Document to eliminate the role of the leader: <https://github.com/cubefs/cubefs/pull/3382>
-    The description of 'project lead' implies a somewhat authoritarian role, but with the establishment of a steering committee, the steering committee should be considered the highest decision-making body.Thus we delete the role of 'project lead'.
+    The description of 'project lead' implies a somewhat authoritarian role, but with the establishment of a steering committee, the steering committee should be considered the highest decision-making body.Thus CubeFS delete the role of 'project lead'.
   - Adding governance rules related to SIGs.: <https://github.com/cubefs/cubefs/pull/3430>
   - Adding governance rules related to RoadMap.: <https://github.com/cubefs/cubefs/pull/3430>
 
@@ -118,8 +118,8 @@ Note: this section may be augmented by the completion of a Governance Review fro
   - Roadmap Governance
     - Changes in project Roadmap rules:[link](https://github.com/cubefs/cubefs/blob/master/GOVERNANCE.md#changes-in-project-roadmap)
     - [Roadmap Update Example](https://github.com/cubefs/cubefs/pull/3358)
-  - Management and maintainance of shared communication channels with vendors, such as social media and messaging platforms, with the rule of taking turns for being on duty.In China, we operate three WeChat groups, and we have also created a cubefs channel on Slack at <https://cubefs.slack.com>, which includes a development channel. Additionally, we have a Slack channel on CNCF at [link](https://cloud-native.slack.com/archives/C014X3T1DDJ). All of these channels include our maintainer members from various vendors.The Entrance is open:[link](https://github.com/cubefs/cubefs#community)
-  - Public events of the project are open to all vendors for participation and topic involvement.  We emphasize the importance of transparent information sharing, such as external conference details and maintainer personnel list updates. We will collect feedback through the email address <cncf-cubefs-maintainers@lists.cncf.io>.
+  - Management and maintainance of shared communication channels with vendors, such as social media and messaging platforms, with the rule of taking turns for being on duty.In China, CubeFS operate three WeChat groups, and CubeFS have also created a cubefs channel on Slack at <https://cubefs.slack.com>, which includes a development channel. Additionally, CubeFS have a Slack channel on CNCF at [link](https://cloud-native.slack.com/archives/C014X3T1DDJ). All of these channels include our maintainer members from various vendors.The Entrance is open:[link](https://github.com/cubefs/cubefs#community)
+  - Public events of the project are open to all vendors for participation and topic involvement.  CubeFS emphasize the importance of transparent information sharing, such as external conference details and maintainer personnel list updates. CubeFS will collect feedback through the email address <cncf-cubefs-maintainers@lists.cncf.io>.
   - Community meetings, activities, and resources will be selected for participation by the leadership team. Maintainers can apply and be selected to participate.
   - Architectural decisions require community consensus and agreement by the majority of maintainers, reached during community meetings.For example:
     - Governance update [link](https://github.com/cubefs/cubefs/pull/3430)
@@ -171,12 +171,8 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [ ] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
 
   <!-- (TOC Evaluation goes here) -->
-  Currently, the maintainers of CubeFS are generally from active contributors. Changes have been made based on activity levels.
-
-  - The latest personnel changes are based on the new governance document and voting principles. Ref: <https://github.com/cubefs/cubefs/pull/3311>
-  - Historical changes: New maintainers onboarding because individuals have been the main contributors to the project. Ref: <https://github.com/cubefs/cubefs/pull/2228/files>
-  - Historical changes: The maintainer offboarding is due to insufficient activity levels from several individuals. Ref: <https://github.com/cubefs/cubefs/pull/3044>
-  - Rules: How to become a maintainer. Ref: [GOVERNANCE.md#changes-in-maintainership](https://github.com/cubefs/cubefs/blob/6617aa1eb7bf6b63bfacc2c266eeb711c650973f/GOVERNANCE.md#changes-in-maintainership)
+  - According to the GOVERNANCE documentation, specifically in the section on [Changes in Maintainership](https://github.com/cubefs/cubefs/blob/master/GOVERNANCE.md#changes-in-maintainership), some maintainers are not sufficiently active. Therefore, a TSC member launched a [pull request](https://github.com/cubefs/cubefs/pull/3311) and mentioned the relevant maintainers in the request
+  - Contributor propose to [add a committer](https://github.com/cubefs/cubefs/pull/3384) in line with the [Expectations from Committers](https://github.com/cubefs/cubefs/blob/master/GOVERNANCE.md#expectations-from-committers) section and nominate candidates according to the guidelines in the [Becoming a Committer](https://github.com/cubefs/cubefs/blob/master/GOVERNANCE.md#becoming-a-committer) section.
 
 - [x] **Project maintainers from at least 2 organizations that demonstrates survivability.**
 
@@ -192,8 +188,8 @@ Note: this section may be augmented by the completion of a Governance Review fro
   *****Kevin: TODO need update answer
 
   ******* Relevant Assets from the Project:
-  - Maintainers have expertise in the domain fields of the project and are listed in the maintainer documentation. Ref: [Maitainers.md#maintainers](https://github.com/cubefs/cubefs/blob/1536a544f2d9547647ad4e260edade60163e3585/MAINTAINERS.md#maintainers)
-  - The top 6 contributors with the highest number of contributions are all maintainers. Ref: [github contribution graph](https://github.com/cubefs/cubefs/graphs/contributors?from=2019-02-20&to=2024-08-05&type=c)
+  - Use a CODEOWNERS file to define individuals or teams that are responsible for code in a repository. [link](https://github.com/cubefs/cubefs/tree/master/.github/CODEOWNERS)
+  - Team in the cubefs organization [link](https://github.com/orgs/cubefs/teams)
 
 - [x] **Document agreement that project will adopt CNCF Code of Conduct.**
 
@@ -277,8 +273,13 @@ Note: this section may be augmented by the completion of a Governance Review fro
   - Contributor activities measured by devstats: [chubaofs.devstats.cncf.io](https://chubaofs.devstats.cncf.io/d/66/developer-activity-counts-by-companies?orgId=1&var-period_name=Since%20joining%20CNCF&var-metric=contributions&var-repogroup_name=All&var-country_name=All&var-companies=All)  
   - Contributor activity measured by GitHub contributor dashboard: [The contributions of contributors](https://github.com/cubefs/cubefs/graphs/contributors)
   - Example of recruiting new committers according to contributor's contributions:
-    - [NaturalSelect](https://github.com/NaturalSelect) : [Contribution record](https://github.com/cubefs/cubefs/pulls?q=is%3Apr+is%3Amerged+author%3ANaturalSelect), TODO: add PR link to add to Committers list
-    - [setcy](https://github.com/setcy) : [Contribution record](https://github.com/cubefs/cubefs/pulls?q=is%3Apr+author%3Asetcy+is%3Amerged), TODO: add PR link to add to Committers list
+    - [shuqiang-zheng](https://github.com/shuqiang-zheng) :
+		- [Contribution pr record](https://github.com/cubefs/cubefs/pulls?q=is%3Apr+is%3Amerged+author%3Ashuqiang-zheng)
+		- [PR link](https://github.com/cubefs/cubefs/pull/3384) to add to Committers list
+    - [zhangchuanqing](https://github.com/zhangchuanqing5658) : 
+		- [Contribution main branch](https://github.com/cubefs/cubefs/tree/develop-v3.5.0-metanode_rocksdb)
+		- [PR link](https://github.com/cubefs/cubefs/pull/3386) to add to Committers list
+	
   - Recruiting new contributors by participating in developer events
     - [Summer of Open Source](https://www.we2shopping.com/blog/2829327/)
     - [Developer activity 2024](https://github.com/cubefs/cubefs/issues/3105)
@@ -389,7 +390,7 @@ Note: this section may be augemented by a joint-assessment performed by TAG Secu
 
   <!-- (TOC Evaluation goes here) -->
   - **TODO for project team: enable two-factor authentication**
-
+  - Enforcement of two-factor authentication [declaration](https://github.com/cubefs/cubefs/issues/3487) and notice to relevant members of CubeFS.
   - Static and dynamic scanning, Security scanning
     - [gofumpt](https://github.com/cubefs/cubefs/blob/master/docker/script/run_format.sh)
     - golint:In file docker-compose.yml:469 [link](https://github.com/cubefs/cubefs/blob/master/docker/docker-compose.yml)
@@ -456,8 +457,10 @@ Refer to the Adoption portion of this document.
 - [ ] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
 
   <!-- (TOC Evaluation goes here) -->
-  Integration with Hadoop: <https://cubefs.io/docs/master/ecology/hadoop.html>
-  Integration with Kubernetes: <https://cubefs.io/docs/master/ecology/k8s.html>
+  - Integration with Hadoop: <https://cubefs.io/docs/master/ecology/hadoop.html>
+  - Integration with Kubernetes: <https://cubefs.io/docs/master/ecology/k8s.html>
+  - Integration with Prometheus: <https://cubefs.io/docs/master/ecology/prometheus.html>
+  - Integration with Grafana: <https://cubefs.io/docs/master/ecology/grafana.html>
 
 
 
