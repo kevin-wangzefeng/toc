@@ -378,7 +378,7 @@ Note: this section may be augemented by a joint-assessment performed by TAG Secu
 - [ ] **Achieving OpenSSF Best Practices silver or gold badge.**
 
   <!-- (TOC Evaluation goes here) -->
-  
+  [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/6232/badge)](https://www.bestpractices.dev/projects/6232)
 ### Required
 
 - [x] **Clearly defined and discoverable process to report security issues.**
