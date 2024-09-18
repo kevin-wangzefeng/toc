@@ -8,7 +8,7 @@
 
 ### Criteria Evaluation
 
-_$TOCMEMBER conducted the due diligence of $PROJECT who applied for $LEVEL. The project [has/has not] completed the criteria that show its maturity at $LEVEL. The following criteria implementations are noteworthy to call out... $NOTABLES. The following actions were provided to the project that were considered blocking but since resolved... $BLOCKERS. The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project... $RECOMMENDATIONS._
+Kevin Wang conducted the due diligence of CubeFS who applied for graduation. The project has completed the criteria that show its maturity at graduation. The following criteria implementations are noteworthy to call out... $NOTABLES. The following actions were provided to the project that were considered blocking but since resolved... $BLOCKERS. The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project... $RECOMMENDATIONS.
 
 ### Adoption Evaluation
 
@@ -76,7 +76,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Suggested
 
-- [ ] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
+- [x] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
   <!-- (TOC Evaluation goes here) -->
 
@@ -171,7 +171,18 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [ ] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
 
   <!-- (TOC Evaluation goes here) -->
-  - According to the GOVERNANCE documentation, specifically in the section on [Changes in Maintainership](https://github.com/cubefs/cubefs/blob/master/GOVERNANCE.md#changes-in-maintainership), some maintainers are not sufficiently active. Therefore, a TSC member launched a [pull request](https://github.com/cubefs/cubefs/pull/3311) and mentioned the relevant maintainers in the request
+  TODO: Kevin
+
+  - According to the GOVERNANCE documentation, in the section on [Changes in Maintainership](https://github.com/cubefs/cubefs/blob/master/GOVERNANCE.md#changes-in-maintainership), some maintainers are not sufficiently active. Therefore, a TSC member launched a [pull request](https://github.com/cubefs/cubefs/pull/3311) and mentioned the relevant maintainers in the request
+  - Example
+
+
+
+  - <https://github.com/cubefs/cubefs/pull/3386> Chuanqing Zhang was added as a new committer
+  - <https://github.com/cubefs/cubefs/pull/3384> Shuqiang Zheng was added as a new committer
+  - <https://github.com/cubefs/cubefs/pull/3311> updated maintainer list including removal of inactive maintainers, and added steering committee members
+
+
   - Contributor propose to [add a committer](https://github.com/cubefs/cubefs/pull/3384) in line with the [Expectations from Committers](https://github.com/cubefs/cubefs/blob/master/GOVERNANCE.md#expectations-from-committers) section and nominate candidates according to the guidelines in the [Becoming a Committer](https://github.com/cubefs/cubefs/blob/master/GOVERNANCE.md#becoming-a-committer) section.
 
 - [x] **Project maintainers from at least 2 organizations that demonstrates survivability.**
@@ -274,12 +285,12 @@ Note: this section may be augmented by the completion of a Governance Review fro
   - Contributor activity measured by GitHub contributor dashboard: [The contributions of contributors](https://github.com/cubefs/cubefs/graphs/contributors)
   - Example of recruiting new committers according to contributor's contributions:
     - [shuqiang-zheng](https://github.com/shuqiang-zheng) :
-		- [Contribution pr record](https://github.com/cubefs/cubefs/pulls?q=is%3Apr+is%3Amerged+author%3Ashuqiang-zheng)
-		- [PR link](https://github.com/cubefs/cubefs/pull/3384) to add to Committers list
+    - [Contribution pr record](https://github.com/cubefs/cubefs/pulls?q=is%3Apr+is%3Amerged+author%3Ashuqiang-zheng)
+    - [PR link](https://github.com/cubefs/cubefs/pull/3384) to add to Committers list
     - [zhangchuanqing](https://github.com/zhangchuanqing5658) : 
-		- [Contribution main branch](https://github.com/cubefs/cubefs/tree/develop-v3.5.0-metanode_rocksdb)
-		- [PR link](https://github.com/cubefs/cubefs/pull/3386) to add to Committers list
-	
+    - [Contribution main branch](https://github.com/cubefs/cubefs/tree/develop-v3.5.0-metanode_rocksdb)
+    - [PR link](https://github.com/cubefs/cubefs/pull/3386) to add to Committers list
+
   - Recruiting new contributors by participating in developer events
     - [Summer of Open Source](https://www.we2shopping.com/blog/2829327/)
     - [Developer activity 2024](https://github.com/cubefs/cubefs/issues/3105)
@@ -316,19 +327,6 @@ Note: this section may be augmented by the completion of a Governance Review fro
   - Database & Middleware
   - Online Services
   - Traditional NAS to Cloud
-
-
-<!-- 
-  Project’s differentiation documented in [#why-cubefs](https://cubefs.io/docs/master/overview/introduction.html#why-cubefs)
-
-  File storage and object storage are key in the storage domain. CubeFS is a file storage system that provides cloud-native file system capabilities and is compatible with object storage. Moreover, it offers a multitude of competitive features and capabilities. The project’s differentiation is the main feature of CubeFS: [link to md#section](https://github.com/cubefs/cubefs/blob/master/README.md#what-can-you-build-with-cubefs)
-
-- [CubeFS Introduction](https://cubefs.io/docs/master/overview/introduction.html) includes what CubeFS does, and why it does it
-- Use Case: How CubeFS Accelerates AI training in Hybrid Cloud platform: [link](https://cubefs.io/blog/useCases/oppo-ai.html)
-- Documentation:[Integration with Kubernetes](https://cubefs.io/docs/master/ecology/k8s.html)
-   -->
-
-
 
 - [x] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
 
@@ -375,10 +373,11 @@ Note: this section may be augemented by a joint-assessment performed by TAG Secu
 
 ### Suggested
 
-- [ ] **Achieving OpenSSF Best Practices silver or gold badge.**
+- [x] **Achieving OpenSSF Best Practices silver or gold badge.**
 
   <!-- (TOC Evaluation goes here) -->
   [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/6232/badge)](https://www.bestpractices.dev/projects/6232)
+
 ### Required
 
 - [x] **Clearly defined and discoverable process to report security issues.**
@@ -386,17 +385,16 @@ Note: this section may be augemented by a joint-assessment performed by TAG Secu
   <!-- (TOC Evaluation goes here) -->
   CubeFS has a clear security vulnerability report guide at: [SECURITY.md](https://github.com/cubefs/cubefs/blob/1536a544f2d9547647ad4e260edade60163e3585/SECURITY.md#report-a-vulnerability)
 
-- [ ] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
+- [x] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
 
   <!-- (TOC Evaluation goes here) -->
-  - **TODO for project team: enable two-factor authentication**
-  - Enforcement of two-factor authentication [declaration](https://github.com/cubefs/cubefs/issues/3487) and notice to relevant members of CubeFS.
+  - CubeFS commnity is currently WIP in the enforcement of two-factor authentication for all members: <https://github.com/cubefs/cubefs/issues/3487>.
   - Static and dynamic scanning, Security scanning
     - [gofumpt](https://github.com/cubefs/cubefs/blob/master/docker/script/run_format.sh)
-    - golint:In file docker-compose.yml:469 [link](https://github.com/cubefs/cubefs/blob/master/docker/docker-compose.yml)
-    - gosec:In file docker-compose.yuml:479 [link](https://github.com/cubefs/cubefs/blob/master/docker/docker-compose.yml)
+    - golint:In file [docker-compose.yml:469](https://github.com/cubefs/cubefs/blob/master/docker/docker-compose.yml#L469-L477)
+    - gosec:In file [docker-compose.yuml:479](https://github.com/cubefs/cubefs/blob/master/docker/docker-compose.yml#L479-L487)
     - Fuzz testing [cubefs: add base fuzzers cncf/cncf-fuzzing#387](https://github.com/cncf/cncf-fuzzing/pull/387)
-  - CI integration includes ci-test-unit, ci-test-s3 and ci-sast [link](https://github.com/cubefs/cubefs/blob/master/.github/workflows/ci.yml)
+  - CI integration includes ci-test-unit, ci-test-s3 and ci-sast: [ci.yml](https://github.com/cubefs/cubefs/blob/master/.github/workflows/ci.yml)
 
 - [x] **Document assignment of security response roles and how reports are handled.**
 
@@ -454,7 +452,7 @@ The project provided the TOC with a list of adopters for verification of use of 
 
 Refer to the Adoption portion of this document.
 
-- [ ] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
+- [x] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
 
   <!-- (TOC Evaluation goes here) -->
   - Integration with Hadoop: <https://cubefs.io/docs/master/ecology/hadoop.html>
