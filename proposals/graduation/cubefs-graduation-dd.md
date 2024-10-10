@@ -31,13 +31,18 @@ N/A
 - [x] **Give a presentation and engage with the domain specific TAG(s) to increase awareness**
 
   <!-- (TOC Evaluation goes here) -->
-  Record of CubeFS presentation at the Storage TAG on April 24, 2024. [link to video](https://www.youtube.com/watch?v=UgRBZhzfr4w)
+  The CubeFS team has given presentation on the TAG Storage meeting on April 24, 2024. [link to recording](https://www.youtube.com/watch?v=UgRBZhzfr4w)
+
+  The project has requested Governance Review by TAG Contributor Strategy at: <https://github.com/cncf/tag-contributor-strategy/issues/649>
 
 - [ ] **TAG provides insight/recommendation of the project in the context of the landscape**
 
+  TAG Storage recommendation can be found in [this doc](https://docs.google.com/document/d/1D-Y1XVmPNu_g4Vtl6ZhmueR2ATmuGjoe8Bnc-uTFsqI/edit).
+  > TAG Storage has reviewed CubeFS for its graduation request, provided suggestions for updating CubeFS-csi and CubeFS-helm projects to resolve CVEs, and the team responded quickly to address the issues. We recommend that the CubeFS team continue to keep these projects up to date. We believe that the project’s health is sound in general, the customer adoption has been increasing, and the project is at a mature state and it is ready to move to the graduation level.
+
   <!-- (TOC Evaluation goes here) -->
   ******* Kevin:
-  TODO: add recommendation from TAG-storage here.
+  TODO: add recommendation from TAG Contributor Strategy here.
 
 - [x] **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 
@@ -153,22 +158,13 @@ Note: this section may be augmented by the completion of a Governance Review fro
   - [GOVERNANCE.md#becoming-a-maintainer](https://github.com/cubefs/cubefs/blob/master/GOVERNANCE.md#becoming-a-maintainer)
   - Document changes in maintainership, onboarding, offboarding: [GOVERNANCE.md#changes-in-maintainership](https://github.com/cubefs/cubefs/blob/master/GOVERNANCE.md#changes-in-maintainership)
 
-- [ ] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
+- [x] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
 
   <!-- (TOC Evaluation goes here) -->
-  TODO: Kevin
-
-  - According to the GOVERNANCE documentation, in the section on [Changes in Maintainership](https://github.com/cubefs/cubefs/blob/master/GOVERNANCE.md#changes-in-maintainership), some maintainers are not sufficiently active. Therefore, a TSC member launched a [pull request](https://github.com/cubefs/cubefs/pull/3311) and mentioned the relevant maintainers in the request
-  - Example
-
-
-
+  Demonstrations regarding the maintainer lifecycle of the CubeFS project:
   - <https://github.com/cubefs/cubefs/pull/3386> Chuanqing Zhang was added as a new committer
   - <https://github.com/cubefs/cubefs/pull/3384> Shuqiang Zheng was added as a new committer
   - <https://github.com/cubefs/cubefs/pull/3311> updated maintainer list including removal of inactive maintainers, and added steering committee members
-
-
-  - Contributor propose to [add a committer](https://github.com/cubefs/cubefs/pull/3384) in line with the [Expectations from Committers](https://github.com/cubefs/cubefs/blob/master/GOVERNANCE.md#expectations-from-committers) section and nominate candidates according to the guidelines in the [Becoming a Committer](https://github.com/cubefs/cubefs/blob/master/GOVERNANCE.md#becoming-a-committer) section.
 
 - [x] **Project maintainers from at least 2 organizations that demonstrates survivability.**
 
@@ -441,10 +437,23 @@ N/A
 
 #### Adoption
 
-##### Adopter 1 - $COMPANY/$INDUSTRY
+##### Adopter 1 - NetEase / Internet
 
-_If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
-MONTH YEAR
+NetEase has integrated CubeFS into its cloud-native infrastructure since 2020, using it as a distributed file system solution. After a thorough evaluation of various options, CubeFS was selected for its superior scalability and reliability. Currently in production, NetEase's deployment spans over 200 servers and manages more than 15 petabytes of user data.
+
+The core features of CubeFS that NetEase finds most valuable are high availability, fault tolerance, and the ability to handle large data volumes efficiently. These functionalities have made CubeFS an integral part of their cloud operations. The project's compatibility with Kubernetes has also been a significant advantage.
+
+During the implementation phase, NetEase found the documentation quite helpful, although there was an initial challenge in understanding the architecture. They received community support that helped them overcome these initial hurdles.
+
+NetEase upgrades their deployment of CubeFS with one minor release per year and patch releases as needed. CubeFS releases are usually stable and upgrades can be done with automated scripts in most cases.
+
+Looking ahead, NetEase intends to increase its engagement with the CubeFS community and explore additional features that could enhance their cloud services. They view the project as a valuable asset that has not only met their storage needs but also contributed to their learning and development in distributed systems.
+
+The adoption of CubeFS has been a significant benefit for NetEase, enhancing its cloud services with a robust and scalable storage solution. The project's stability and clear scope and roadmap have built trust with NetEase, making it a reliable component for its cloud-native infrastructure needs.
+
+August, 2024
+
+Ref: [Adopter Interview - NetEase](./cubefs-adopter-interview-netease.md)
 
 ##### Adopter 2 - $COMPANY/$INDUSTRY
 
