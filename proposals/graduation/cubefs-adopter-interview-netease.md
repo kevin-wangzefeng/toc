@@ -2,7 +2,7 @@
 
 Interview date: Auguest 1st, 2024
 
-## **Organization Intro**
+## Organization Intro
 
 ### Can you give us an overview of your organization and what it does?
 
@@ -17,7 +17,7 @@ CubeFS is used for data analysis and log retrieval, including:
 1. Game operation logs and game server logs.
 2. For scoring and recommendation based on game data, storage-computing separation is required.
 
-## **Motivation**
+## Motivation
 
 ### Compared with other products in this space (proprietary and open), what drew you to the project?
 
@@ -25,7 +25,7 @@ We made the selection in 2020. At that time, there were not many comparable opti
 
 In fact, there were not many open source distributed storage solutions at that time. The relatively well-known Ceph is known to be difficult to maintain and requires a lot of manpower. Practice has proved that as a user of CubeFS, not much manpower is required.
 
-## **Usage Scenario**
+## Usage Scenario
 
 ### How long has your organization used the project?
 
@@ -52,9 +52,7 @@ As the project evolves and business needs arise:
 ### What version is used and what is your update cadence with the project?
 
 One feature release upgrade per year, CubeFS is usually stable, no fatal bugs.
-
 For bugfix releases, we upgrade as needed.
-
 The upgrade process is done by automated scripts, which does not require attendance, and administrators only step in to fix problems when they occur.
 
 ### Can you walk me through what your experience was in either adopting it outright or integrating it with your existing services and applications? What challenges did you experience with the project?
@@ -84,17 +82,13 @@ Solution to problems: CubeFS provides a high-performance storage solution for th
 
 We hope CubeFS can be further improved in hybrid cloud acceleration and provide kernel client support.
 
-**For the hybrid cloud scenarios:**
+- For the hybrid cloud scenarios:
+  - Workloads are deployed in IDC + public cloud or only running in the public cloud, resources need to be released after completion. With the data source in IDC, a caching scheme is used to accelerate data access on the public cloud.
+  - Currently, the cache and client have a 1:1 deployment relationship. The cache cannot be reused, resulting in high resource consumption. We hope the community can consider providing a shared cache solution.
+- Regarding the kernel space client:
+  - Currently, the FUSE client is in user space and has limited performance. We hope the community can consider providing a kernel space client to offer higher performance.
 
-Workloads are deployed in IDC + public cloud or only running in the public cloud, resources need to be released after completion. With the data source in IDC, a caching scheme is used to accelerate data access on the public cloud.
-
-**Currently, the cache and client have a 1:1 deployment relationship. The cache cannot be reused, resulting in high resource consumption. We hope the community can consider providing a shared cache solution.**
-
-**Regarding the kernel space client:**
-
-Currently, the FUSE client is in user space and has limited performance. We hope the community can consider providing a kernel space client to offer higher performance.
-
-## **Perception**
+## Perception
 
 ### What is your perception in terms of the project’s
 - Community openness
@@ -105,9 +99,7 @@ Currently, the FUSE client is in user space and has limited performance. We hope
 
 
 The community has done relatively well in the areas above.
-
 The community has shown that it values users and will provide targeted user support in the community, such as answering questions.
-
 The community is also active, with regular updates on the WeChat official account.
 
 ### How are you participating in the project community?
