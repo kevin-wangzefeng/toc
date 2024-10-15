@@ -432,7 +432,19 @@ September, 2024
 
 Ref: [Adopter Interview - BEIKE](./cubefs-adopter-interview-beike.md)
 
-##### Adopter 3 - $COMPANY/$INDUSTRY
+##### Adopter3 - Live Streaming and Short Video
 
-_If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
-MONTH YEAR
+Adopter3 started to use CubeFS in the second half of 2022. It began with testing and was deployed for production in January 2023. The key reason for adopting CubeFS was its ability to handle concurrent writes and the capability to horizontally scale metadata nodes. These were major advantages compared to HDFS and CephFS, which had constraints in performance, maintenance, and handling small files.
+
+CubeFS has been convenient to use with its FUSE mounting. It has been integrated with the Kubernetes clusters and is also used directly on physical machines in some scenarios. The community documentation has been helpful to the adopter for learning about APIs, RESTful commands, and the architecture. Some internal business units have transitioned from CephFS to CubeFS, benefiting from reduced maintenance time. The replacement of HDFS with CubeFS is in progress.
+
+In the future, Adopter3 plans to use the EC (Erasure Coding) feature when the community's architecture becomes more stable. Currently, they are focusing on replacing HDFS. Adopter3 has 3 committers in the community, interacting with maintainers primarily through WeChat group discussions.
+
+Overall, the CubeFS project is considered stable. However, there is room for improvement in areas such as covering more corner cases, promoting the project more effectively, and enhancing the format and content of issue and PR descriptions to facilitate better maintenance.
+
+September, 2024
+
+Note: Adopter3 preferred to remain anonymous. The interview details are kept on file for CNCF TOC review.
+
+##### Adopter4 - Online Retailing
+
