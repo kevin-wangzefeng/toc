@@ -448,3 +448,19 @@ Note: Adopter3 preferred to remain anonymous. The interview details are kept on 
 
 ##### Adopter4 - Online Retailing
 
+JD.com has been using CubeFS since 2018 as the foundation for its entire storage infrastructure. This adoption supports a diverse range of unstructured storage needs across the company's retail operations, including middleware, online and offline business, big data, and AI training, etc. In production for more than 6 years, they have multiple clusters, with the largest one consisting of over 4,000 servers and a total storage capacity exceeding 300TB, serving over 1 million clients concurrently. They use the 2020 version from the community and manually backport bug fixes.
+
+JD.com choses CubeFS because it is customizable for their specific scenarios and supports large-scale clusters. CubeFS supports operating on the same dataset with different protocols simultaneously, like POSIX and S3, while alternatives like CephFS support only one. The adopter has also evaulated MooseFS, however it didn't met their requirements in scalability and stability.
+
+JD.com has found the project documentation invaluable, particularly the design documents, which facilitated a deeper understanding and customization of CubeFS. The adoption has led to significant value, including reduced maintenance and resource costs, and improved resource utilization, reaching up to 98% in some environments.
+
+From the adopter's perspective, the CubeFS community has rational governance and responsive maintainers. JD.com participates by sharing internal solutions, having maintainers review PRs, and interacting via GitHub and WeChat groups.
+
+JD.com has a positive view of the CubeFS community, with rational governance and responsive maintainers. JD.com participates by sharing internal solutions, having maintainers review PRs, and interacting via GitHub and WeChat groups. They will continue to actively engage, contribute solutions, propose features, seeing the relationship as mutually beneficial.
+
+Overall, CubeFS has strengths such as handling extreme scenarios and meeting enterprise requirements. JD.com suggests that the project could benefit from more community events and wider adoption promotion to reach its full potential.
+
+
+October, 2024
+
+Ref: [Adopter Interview - JD.com](./cubefs-adopter-interview-JD.com.md)
