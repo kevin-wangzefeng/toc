@@ -8,15 +8,40 @@
 
 ### Criteria Evaluation
 
-Kevin Wang conducted the due diligence of CubeFS who applied for graduation. The project has completed the criteria that show its maturity at graduation. The following criteria implementations are noteworthy to call out... $NOTABLES. The following actions were provided to the project that were considered blocking but since resolved... $BLOCKERS. The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project... $RECOMMENDATIONS.
+// **TODO: Kevin Wang**
+
+Kevin Wang conducted the due diligence of CubeFS who applied for graduation. The project has completed the criteria that show its maturity at graduation.
+
+The following criteria implementations are noteworthy to call out:
+
+- *... $NOTABLES.*
+
+- // Technical: innovations, technical maturity
+
+- A stable and easily maintainable distributed file system, with excellent concurrent write performance, scalability and extensibility.
+- // ecosystem: user support, user adoption
+- // community: open governance, contribution, transparency, activity etc.
+- 
+- // security
+- The project completed the  [third party security audit by Ada Logics](https://github.com/cubefs/cubefs/blob/master/security/CubeFS-security-audit-2023-report.pdf) with no high-level or critical issues found. The project team actively resolved the 12 detected issues, clearly demonstrated commitment to security, which is praiseworthy.
+
+
+The following actions were provided to the project that were considered blocking but have since been resolved:
+
+- Governance Roles,
+- *$BLOCKERS....*
+
+The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project:
+
+- ... $RECOMMENDATIONS.
 
 ### Adoption Evaluation
 
-_The adopter interviews reflect a project [in use/too early] for the level which the project applied. They show ... $INTERVIEWSUMMARY._
+The adopter interviews reflect the production grade usage of CubeFS for the applied Graduation level. According to the feedback, CubeFS simplifies the interaction between users and storage infrastructure by providing a high-performance, scalable, reliable and easy-to-maintain distributed file system. Developers leverage CubeFS to address the challenges of complex distributed file systems, including large-scale data storage, high concurrent access, data reliability and the complexity of system maintenance. Adopters have been using CubeFS in the production environment for many years, managing data ranging from hundreds of terabytes to petabytes and supporting the access of millions of clients. Overall, the stability, reliable performance and active community of CubeFS have built the trust of adopters.
 
 ### Final Assessment
 
-_[The TOC has found the project to have satisfied the criteria for $LEVEL/ The TOC's evaluation of the project shows a needed focus to complete the outstanding blockers and reapply when the following conditions are met ... $CONDITIONS]._
+The TOC has found the project to have satisfied the criteria for Graduation.
 
 ## Application Process Principles
 
@@ -32,13 +57,10 @@ N/A
 
   The project has requested Governance Review by TAG Contributor Strategy at: <https://github.com/cncf/tag-contributor-strategy/issues/649>
 
-- [ ] **TAG provides insight/recommendation of the project in the context of the landscape**
+- [x] **TAG provides insight/recommendation of the project in the context of the landscape**
 
   TAG Storage recommendation can be found in [this doc](https://docs.google.com/document/d/1D-Y1XVmPNu_g4Vtl6ZhmueR2ATmuGjoe8Bnc-uTFsqI/edit).
   > TAG Storage has reviewed CubeFS for its graduation request, provided suggestions for updating CubeFS-csi and CubeFS-helm projects to resolve CVEs, and the team responded quickly to address the issues. We recommend that the CubeFS team continue to keep these projects up to date. We believe that the project’s health is sound in general, the customer adoption has been increasing, and the project is at a mature state and it is ready to move to the graduation level.
-
-  ******* Kevin:
-  TODO: add recommendation from TAG Contributor Strategy here.
 
 - [x] **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 
@@ -296,19 +318,23 @@ N/A
 - [x] **Document the project's release process and guidelines publicly in a RELEASES.md or equivalent file that defines:**
 
   - [x] Release expectations (scheduled or based on feature implementation)
+    CubeFS documents their release frequency as needed (beta and official releases), which can be regarded as based on feature implementation.
   - [x] Tagging as stable, unstable, and security related releases
+    CubeFS uses beta to mark their unstable releases. Ref: [RELEASE.md#types-of-releases](https://github.com/cubefs/cubefs/blob/master/RELEASE.md#types-of-releases).
+    Security release process is documented at: [security-release-process.md](https://github.com/cubefs/cubefs/blob/master/security/security-release-process.md)
   - [x] Information on branch and tag strategies
+
+    > | Type      | Versioning     | Branch               | Frequency                    |
+    > | ----      | ----------     | ---------            | ---------                    |
+    > | beta      | vX.Y.Z-beta    | release-X.Y.Z-Beta   | as needed (at branch time)   |
+    > | official  | vX.Y.Z         | release-X.Y.Z        | as needed (post beta)        |
+
   - [x] Branch and platform support and length of support
+    No specific description of platform supported, according to the [artifacts-included-in-the-release](https://github.com/cubefs/cubefs/blob/cef58ab3db04857b05a69d9a132e37d4d92e79c7/RELEASE.md#artifacts-included-in-the-release), currently only amd64 binaries are maintained by the community.
+    Length of support clearly documented, support latest 3 minor releases.
   - [x] Artifacts included in the release.
   - Additional information on topics such as LTS and edge releases are optional. Release expectations are a social contract between the project and its end users and hence changes to these should be well thought out, discussed, socialized and as necessary agreed upon by project leadership before getting rolled out.
-
-
-  According to [CubeFS RELEASES.md](https://github.com/cubefs/cubefs/blob/master/RELEASE.md#artifacts-included-in-the-release):
-  - Cubefs documents their release frequency as needed (beta and official releases), which can be regarded as based on feature implementation.
-  - Length of support clearly documented, support latest 3 minor releases.
-  - No specific description of platform supported, according to the [artifacts-included-in-the-release](https://github.com/cubefs/cubefs/blob/cef58ab3db04857b05a69d9a132e37d4d92e79c7/RELEASE.md#artifacts-included-in-the-release), currently only amd64 binaries are maintained by the community.
-
-  Security release process described at: <https://github.com/cubefs/cubefs/blob/master/security/security-release-process.md>
+    Each release note specifies the artifacts included in the release. Example: [CubeFS v3.3.2 release notes](https://github.com/cubefs/cubefs/releases/tag/v3.3.2)
 
 - [x] **History of regular, quality releases.**
 
@@ -444,7 +470,7 @@ Overall, the CubeFS project is considered stable. However, there is room for imp
 
 September, 2024
 
-Note: Adopter3 preferred to remain anonymous. The interview details are kept on file for CNCF TOC review.
+Note: Adopter3 preferred to remain anonymous. The interview details are kept in a private file for CNCF TOC review.
 
 ##### Adopter4 - Online Retailing
 
