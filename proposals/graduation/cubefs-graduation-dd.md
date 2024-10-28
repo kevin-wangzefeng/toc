@@ -78,10 +78,16 @@ N/A
 
 - [x] **Review and acknowledgement of expectations for [graduated](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**
   - [x] Met during Project's application on 10-Apr-2024 as a kick-off meeting.
-  - And met multiple times during the due diligence review. Meeting notes available at [Tracking Doc for CubeFS Graduation](https://docs.google.com/document/d/1wJIFwXFsvWM9wqayaqhr5n1KCVbttkZPYx_hCs2MbbQ).
 
+  The [initial PR](https://github.com/cncf/toc/pull/1140) was submitted on 5-Aug-2023. The TOC reviewer was assigned on 9-Apr-2024.
 
-Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisifies the Due Diligence Review criteria.
+  On 10-Apr-2024, the TOC and project maintainers met during the kick-off meeting of the Graduation process, discussed the changes and update in the TOC repo regarding the criteria and expectations for moving levels, release, and freeze time period for KubeCons.
+
+  The project provided [updates](https://github.com/cubefs/cubefs/issues/3298) using the recommended template on 18-Jun-2024.
+
+  The TOC and project maintainers met multiple time during the due diligence review. Some [suggested action items](https://github.com/cncf/toc/pull/1140#issuecomment-2195009379) were provided during the review, and the project maintainers have been highly responsive throughout the process.
+
+  Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisifies the Due Diligence Review criteria.
 
 - [x] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
 
@@ -98,7 +104,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [x] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
   CubeFS has been continuously updating governance doc to reflect project growth, some examples are:
-  - CubeFS inintail governance: <https://github.com/cubefs/cubefs/blob/017c689013cfaef9c430680bc2c68f62c25a8fa9/GOVERNANCE.md#credits>
+  - CubeFS initial governance: <https://github.com/cubefs/cubefs/blob/017c689013cfaef9c430680bc2c68f62c25a8fa9/GOVERNANCE.md#credits>
   - Added Commiter role in May. 2023: <https://github.com/cubefs/cubefs/pull/1976>
   - Added Steering Committee in Apr. 2024: <https://github.com/cubefs/cubefs/pull/3312>
   - Update maintainer list according to activity and add steering commitee member: <https://github.com/cubefs/cubefs/pull/3311>
