@@ -8,32 +8,31 @@
 
 ### Criteria Evaluation
 
-// **TODO: Kevin Wang**
-
 Kevin Wang conducted the due diligence of CubeFS who applied for graduation. The project has completed the criteria that show its maturity at graduation.
 
 The following criteria implementations are noteworthy to call out:
 
-- *... $NOTABLES.*
-
-- // Technical: innovations, technical maturity
-
 - A stable and easily maintainable distributed file system, with excellent concurrent write performance, scalability and extensibility.
-- // ecosystem: user support, user adoption
-- // community: open governance, contribution, transparency, activity etc.
-- 
-- // security
+- Has a strong and growing community of maintainers and adopters, ensuring its long-term sustainability.
+- Provided diverse channels for community users and contributors to interact, and public meeting links, recordings and notes can be easily found.
+- Provided high-quality, well-organized documentation and practical examples to help users quickly learn and master the project.
 - The project completed the  [third party security audit by Ada Logics](https://github.com/cubefs/cubefs/blob/master/security/CubeFS-security-audit-2023-report.pdf) with no high-level or critical issues found. The project team actively resolved the 12 detected issues, clearly demonstrated commitment to security, which is praiseworthy.
-
 
 The following actions were provided to the project that were considered blocking but have since been resolved:
 
-- Governance Roles,
-- *$BLOCKERS....*
+- Removed the Project Lead role, previously held by one individual and considered conflicting with community neutrality. And instead, established a Technical Steering Committee (TSC) with a defined number of seats and neutrality requirements.
+- Updated the governance documents to clarify the management rules for subprojects.
+- Added a [RELEASE.md](https://github.com/cubefs/cubefs/blob/master/RELEASE.md) file, including updating the release process to reflect the latest engineering principles criteria.
+- Updated the governance documents to inlcude roadmap changing process.
 
 The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project:
 
-- ... $RECOMMENDATIONS.
+- TOC Reviewer recommends finalizing the ongoing Governance Review by the TAG Contributor Strategy to achieve a more comprehensive community governance.
+- TOC Reviewer recommends to extend its current management rules to cover all repos under the GitHub organization, including non-subproject repos, and archive any repos that are no longer being maintained.
+- Make full use of `cubefs-community` repo, as the canonical location for community governance-related documents.
+- To better support project adopters, TOC Reviewer suggests keeping deep engagement with them and improving the project's extensibility and code history management. This will facilitate easier tracking of community updates.
+- To foster a more inclusive global community, TOC Reviewer recommends making a plan for global community development. This plan may include initiatives like English-language community meetings and cultivating contributors from various regions to better support adopters worldwide.
+- TOC Reviewer recommends to organizing dedicated TSC meeting, in order to keep TSC members engaged.
 
 ### Adoption Evaluation
 
