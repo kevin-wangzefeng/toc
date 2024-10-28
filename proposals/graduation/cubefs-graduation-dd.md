@@ -33,6 +33,7 @@ The following recommendations were provided to the project that are non-blocking
 - To better support project adopters, TOC Reviewer suggests keeping deep engagement with them and improving the project's extensibility and code history management. This will facilitate easier tracking of community updates.
 - To foster a more inclusive global community, TOC Reviewer recommends making a plan for global community development. This plan may include initiatives like English-language community meetings and cultivating contributors from various regions to better support adopters worldwide.
 - TOC Reviewer recommends to organizing dedicated TSC meeting, in order to keep TSC members engaged.
+- To enhance community decision-making transparency, the TOC Reviewer recommends the project provide explicit records of voting processes, e.g. manual vote counts or using [gitvote](https://github.com/cncf/gitvote).
 
 ### Adoption Evaluation
 
@@ -79,13 +80,13 @@ N/A
 - [x] **Review and acknowledgement of expectations for [graduated](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**
   - [x] Met during Project's application on 10-Apr-2024 as a kick-off meeting.
 
-  The [initial PR](https://github.com/cncf/toc/pull/1140) was submitted on 5-Aug-2023. The TOC reviewer was assigned on 9-Apr-2024.
+  The [initial PR](https://github.com/cncf/toc/pull/1140) was submitted on 5-Aug-2023. The TOC Reviewer was assigned on 9-Apr-2024.
 
-  On 10-Apr-2024, the TOC and project maintainers met during the kick-off meeting of the Graduation process, discussed the changes and update in the TOC repo regarding the criteria and expectations for moving levels, release, and freeze time period for KubeCons.
+  On 10-Apr-2024, the TOC Reviewer and project maintainers met during the kick-off meeting of the Graduation process, discussed the changes and update in the TOC repo regarding the criteria and expectations for moving levels, release, and freeze time period for KubeCons.
 
   The project provided [updates](https://github.com/cubefs/cubefs/issues/3298) using the recommended template on 18-Jun-2024.
 
-  The TOC and project maintainers met multiple time during the due diligence review. Some [suggested action items](https://github.com/cncf/toc/pull/1140#issuecomment-2195009379) were provided during the review, and the project maintainers have been highly responsive throughout the process.
+  The TOC Reviewer and project maintainers met multiple time during the due diligence review. Some [suggested action items](https://github.com/cncf/toc/pull/1140#issuecomment-2195009379) were provided during the review, and the project maintainers have been highly responsive throughout the process.
 
   Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisifies the Due Diligence Review criteria.
 
@@ -207,10 +208,10 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
   According to [Governance.md#sub-projects](https://github.com/cubefs/cubefs/blob/3576d88889e94d7173401e389824dd61cc485718/GOVERNANCE.md#sub-projects), sub-projects can have their own repositories but follow the same governance mechanism as the main project
 
-  Subprojects Goverance descriptions:
-  - [cubefs-helm Governance](https://github.com/cubefs/cubefs-csi#governance)
-  - [cubefs-csi Governance](https://github.com/cubefs/cubefs-csi#governance)
-  - [cubefs-dashboard Governance](https://github.com/cubefs/cubefs-dashboard#governance)
+  Subprojects Goverance descriptions can be found at:
+  - cubefs-helm Governance: <https://github.com/cubefs/cubefs-csi#governance>
+  - cubefs-csi Governance: <https://github.com/cubefs/cubefs-csi#governance>
+  - cubefs-dashboard Governance: <https://github.com/cubefs/cubefs-dashboard#governance>
 
 ## Contributors and Community
 
@@ -354,6 +355,7 @@ Note: this section may be augemented by a joint-assessment performed by TAG Secu
 - [x] **Achieving OpenSSF Best Practices silver or gold badge.**
 
   CubeFS has achieved the OpenSSF Best Practices siler badge: <https://www.bestpractices.dev/projects/6232>
+
   [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/6232/badge)](https://www.bestpractices.dev/projects/6232)
 
 ### Required
