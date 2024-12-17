@@ -26,7 +26,7 @@ N/A
 
 ### Required
 
-- [ ] **Give a presentation and engage with the domain specific TAG(s) to increase awareness**
+- [ ] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
   - This was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (TOC Evaluation goes here) --> 
@@ -39,7 +39,7 @@ N/A
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**		
+- [ ] **Review and acknowledgement of expectations for Incubation projects and requirements for moving forward through the CNCF Maturity levels.**
 - Met during Project's application on DD-MMM-YYYY.
 
 <!-- (TOC Evaluation goes here) --> 
@@ -70,7 +70,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
+- [ ] **Governance clearly documents [vendor-neutrality](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
 <!-- (TOC Evaluation goes here) --> 
 
@@ -170,11 +170,11 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Required 
 
-- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
+- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. This can also be satisfied by completing a General Technical Review.**
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **Document what the project does, and why it does it - including viable cloud native use cases.**
+- [ ] **Document what the project does, and why it does it - including viable cloud native use cases. This can also be satisfied by completing a General Technical Review.**
 
 <!-- (TOC Evaluation goes here) --> 
 
@@ -182,7 +182,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
+- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation. This can also be satisfied by completing a General Technical Review and capturing the output in the project's documentation.**
 
 <!-- (TOC Evaluation goes here) --> 
 
@@ -192,7 +192,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ## Security
 
-Note: this section may be augemented by a joint-assessment performed by TAG Security.
+Note: this section may be augmented by a joint-assessment performed by TAG Security.
 
 ### Suggested
 
@@ -212,7 +212,7 @@ N/A
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **Document Security Self-Assessment.**
+- [ ] **Document [Security Self-Assessment](https://tag-security.cncf.io/community/assessments/guide/self-assessment/).**
 
 <!-- (TOC Evaluation goes here) --> 
 
