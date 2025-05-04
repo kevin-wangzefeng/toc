@@ -29,24 +29,24 @@ N/A
 - [ ] **Give a presentation and engage with the domain specific TAG(s) to increase awareness**
   - This was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
 
-<!-- (TOC Evaluation goes here) -->  
+  <!-- (TOC Evaluation goes here) -->  
   **TODO for KServe team**: provide the latest presentation date and recording.
 
 - [ ] **TAG provides insight/recommendation of the project in the context of the landscape**
 
-<!-- (TOC Evaluation goes here) -->  
+  <!-- (TOC Evaluation goes here) -->  
   **TODO for KServe team**: fill GTR/DTR
   **TODO for Kevin**: check with TAG runtime to provide recommendation
 
 - [ ] **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 
-<!-- (TOC Evaluation goes here) -->  
+  <!-- (TOC Evaluation goes here) -->  
   - Yes. KServe is utilizing vendor neutral resources for communication, testing , hosting and governance.
   **TODO for KServe team**: provide links do prove this.
 
 - [ ] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**  
 
-<!-- (TOC Evaluation goes here) -->  
+  <!-- (TOC Evaluation goes here) -->  
   - The project contacts and TOC Reviewers had a kick-off meeting on Feb. 18th, set expectations and discussed general steps & timelines.
   - **TODO for Kevin**: summarize and describe the meetings hold during application process
 
@@ -56,7 +56,7 @@ Completion of this due diligence document, resolution of concerns raised, and pr
 
 - [ ] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
   - Installation: https://kserve.github.io/website/latest/admin
   - End user documentation: https://kserve.github.io/website/master/modelserving/control_plane/
   - Blog posts: https://kserve.github.io/website/master/blog/articles/2024-05-15-KServe-0.13-release/
@@ -69,65 +69,78 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [ ] **Clear and discoverable project governance documentation.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
   - [Project governance doc](https://github.com/kserve/community/blob/main/KSERVE-TECHICAL-CHARTER.md)
 
 - [ ] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
    KServe project Governance has iterated organically as it has gained experienced over the years. Contributor Roles and contributor ladder processes are streamlined over the past years as well as team member onboarding/offboarding process is well defined. The Project has currently 15 active committers and maintainers and it has received contributions from 267 contributors who come from different companies.
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
 
   KServe Technical Steering Committee was established in Apr. 2025. <https://github.com/kserve/community/pull/18>
   **TODO for KServe team**: provide links as references.
 
 - [ ] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
   Governance is up to date and KServe project has been running [bi-weekly community meeting](https://github.com/kserve/community/tree/main?tab=readme-ov-file#community-meeting) for 5 years now. KServe also regularly promote contributors with the established voting and approval process.
   **TODO for KServe team**: provide links that show how KServe promote contributors.
 
 - [ ] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) --> 
   [KSERVE-TECHNICAL-CHARTER.md](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md) doesn't document vendor neutrality of project direction.
   **TODO for KServe team**: need update this
 
 - [ ] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) --> 
   - The project decisions are discussed in open issues and we use gitvote process to make the final decision. 
      For example: [requests to the CNCF](https://github.com/kserve/community/issues/10)
 
 - [ ] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) --> 
    - KServe uses the GitHub team to manage the roles and remembers, for example `kserve-security` team  responses to the security issues.
   **TODO for KServe team**: Provide more information, not just security
 
 - [ ] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) --> 
 
-   - The role promotion process is documented [here](https://github.com/kserve/community/blob/main/CONTRIBUTING.md#becoming-a-committer)
+  - The role promotion process is documented [here](https://github.com/kserve/community/blob/main/CONTRIBUTING.md#becoming-a-committer)
   **TODO for Kevin**: review the doc content
 
 - [ ] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  - Updates to the KServe OWNER file can be found at: <https://github.com/kserve/kserve/commits/master/OWNERS>
+  
+  - Some of the good examples are:
+    - Add new PR reviewers and approvers: <https://github.com/kserve/kserve/pull/3213>
+    - Update list of reviewers according to activities: <https://github.com/kserve/kserve/pull/3484>
+    - PR that adds the promoted maintainers: <https://github.com/kserve/kserve/pull/3966>
 
 - [ ] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The mainatiners listed the following 2 subprojects, however no descriptions or rules about subprojects found in the [KSERVE-TECHNICAL-CHARTER.md]:
+  - KServe ModelMesh:  Yuan Tang, [terrytangyuan@gmail.com](mailto:terrytangyuan@gmail.com)
+  - KServe Open Inference Protocol: Dan Sun [dsun20@bloomberg.net](mailto:dsun20@bloomberg.net)
+
+  **TODO for KServe team**: this is not blocking but suggested to document subproject leadership, contribution, maturity status, including add/remove process.
 
 ### Required
 
 - [ ] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  - KServe has a clear [KServe maintainers.md](https://github.com/kserve/community/blob/main/MAINTAINERS.md) file for all the maintainer relevant information.
 
 - [ ] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The "Contributor Leaderboard" in [LFX insights - KServe](https://insights.lfx.linuxfoundation.org/foundation/lf-ai-foundation/overview/github?project=kserve&routedFrom=Github&bestPractice=false&repository=all&dateFilters=2024-05-01%20to%202025-05-01&dateRange=2024-05-01%20to%202025-05-01&compare=PP&granularity=month&hideBots=true) shows that the current maintainers are active.
 
 - [ ] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
 
