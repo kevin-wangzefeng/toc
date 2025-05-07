@@ -52,7 +52,7 @@ N/A
 
 - [ ] **Due Diligence Review.**
 
-Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisifies the Due Diligence Review criteria.
+  Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisifies the Due Diligence Review criteria.
 
 - [ ] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
 
@@ -132,31 +132,47 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Required
 
-- [ ] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
+- [x] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
   <!-- (TOC Evaluation goes here) -->
   - KServe has a clear [KServe maintainers.md](https://github.com/kserve/community/blob/main/MAINTAINERS.md) file for all the maintainer relevant information.
 
-- [ ] **A number of active maintainers which is appropriate to the size and scope of the project.**
+- [x] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
   <!-- (TOC Evaluation goes here) -->
   The "Contributor Leaderboard" in [LFX insights - KServe](https://insights.lfx.linuxfoundation.org/foundation/lf-ai-foundation/overview/github?project=kserve&routedFrom=Github&bestPractice=false&repository=all&dateFilters=2024-05-01%20to%202025-05-01&dateRange=2024-05-01%20to%202025-05-01&compare=PP&granularity=month&hideBots=true) shows that the current maintainers are active.
 
-- [ ] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
+- [x] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) --> 
+  KServe uses the OWNERS file to manage code and doc approval access among approvers and reviewers, and clearly matches documented governance roles.
+  - Code owners:
+    - KServe: https://github.com/kserve/kserve/blob/master/OWNERS
+    - modelmesh serving: https://github.com/kserve/modelmesh-serving/blob/main/OWNERS
+    - models web apphttps://github.com/kserve/models-web-app/blob/master/OWNERS
+  - Doc owners:
+    - website: https://github.com/kserve/website/blob/main/OWNERS
 
 - [ ] **Document agreement that project will adopt CNCF Code of Conduct.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  KServe has documented their adoption of CNCF Code of Conduct, in [CONTRIBUTING.md#code-of-conduct](https://github.com/kserve/community/blob/main/CONTRIBUTING.md#code-of-conduct).
+  The TOC reviewer suggests adding this description to [KSERVE-TECHNICAL-CHARTER.md](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md)
+  **TODO for KServe team**: create a `CODE_OF_CONDUCT.md` file at the root level of each repository
 
 - [ ] **CNCF Code of Conduct is cross-linked from other governance documents.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The TOC reviewer suggests placing a `CODE_OF_CONDUCT.md` file at the root level of each repository, for accessibility and clarity consideration.
+  **TODO for KServe team**: create a `CODE_OF_CONDUCT.md` file at the root level of each repository
 
 - [ ] **All subprojects, if any, are listed.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  KServe has the following subprojects:
+  - ModelMesh: https://github.com/kserve/modelmesh-serving
+  - Open Inference Protocol: https://github.com/kserve/open-inference-protocol
+  **TODO for KServe team**: find a place to document the list of subprojects.
 
 ## Contributors and Community
 
