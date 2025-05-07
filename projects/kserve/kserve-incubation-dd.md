@@ -30,18 +30,21 @@ N/A
   - This was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
 
   <!-- (TOC Evaluation goes here) -->  
-  **TODO for KServe team**: provide the latest presentation date and recording.
+
+  **TODO for KServe team**: Provide GTR/DTR files
 
 - [ ] **TAG provides insight/recommendation of the project in the context of the landscape**
 
   <!-- (TOC Evaluation goes here) -->  
   **TODO for KServe team**: fill GTR/DTR
+
   **TODO for Kevin**: check with TAG runtime to provide recommendation
 
 - [ ] **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 
   <!-- (TOC Evaluation goes here) -->  
-  - Yes. KServe is utilizing vendor neutral resources for communication, testing , hosting and governance.
+  Yes. KServe is utilizing vendor neutral resources for communication, testing, hosting and governance.
+
   **TODO for KServe team**: provide links do prove this.
 
 - [ ] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**  
@@ -54,9 +57,10 @@ N/A
 
   Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisifies the Due Diligence Review criteria.
 
-- [ ] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
+- [x] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
 
   <!-- (TOC Evaluation goes here) -->
+  Refer to the following links:
   - Installation: https://kserve.github.io/website/latest/admin
   - End user documentation: https://kserve.github.io/website/master/modelserving/control_plane/
   - Blog posts: https://kserve.github.io/website/master/blog/articles/2024-05-15-KServe-0.13-release/
@@ -67,29 +71,32 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Suggested
 
-- [ ] **Clear and discoverable project governance documentation.**
+- [x] **Clear and discoverable project governance documentation.**
 
-  <!-- (TOC Evaluation goes here) -->
-  - [Project governance doc](https://github.com/kserve/community/blob/main/KSERVE-TECHICAL-CHARTER.md)
+  <!-- (TOC Evaluation goes here) --> 
+  KServe project documents its open govermance at [KSERVE-TECHICAL-CHARTER.md](https://github.com/kserve/community/blob/main/KSERVE-TECHICAL-CHARTER.md)
 
 - [ ] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
-   KServe project Governance has iterated organically as it has gained experienced over the years. Contributor Roles and contributor ladder processes are streamlined over the past years as well as team member onboarding/offboarding process is well defined. The Project has currently 15 active committers and maintainers and it has received contributions from 267 contributors who come from different companies.
-  <!-- (TOC Evaluation goes here) -->
+  KServe project Governance has iterated organically as it has gained experienced over the years. Contributor Roles and contributor ladder processes are streamlined over the past years as well as team member onboarding/offboarding process is well defined. The Project has currently 15 active committers and maintainers and it has received contributions from 267 contributors who come from different companies.
 
+  <!-- (TOC Evaluation goes here) --> 
   KServe Technical Steering Committee was established in Apr. 2025. <https://github.com/kserve/community/pull/18>
+
   **TODO for KServe team**: provide links as references.
 
 - [ ] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
-  <!-- (TOC Evaluation goes here) -->
+  <!-- (TOC Evaluation goes here) --> 
   Governance is up to date and KServe project has been running [bi-weekly community meeting](https://github.com/kserve/community/tree/main?tab=readme-ov-file#community-meeting) for 5 years now. KServe also regularly promote contributors with the established voting and approval process.
+
   **TODO for KServe team**: provide links that show how KServe promote contributors.
 
 - [ ] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
   <!-- (TOC Evaluation goes here) --> 
   [KSERVE-TECHNICAL-CHARTER.md](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md) doesn't document vendor neutrality of project direction.
+
   **TODO for KServe team**: need update this
 
 - [ ] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
@@ -101,17 +108,19 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [ ] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
 
   <!-- (TOC Evaluation goes here) --> 
-   - KServe uses the GitHub team to manage the roles and remembers, for example `kserve-security` team  responses to the security issues.
+  KServe uses the GitHub team to manage the roles and remembers, for example `kserve-security` team  responses to the security issues.
+
   **TODO for KServe team**: Provide more information, not just security
 
 - [ ] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
 
   <!-- (TOC Evaluation goes here) --> 
 
-  - The role promotion process is documented [here](https://github.com/kserve/community/blob/main/CONTRIBUTING.md#becoming-a-committer)
+  The role promotion process is documented [here](https://github.com/kserve/community/blob/main/CONTRIBUTING.md#becoming-a-committer)
+
   **TODO for Kevin**: review the doc content
 
-- [ ] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
+- [x] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
 
   <!-- (TOC Evaluation goes here) -->
   - Updates to the KServe OWNER file can be found at: <https://github.com/kserve/kserve/commits/master/OWNERS>
@@ -135,7 +144,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [x] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
   <!-- (TOC Evaluation goes here) -->
-  - KServe has a clear [KServe maintainers.md](https://github.com/kserve/community/blob/main/MAINTAINERS.md) file for all the maintainer relevant information.
+  KServe has a clear [KServe maintainers.md](https://github.com/kserve/community/blob/main/MAINTAINERS.md) file for all the maintainer relevant information.
 
 - [x] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
@@ -157,13 +166,16 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
   <!-- (TOC Evaluation goes here) -->
   KServe has documented their adoption of CNCF Code of Conduct, in [CONTRIBUTING.md#code-of-conduct](https://github.com/kserve/community/blob/main/CONTRIBUTING.md#code-of-conduct).
+
   The TOC reviewer suggests adding this description to [KSERVE-TECHNICAL-CHARTER.md](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md)
+
   **TODO for KServe team**: create a `CODE_OF_CONDUCT.md` file at the root level of each repository
 
 - [ ] **CNCF Code of Conduct is cross-linked from other governance documents.**
 
   <!-- (TOC Evaluation goes here) -->
   The TOC reviewer suggests placing a `CODE_OF_CONDUCT.md` file at the root level of each repository, for accessibility and clarity consideration.
+  
   **TODO for KServe team**: create a `CODE_OF_CONDUCT.md` file at the root level of each repository
 
 - [ ] **All subprojects, if any, are listed.**
@@ -172,6 +184,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
   KServe has the following subprojects:
   - ModelMesh: https://github.com/kserve/modelmesh-serving
   - Open Inference Protocol: https://github.com/kserve/open-inference-protocol
+
   **TODO for KServe team**: find a place to document the list of subprojects.
 
 ## Contributors and Community
