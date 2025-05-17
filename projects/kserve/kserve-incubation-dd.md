@@ -193,35 +193,53 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Suggested
 
-- [ ] **Contributor ladder with multiple roles for contributors.**
+- [x] **Contributor ladder with multiple roles for contributors.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->  
+  The project describes its contributor ladder in [membership.md](https://github.com/kserve/community/blob/main/membership.md). Contributor roles include "member", "reviewer", "approver" and "leader".
+  Requirements and recruiting/retiring process are clearly documented.
 
 ### Required
 
-- [ ] **Clearly defined and discoverable process to submit issues or changes.**
+- [x] **Clearly defined and discoverable process to submit issues or changes.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->  
+  The project describes issue and PR process in its [Contribution Guide](https://github.com/kserve/community/blob/main/CONTRIBUTING.md).
 
-- [ ] **Project must have, and document, at least one public communications channel for users and/or contributors.**
+- [x] **Project must have, and document, at least one public communications channel for users and/or contributors.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->  
+  Communication channels are documented at <https://github.com/kserve/community?tab=readme-ov-file#questions-and-issues>
 
 - [ ] **List and document all project communication channels, including subprojects (mail list/slack/etc.).  List any non-public communications channels and what their special purpose is.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) --> 
+  **TODO for KServe Team:** KServe doesn't have a unified place listing and documenting all project communication channels, suggested to provide if there is, or determin a file for this purpose.
 
-- [ ] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
+- [x] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
 
-<!-- (TOC Evaluation goes here) --> 
+ <!-- (TOC Evaluation goes here) -->  
+  KServe uses [LFX calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/kserve?view=month) for running community meeting.
+  The [readme of kserve/community repo](https://github.com/kserve/community#community-meeting) clearly documents meeting time, meeting link, community calendar, and meeting notes:
 
-- [ ] **Documentation of how to contribute, with increasing detail as the project matures.**
+  > You can also find these meetings on [the community calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/kserve?view=month), along with other major community events.
+  >
+  > Meeting agendas and notes can be accessed in the [working group document](https://docs.google.com/document/d/1KZUURwr9MnHXqHA08TFbfVbM8EAJSJjmaMhnvstvi-k).
+  >
+  > You can access the meeting recordings on [the community calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/kserve?view=month) by clicking on the respective date's event details.
 
-<!-- (TOC Evaluation goes here) --> 
+- [x] **Documentation of how to contribute, with increasing detail as the project matures.**
 
-- [ ] **Demonstrate contributor activity and recruitment.**
+  <!-- (TOC Evaluation goes here) -->  
+  KServe has a cleary contribute guide at <https://github.com/kserve/community/blob/main/CONTRIBUTING.md>
 
-<!-- (TOC Evaluation goes here) --> 
+- [x] **Demonstrate contributor activity and recruitment.**
+
+  <!-- (TOC Evaluation goes here) --> 
+  The project [contributor guide](https://github.com/kserve/community/blob/main/CONTRIBUTING.md#project-membership) describes an activity based project membership recruitment.  
+  Two examples of using the contributor activity data are:  
+  - Update list of reviewers according to activities: <https://github.com/kserve/kserve/pull/3484>
+  - PR that adds the promoted maintainers: <https://github.com/kserve/kserve/pull/3966>
 
 ## Engineering Principles
 
