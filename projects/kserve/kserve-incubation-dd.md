@@ -247,50 +247,65 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [ ] **Roadmap change process is documented.**
 
-Even though KServe 2024-2025 roadmap is captured at https://github.com/kserve/kserve/blob/master/ROADMAP.md, the [Governance document](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md) does not seem to cover how the Roadmap is created or how changes to project roadmap is handled. It is recommended to have this process documented.
+  <!-- (TOC Evaluation goes here) --> 
+  KServe 2024-2025 roadmap is captured at https://github.com/kserve/kserve/blob/master/ROADMAP.md, the [Governance document](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md) does not 
+  seem to cover how the Roadmap is created or how changes to project roadmap is handled.
+
+  **TODO for KServe Team:** It is not mandatory, but recommended to document the Roadmap change process.
 
 - [x] **History of regular, quality releases.**
 
-KServe follows quarterly releases as per https://github.com/kserve/kserve/releases and https://github.com/kserve/kserve/tags.
-Even though the release process from a development perspective is captured under : https://github.com/kserve/kserve/blob/master/release/RELEASE_PROCESS_v2.md, it is recommended to document at a high level the frequency/type of releases and support windows also.
+  <!-- (TOC Evaluation goes here) --> 
+  KServe follows quarterly releases as per https://github.com/kserve/kserve/releases and https://github.com/kserve/kserve/tags.
+  Even though the release process from a development perspective is captured under : https://github.com/kserve/kserve/blob/master/release/RELEASE_PROCESS_v2.md, it is recommended to document at a high level the 
+  frequency/type of releases and support windows also.
 
 ### Required 
 
 - [x] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
 
-KServe project goals, objectives and how it fits in the Cloud Native landscape are well captured under https://github.com/kserve/kserve?tab=readme-ov-file#why-kserve  
+  <!-- (TOC Evaluation goes here) --> 
+  KServe project goals, objectives and how it fits in the Cloud Native landscape are well captured under https://github.com/kserve/kserve?tab=readme-ov-file#why-kserve  
 
 - [x] **Document what the project does, and why it does it - including viable cloud native use cases.**
 
-The high level usage of the project is captured at https://github.com/kserve/kserve?tab=readme-ov-file#kserve . The project website also contains good documentation : https://kserve.github.io/website/latest/ on usage, and administration. The project also has done a good job in capturing various KServe usages, demos and presentations at https://kserve.github.io/website/master/community/presentations/ . The project also lists adopters at https://kserve.github.io/website/latest/community/adopters.
+  <!-- (TOC Evaluation goes here) --> 
+  The high level usage of the project is captured at https://github.com/kserve/kserve?tab=readme-ov-file#kserve . The project website also contains good documentation : https://kserve.github.io/website/latest/ 
+  on usage, and administration. The project also has done a good job in capturing various KServe usages, demos and presentations at https://kserve.github.io/website/master/community/presentations/ . The project 
+  also lists adopters at https://kserve.github.io/website/latest/community/adopters.
 
 - [x] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
 
-KServe has documented their 2024-2025 roadmap in https://github.com/kserve/kserve/blob/master/ROADMAP.md and the major highlights include:
+  <!-- (TOC Evaluation goes here) --> 
+  KServe has documented their 2024-2025 roadmap in https://github.com/kserve/kserve/blob/master/ROADMAP.md and the major highlights include:
 
-1.	Support GenAI inference
-2.	Graduate core inference capability to stable/GA
-3.	Graduate KServe Python SDK to 1.0
-4.	Graduate InferenceGraph
-5.	Secure InferenceService
-6.	Improve KServe 1.0 documentation
+  1.	Support GenAI inference
+  2.	Graduate core inference capability to stable/GA
+  3.	Graduate KServe Python SDK to 1.0
+  4.	Graduate InferenceGraph
+  5.	Secure InferenceService
+  6.	Improve KServe 1.0 documentation
 
-Feature Request process is also documented clearly at : [community/CONTRIBUTING.md at main · kserve/community](https://github.com/kserve/community/blob/main/CONTRIBUTING.md#contributing-a-feature)
-However roadmap document is present only for 2024-2025 and not previous years. Hoping that 2024-2025 trend continues, and roadmaps are similarly published for upcoming years too to indicate a healthy project.
-Similarly, it is recommended to mention the roadmap change process in the Governance document.
+  Feature Request process is also documented clearly at : [community/CONTRIBUTING.md at main · kserve/community](https://github.com/kserve/community/blob/main/CONTRIBUTING.md#contributing-a-feature)
+  However roadmap document is present only for 2024-2025 and not previous years. Hoping that 2024-2025 trend continues, and roadmaps are similarly published for upcoming years too to indicate a healthy project.
+  Similarly, it is recommended to mention the roadmap change process in the Governance document.
 
 - [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
 
-KServe website has detailed information on the project architecture and design at the User Guide section. For eg: https://kserve.github.io/website/latest/modelserving/control_plane/ and https://kserve.github.io/website/latest/modelserving/data_plane/data_plane.
+  <!-- (TOC Evaluation goes here) --> 
+  KServe website has detailed information on the project architecture and design at the User Guide section. For eg: https://kserve.github.io/website/latest/modelserving/control_plane/ and 
+  https://kserve.github.io/website/latest/modelserving/data_plane/data_plane.
 
 - [ ] **Document the project's release process.**
 
-The release process for KServe is documented here: https://github.com/kserve/kserve/blob/master/release/RELEASE_PROCESS_v2.md
-It is recommended to rename this to RELEASE.md, as there are no references to v1 release process in the repo, and hence the current name might be misleading.
-Also in the release process, it would be nice to have an initial section which is easy to follow for KServe users on – frequency of the releases, supported releases, support policy, types of releases(in case Beta support), eol announcements etc. It would be also nice to mention that the whole process outlined in the release document is performed by authorized people - ie, release managers who are chosen per release (preferably in a step outlined in the governance document).
+  <!-- (TOC Evaluation goes here) --> 
+  The release process for KServe is documented here: https://github.com/kserve/kserve/blob/master/release/RELEASE_PROCESS_v2.md
+  It is recommended to rename this to RELEASE.md, as there are no references to v1 release process in the repo, and hence the current name might be misleading.
+  Also in the release process, it would be nice to have an initial section which is easy to follow for KServe users on – frequency of the releases, supported releases, support policy, types of releases(in case 
+  Beta support), eol announcements etc. It would be also nice to mention that the whole process outlined in the release document is performed by authorized people - ie, release managers who are chosen per 
+  release (preferably in a step outlined in the governance document). There seems to be detailed blogs about the release process upto v0.14: https://kserve.github.io/website/0.14/blog/articles/2024-12-13-KServe-0.14-release/. The same for v0.15 is missing, however assuming that to be in place soon.
 
-There seems to be detailed blogs about the release process upto v0.14:[ KServe 0.14 Release - KServe Documentation Website ](https://kserve.github.io/website/0.14/blog/articles/2024-12-13-KServe-0.14-release/). The same for v0.15 is missing, however assuming that to be in place soon.
-
+  **TODO for KServe Team:** Add information about release frequency, supported releases, support policy etc to the release process document.
 
 ## Security
 
