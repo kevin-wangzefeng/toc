@@ -33,11 +33,11 @@ N/A
 ### Required
 
 - [ ] **Give a presentation and engage with the domain specific TAG(s) to increase awareness**
-  - This was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
 
   <!-- (TOC Evaluation goes here) -->  
-
-  **TODO for KServe team**: Provide GTR/DTR files
+  The KServe maintainers has provided GTR file at: <https://github.com/kserve/community/blob/main/docs/general-technical-review-cncf-incubating.md>
+  **TODO for KServe team**:
+  - share the GTR files with TAG-runtime, [#cncf-project-reviews](https://cloud-native.slack.com/archives/C08M8L74NAJ)
 
 - [ ] **TAG provides insight/recommendation of the project in the context of the landscape**
 
