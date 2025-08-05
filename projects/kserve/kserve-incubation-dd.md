@@ -405,10 +405,18 @@ Would be great to incorporate content similar to some of the below documentation
    
 #### Adoption
 
-##### Adopter 1 - $COMPANY/$INDUSTRY
+##### Adopter 1 - Nutanix/Cloud Service Provider
 
-_If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
-MONTH YEAR
+A global leader in cloud software, Nutanix has integrated KServe into its production cloud platform since 2021, following extensive experimentation from the project’s early stages. Their choice of KServe over alternative solutions highlights the platform’s maturity, driven by its Kubernetes-native design, flexible and rich feature set, and robust support for both predictive and generative AI model inference.
+
+KServe’s standard inference APIs abstract away the complexity of underlying ML frameworks, making it accessible for production use. Nutanix has specifically called out features such as accelerator support and autoscaling as key differentiators that align with their enterprise-grade requirements.
+
+In addition to technical capabilities, Nutanix reports that the KServe community is active, supportive, and well-governed with a strong commitment to vendor neutrality. They commend the project’s high-quality documentation, which has facilitated seamless adoption and upgrades. Each new KServe release is thoroughly tested by Nutanix internally, and backward compatibility is consistently upheld—demonstrating the project's engineering maturity.
+
+Nutanix is also an active contributor to the KServe project, with five engineers engaged, including three official reviewers. They have expressed a strong commitment to continue contributing and to deepen their collaboration with other CNCF ecosystem projects such as Envoy and components within the model inference domain. This level of production usage, community involvement, and sustained commitment from a major enterprise vendor like Nutanix reflects positively on KServe’s readiness for CNCF incubation.
+
+July 2025
+Reference: https://docs.google.com/document/d/1zyzO80NsZ_QGbwqSJ9fV5jD2LLDBvXEzWk-Hx2Iihhg/edit?usp=sharing
 
 ##### Adopter 2 - $COMPANY/$INDUSTRY
 
