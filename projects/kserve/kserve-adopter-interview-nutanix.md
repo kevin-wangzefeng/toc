@@ -1,7 +1,7 @@
 # KServe Adopter Interview – Nutanix
 
 **Interview Date:** July 3, 2025  
-**Interviewee:** Johnu George (johnu.george@nutanix.com)  
+**Interviewee:** Johnu George
 
 ---
 
