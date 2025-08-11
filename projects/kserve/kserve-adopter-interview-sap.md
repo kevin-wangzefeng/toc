@@ -100,4 +100,24 @@ We engage via Slack, GitHub issues, and discussions. While timezone constraints 
 
 ### Have you engaged with maintainers directly, and what was the outcome?
 
-Yes. We have engaged the community and m
+Yes. We have engaged the community and maintainers for:
+- Feature requests,
+- Bug fixes,
+- Documentation improvements,
+- Upgrading outdated dependencies (often driven by internal compliance scans).
+
+Outcomes have been positive, with community members responding constructively and collaborating effectively on required changes.
+
+---
+
+## Project Strengths
+
+### In your opinion, what are the overall strengths of the project?
+
+- Long-term **stability** (active for over 6 years) and sustained **community engagement**,
+- Backing from multiple large organizations with strong AI focus,
+- CNCF governance providing licensing clarity and long-term sustainability,
+- Balanced corporate influence, avoiding single-vendor dominance,
+- Open, responsive communication channels with maintainers.
+
+---
