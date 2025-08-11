@@ -4,8 +4,8 @@
 **Attendees:**  
 - **TOC:** Kevin Wang, TOC Sponsor of KServe  
 - **TOC:** Faseela K, TOC Sponsor of KServe  
-- **Adopter:** Zoram Thanga (zoram@cloudera.com)  
-- **Adopter:** Cory Johannsen (cjohannsen@cloudera.com)  
+- **Adopter:** Zoram Thanga
+- **Adopter:** Cory Johannsen 
 
 ---
 
