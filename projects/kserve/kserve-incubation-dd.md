@@ -431,7 +431,15 @@ Cloudera views KServe’s community governance, technical quality, and growth po
 July 2025
 Reference: [KServer Adopter Interview - Cloudera](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-wip/projects/kserve/kserve-adopter-interview-cloudera.md)
 
-##### Adopter 3 - $COMPANY/$INDUSTRY
+##### Adopter 3 – SAP (Enterprise AI Platform Provider)
 
-_If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
-MONTH YEAR
+SAP AI Core, a multi-cloud AI execution platform within SAP’s Business Technology Platform, selected KServe in mid-2020 for its Kubernetes-native, cloud-agnostic serving capabilities. The platform placed a premium on seamless integration with their Kubernetes infrastructure, multi-tenancy, and scalability—criteria that KServe met more effectively than alternatives like BentoML or Seldon Core, particularly given its Kubeflow heritage and alignment with CNCF best practices.
+
+In production since 2021, SAP AI Core currently employs KServe v0.11 across thousands of internal and external tenants. The service leverages KServe’s InferenceService API to abstract model serving logistics, autoscale workloads, and interact with multi-cloud object storage. Critical features include serverless scale-to-zero for cost-efficient edge cases, as well as storage initializers supporting cross-cloud object stores, accelerating deployment and operational agility.
+
+While the overall integration experience has been positive, SAP identified operational complexities arising from KServe’s dependencies—most notably Knative and Istio—during upgrades. Documentation is robust but fragmented between the website and GitHub repository, prompting a recommendation for consolidation. Nonetheless, KServe’s multi-cloud support, alignment with enterprise governance, and accelerated time-to-market have brought tangible value and reduced infrastructure burdens for SAP’s AI services.
+
+SAP continues to contribute to KServe with active development and feature requests (e.g., issues #4574 and #4575), with multiple engineers participating in the project. The community is praised for its responsiveness and diversity under CNCF governance, though meeting times favor US contributors. SAP looks forward to deeper involvement, improved adopter visibility, and reduced operational complexity in future project iterations.
+
+August 2025
+Reference: [KServer Adopter Interview - SAP](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-wip/projects/kserve/kserve-adopter-interview-sap.md)
