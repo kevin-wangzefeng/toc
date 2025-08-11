@@ -418,10 +418,18 @@ Nutanix is also an active contributor to the KServe project, with five engineers
 July 2025
 Reference: [KServer Adopter Interview - Nutanix](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-wip/projects/kserve/kserve-adopter-interview-nutanix.md)
 
-##### Adopter 2 - $COMPANY/$INDUSTRY
+##### Adopter 2 -  Cloudera (Enterprise Data Platform Provider)
 
-_If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
-MONTH YEAR
+Cloudera has integrated KServe as the model serving backbone of its AI Inference product within the Cloudera Data Platform (CDP). The decision followed a comprehensive evaluation of build-versus-buy options in 2022–2023, during which KServe was selected for its open governance under LF AI & Data and CNCF, enterprise-friendly licensing, active and approachable community, and vendor-neutral roadmap. KServe’s Kubernetes-native architecture, built on Knative Serving, aligned with Cloudera’s cloud-native design principles and avoided duplicating existing infrastructure capabilities.
+
+KServe has been in use for nearly two years, with approximately one year of production deployment since the product’s GA release in 2024. Current production usage spans multiple industries, including banking, government, healthcare, and oil & gas, with customers running both generative AI (GenAI) and traditional machine learning models. Cloudera primarily leverages KServe’s customizable cluster serving runtimes, traffic management, and scaling features, enabling rapid onboarding of diverse model types across hybrid and multi-cloud environments.
+
+The integration experience was smooth due to KServe’s compatibility with existing Kubernetes-based infrastructure. Documentation quality was cited as a strength, with the project’s requirement for synchronized code and documentation updates ensuring accuracy and completeness. KServe has delivered measurable value by accelerating time-to-market (estimated savings of at least two years in development effort), enabling multi-cloud operations, and supporting rapid adoption of emerging AI capabilities. Cloudera actively contributes upstream, including code, documentation, and new features such as enhanced inference logging with cloud storage backends.
+
+Cloudera views KServe’s community governance, technical quality, and growth potential positively, though it notes challenges such as a small maintainer pool, slow PR review cycles, and constrained CI infrastructure. Future plans include deepened community involvement, governance participation, and continued upstreaming of customer-driven features to avoid maintaining internal forks. Cloudera believes CNCF incubation could help address resource constraints, improve build/test infrastructure, and expand maintainer diversity across time zones.
+
+July 2025
+Reference: [KServer Adopter Interview - Cloudera](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-wip/projects/kserve/kserve-adopter-interview-cloudera.md)
 
 ##### Adopter 3 - $COMPANY/$INDUSTRY
 
