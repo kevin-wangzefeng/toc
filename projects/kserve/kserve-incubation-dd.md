@@ -405,7 +405,20 @@ Would be great to incorporate content similar to some of the below documentation
    
 #### Adoption
 
-##### Adopter 1 - Nutanix/Cloud Service Provider
+##### Adopter 1 - CyberAgent, Inc. (Internet Services & Entertainment)
+
+CyberAgent, Inc., a leading internet and entertainment company in Japan, operates across media, advertising, and gaming. To support its diverse AI-driven business operations, CyberAgent built Cycloud, a private cloud platform with a dedicated bare-metal GPU cluster in its own Japanese data center. This cluster, hosting over 80 nodes and ~500 GPUs, powers between 1,500 and 2,500 pods, delivering GPU-as-a-Service, distributed training, and a global inference endpoint. KServe serves as the core model serving solution within Cycloud, enabling the company to offer flexible, scalable inference services across business units.
+
+CyberAgent adopted KServe four years ago after evaluating multiple architectures, including a DIY approach and a Knative + Istio stack. KServe was chosen for its built-in autoscaling and zero-scale features, which optimize costly GPU usage, as well as for its deep integration with Knative and Istio that reduced operational complexity. Today, KServe supports ~80 inference services, each consuming between 1 and 8 GPUs during peak usage. Scaling is demand-driven, and zero-scale ensures idle services release resources to maximize efficiency.
+
+Operationally, CyberAgent upgrades KServe annually, currently running v0.14.0 after eight successful upgrades since v0.6. Adoption was smooth thanks to strong documentation and examples, though production troubleshooting proved challenging due to limited deep-dive technical guides. Despite this, KServe’s templating mechanism (serving runtime) allowed for seamless support of multiple ML frameworks and custom containers. The platform achieved ~40% cost savings versus alternatives, and was built by just four developers in six months—highlighting KServe’s efficiency.
+
+CyberAgent’s future plans include active community participation and feature requests such as Gateway API Inference Extension, zero-scale for raw deployment mode, vertical pod autoscaling, and Dynamic Resource Allocation support. While praising KServe’s governance, maintainer responsiveness, and strong technical foundations, CyberAgent noted opportunities to improve technical decision transparency and global collaboration through more asynchronous communication. KServe remains a critical component in enabling CyberAgent’s large-scale, cost-efficient AI infrastructure.
+
+August 2025
+Reference: [KServer Adopter Interview - CyberAgent](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-wip/projects/kserve/kserve-adopter-interview-cyberagent.md)
+
+##### Adopter 2 - Nutanix/Cloud Service Provider
 
 A global leader in cloud software, Nutanix has integrated KServe into its production cloud platform since 2021, following extensive experimentation from the project’s early stages. Their choice of KServe over alternative solutions highlights the platform’s maturity, driven by its Kubernetes-native design, flexible and rich feature set, and robust support for both predictive and generative AI model inference.
 
@@ -418,7 +431,7 @@ Nutanix is also an active contributor to the KServe project, with five engineers
 July 2025
 Reference: [KServer Adopter Interview - Nutanix](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-wip/projects/kserve/kserve-adopter-interview-nutanix.md)
 
-##### Adopter 2 -  Cloudera (Enterprise Data Platform Provider)
+##### Adopter 3 -  Cloudera (Enterprise Data Platform Provider)
 
 Cloudera has integrated KServe as the model serving backbone of its AI Inference product within the Cloudera Data Platform (CDP). The decision followed a comprehensive evaluation of build-versus-buy options in 2022–2023, during which KServe was selected for its open governance under LF AI & Data and CNCF, enterprise-friendly licensing, active and approachable community, and vendor-neutral roadmap. KServe’s Kubernetes-native architecture, built on Knative Serving, aligned with Cloudera’s cloud-native design principles and avoided duplicating existing infrastructure capabilities.
 
@@ -431,7 +444,7 @@ Cloudera views KServe’s community governance, technical quality, and growth po
 July 2025
 Reference: [KServer Adopter Interview - Cloudera](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-wip/projects/kserve/kserve-adopter-interview-cloudera.md)
 
-##### Adopter 3 – SAP (Enterprise AI Platform Provider)
+##### Adopter 4 – SAP (Enterprise AI Platform Provider)
 
 SAP AI Core, a multi-cloud AI execution platform within SAP’s Business Technology Platform, selected KServe in mid-2020 for its Kubernetes-native, cloud-agnostic serving capabilities. The platform placed a premium on seamless integration with their Kubernetes infrastructure, multi-tenancy, and scalability—criteria that KServe met more effectively than alternatives like BentoML or Seldon Core, particularly given its Kubeflow heritage and alignment with CNCF best practices.
 
