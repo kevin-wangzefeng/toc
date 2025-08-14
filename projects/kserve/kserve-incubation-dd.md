@@ -8,7 +8,13 @@
 
 ### Criteria Evaluation
 
-_$TOCMEMBER conducted the due diligence of KServe who applied for $LEVEL. The project [has/has not] completed the criteria that show its maturity at $LEVEL. The following criteria implementations are noteworthy to call out... $NOTABLES. The following actions were provided to the project that were considered blocking but since resolved... $BLOCKERS. The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project... $RECOMMENDATIONS._
+_$TOCMEMBER conducted the due diligence of KServe who applied for $LEVEL. The project [has/has not] completed the criteria that show its maturity at $LEVEL._
+
+_The following criteria implementations are noteworthy to call out... $NOTABLES._
+
+_The following actions were provided to the project that were considered blocking but since resolved... $BLOCKERS._
+
+_The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project... $RECOMMENDATIONS._
 
 ### Adoption Evaluation
 
@@ -32,34 +38,34 @@ N/A
 
 ### Required
 
-- [ ] **Give a presentation and engage with the domain specific TAG(s) to increase awareness**
+- [x] **Give a presentation and engage with the domain specific TAG(s) to increase awareness**
 
   <!-- (TOC Evaluation goes here) -->  
   The KServe maintainers has provided GTR file at: <https://github.com/kserve/community/blob/main/docs/general-technical-review-cncf-incubating.md>
-  **TODO for KServe team**:
-  - share the GTR files with TAG-runtime, [#cncf-project-reviews](https://cloud-native.slack.com/archives/C08M8L74NAJ)
 
-- [ ] **TAG provides insight/recommendation of the project in the context of the landscape**
-
-  <!-- (TOC Evaluation goes here) -->  
-  **TODO for KServe team**: fill GTR/DTR
-
-  **TODO for Kevin**: check with TAG runtime to provide recommendation
-
-- [ ] **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
+- [x] **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 
   <!-- (TOC Evaluation goes here) -->  
   Yes. KServe is utilizing vendor neutral resources for communication, testing, hosting and governance.
+  Some examples are:
+  - KServe Github: <https://github.com/kserve/kserve>
+  - KServe Slack: <https://cloud-native.slack.com/archives/C06AH2C3K8B>
+  - Testing - KServe CI Configuration: <https://github.com/kserve/kserve/tree/master/.github/workflows>
+  - KServe Communigy Governance: <https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md>
+  Ref: <https://github.com/kserve/community/issues/26#issuecomment-2866903229>
 
-  **TODO for KServe team**: provide links do prove this.
-
-- [ ] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**  
+- [x] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**
 
   <!-- (TOC Evaluation goes here) -->  
   - The project contacts and TOC Reviewers had a kick-off meeting on Feb. 18th, set expectations and discussed general steps & timelines.
-  - **TODO for Kevin**: summarize and describe the meetings hold during application process
 
-- [ ] **Due Diligence Review.**
+- [x] **Due Diligence Review.**
+
+  The initial [application](https://github.com/cncf/toc/issues/1365) was submitted on July 6th, 2024.
+
+  The TOC reviewers started working the due diligence on Feb. 5th, 2025, and met with the project maintainers multiple times during the DD evaluation.
+
+  The project maintainers have been highly responsive throughout the process.
 
   Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisifies the Due Diligence Review criteria.
 
@@ -67,9 +73,9 @@ N/A
 
   <!-- (TOC Evaluation goes here) -->
   Refer to the following links:
-  - Installation: https://kserve.github.io/website/latest/admin
-  - End user documentation: https://kserve.github.io/website/master/modelserving/control_plane/
-  - Blog posts: https://kserve.github.io/website/master/blog/articles/2024-05-15-KServe-0.13-release/
+  - Installation: <https://kserve.github.io/website/latest/admin>
+  - End user documentation: <https://kserve.github.io/website/master/modelserving/control_plane/>
+  - Example Blog post for a new release: <https://kserve.github.io/website/0.15/blog/articles/2025-05-27-KServe-0.15-release/x>
 
 ## Governance and Maintainers
 
@@ -79,37 +85,45 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [x] **Clear and discoverable project governance documentation.**
 
-  <!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
   KServe project documents its open govermance at [KSERVE-TECHICAL-CHARTER.md](https://github.com/kserve/community/blob/main/KSERVE-TECHICAL-CHARTER.md)
 
-- [ ] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
+- [x] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
-  KServe project Governance has iterated organically as it has gained experienced over the years. Contributor Roles and contributor ladder processes are streamlined over the past years as well as team member onboarding/offboarding process is well defined. The Project has currently 15 active committers and maintainers and it has received contributions from 267 contributors who come from different companies.
+  <!-- (TOC Evaluation goes here) -->
+  KServe project Governance has iterated organically as it has gained experienced over the years. The roof governance document is tracked at: <https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md>.
 
-  <!-- (TOC Evaluation goes here) --> 
-  KServe Technical Steering Committee was established in Apr. 2025. <https://github.com/kserve/community/pull/18>
+  Contributor Roles and contributor ladder processes are streamlined over the past years as well as team member onboarding/offboarding process is well defined at: <https://github.com/kserve/community/blob/main/membership.md>.
 
-  **TODO for KServe team**: provide links as references.
+  [KServe Technical Steering Committee](https://github.com/kserve/community/blob/main/TECHNICAL-STEERING-COMMITTEE.md) was established in Apr. 2025. <https://github.com/kserve/community/pull/18>
 
-- [ ] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
+  The Project currently has 19 [maintainers](https://github.com/kserve/community/blob/main/MAINTAINERS.md) and according to [lfx insights](https://insights.linuxfoundation.org/project/kserve/contributors?timeRange=past365days&start=2024-08-14&end=2025-08-14&widget=active-contributors) it has received contributions from 499 contributors who come from different companies.
 
-  <!-- (TOC Evaluation goes here) --> 
+- [x] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
+
+  <!-- (TOC Evaluation goes here) -->
   Governance is up to date and KServe project has been running [bi-weekly community meeting](https://github.com/kserve/community/tree/main?tab=readme-ov-file#community-meeting) for 5 years now. KServe also regularly promote contributors with the established voting and approval process.
 
-  **TODO for KServe team**: provide links that show how KServe promote contributors.
+  Some examples are:
+  - <https://github.com/kserve/community/issues/21>
+  - <https://github.com/kserve/kserve/pull/3484>
+  - <https://github.com/kserve/kserve/pull/3213>
+  - <https://github.com/kserve/kserve/pull/3966>
 
-- [ ] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
+- [x] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
-  <!-- (TOC Evaluation goes here) --> 
-  [KSERVE-TECHNICAL-CHARTER.md](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md) doesn't document vendor neutrality of project direction.
-
-  **TODO for KServe team**: need update this
+  <!-- (TOC Evaluation goes here) -->
+  [KSERVE-TECHNICAL-CHARTER.md](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md#5-vendor-neutrality) explicilty documents vendor neutrality of project direction. 
+  **TODO for KServe Team**: "limitation on the number/percentage of seats that a single vendor/company could take", "total seats of TSC member", and "the term of office for the TSC"
+  However there's no limitation on "the number/percentage of seats that a single vendor/company could take", which is recommended to be addressed and demonstrated before applying to incubation.
 
 - [ ] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
-  <!-- (TOC Evaluation goes here) --> 
-  - The project decisions are discussed in open issues and we use gitvote process to make the final decision. 
-     For example: [requests to the CNCF](https://github.com/kserve/community/issues/10)
+  <!-- (TOC Evaluation goes here) -->
+  The project decisions are discussed in open issues and we use gitvote process to make the final decision.
+    For example: [requests to the CNCF](https://github.com/kserve/community/issues/10)
+
+  **TODO for KServe team**: need evidance in the rules not just examples
 
 - [ ] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
 
@@ -280,12 +294,12 @@ Note: this section may be augmented by the completion of a Governance Review fro
   <!-- (TOC Evaluation goes here) --> 
   KServe has documented their 2024-2025 roadmap in https://github.com/kserve/kserve/blob/master/ROADMAP.md and the major highlights include:
 
-  1.	Support GenAI inference
-  2.	Graduate core inference capability to stable/GA
-  3.	Graduate KServe Python SDK to 1.0
-  4.	Graduate InferenceGraph
-  5.	Secure InferenceService
-  6.	Improve KServe 1.0 documentation
+  1. Support GenAI inference
+  2. Graduate core inference capability to stable/GA
+  3. Graduate KServe Python SDK to 1.0
+  4. Graduate InferenceGraph
+  5. Secure InferenceService
+  6. Improve KServe 1.0 documentation
 
   Feature Request process is also documented clearly at : [community/CONTRIBUTING.md at main · kserve/community](https://github.com/kserve/community/blob/main/CONTRIBUTING.md#contributing-a-feature). However roadmap document is present only for 2024-2025 and not previous years. Hoping that 2024-2025 trend continues, and roadmaps are similarly published for upcoming years too to indicate a healthy project.Similarly, it is recommended to mention the roadmap change process in the Governance document.
 
