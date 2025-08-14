@@ -12,7 +12,13 @@ _$TOCMEMBER conducted the due diligence of KServe who applied for $LEVEL. The pr
 
 ### Adoption Evaluation
 
-_The adopter interviews reflect a project [in use/too early] for the level which the project applied. They show ... $INTERVIEWSUMMARY._
+KServe has demonstrated consistent and growing adoption across diverse industries and geographies, with production deployments ranging from large-scale multi-cloud enterprise platforms to specialized internal AI infrastructure. The project is used by major organizations including Cloudera, CyberAgent, Nutanix, SAP, and others, spanning sectors such as enterprise software, cloud infrastructure, online media, gaming, and financial services, with deployments supporting both generative and predictive AI workloads at scale. Use cases span multi-cloud enterprise AI platforms, large GPU clusters, internal developer platforms, and hyperscaler-agnostic services, serving thousands of tenants in some cases.
+
+Adopters highlighted KServe’s Kubernetes-native design, flexible serving runtime mechanism, broad ML framework support, and advanced scaling features (autoscaling, zero-scale) as key benefits. These capabilities have enabled significant operational efficiency and cost savings—CyberAgent reported ~40% savings on GPU costs—while maintaining production stability and smooth upgrade paths.
+
+The project is backed by a diverse set of active contributors from multiple companies, with open governance and strong community support. Areas for improvement noted by adopters include consolidating documentation, simplifying dependencies on Knative/Istio, increasing maintainer coverage across time zones, and enhancing outreach to showcase KServe’s strengths and adoption stories.
+
+Overall, KServe is a mature, production-proven model serving platform with broad applicability, strong community backing, and clear potential for continued growth under CNCF incubation.
 
 ### Final Assessment
 
