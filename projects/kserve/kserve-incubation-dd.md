@@ -14,6 +14,9 @@ _The following criteria implementations are noteworthy to call out... $NOTABLES.
 
 _The following actions were provided to the project that were considered blocking but since resolved... $BLOCKERS._
 
+// KServe has documented their adoption of CNCF Code of Conduct, in CONTRIBUTING.md#code-of-conduct. The TOC reviewer suggests adding this description to KSERVE-TECHNICAL-CHARTER.md, and create a CODE_OF_CONDUCT.md file at the root level of each repository
+
+
 _The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project... $RECOMMENDATIONS._
 
 ### Adoption Evaluation
@@ -113,7 +116,8 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [x] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
   <!-- (TOC Evaluation goes here) -->
-  [KSERVE-TECHNICAL-CHARTER.md](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md#5-vendor-neutrality) explicilty documents vendor neutrality of project direction. 
+  [KSERVE-TECHNICAL-CHARTER.md](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md#5-vendor-neutrality) explicilty documents vendor neutrality of project direction.
+
   **TODO for KServe Team**: "limitation on the number/percentage of seats that a single vendor/company could take", "total seats of TSC member", and "the term of office for the TSC"
   However there's no limitation on "the number/percentage of seats that a single vendor/company could take", which is recommended to be addressed and demonstrated before applying to incubation.
 
@@ -128,7 +132,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [ ] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
 
   <!-- (TOC Evaluation goes here) --> 
-  KServe uses the GitHub team to manage the roles and remembers, for example `kserve-security` team  responses to the security issues.
+  KServe uses the GitHub team to manage the roles and members, for example `kserve-security` team  responses to the security issues.
 
   **TODO for KServe team**: Provide more information, not just security
 
@@ -169,43 +173,41 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [x] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
   <!-- (TOC Evaluation goes here) -->
-  The "Contributor Leaderboard" in [LFX insights - KServe](https://insights.lfx.linuxfoundation.org/foundation/lf-ai-foundation/overview/github?project=kserve&routedFrom=Github&bestPractice=false&repository=all&dateFilters=2024-05-01%20to%202025-05-01&dateRange=2024-05-01%20to%202025-05-01&compare=PP&granularity=month&hideBots=true) shows that the current maintainers are active.
+  The "Contributor Leaderboard" in [LFX insights - KServe](https://insights.linuxfoundation.org/project/kserve/contributors?widget=contributors-leaderboard) shows that the current maintainers are active.
 
 - [x] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
 
-  <!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
   KServe uses the OWNERS file to manage code and doc approval access among approvers and reviewers, and clearly matches documented governance roles.
   - Code owners:
-    - KServe: https://github.com/kserve/kserve/blob/master/OWNERS
-    - modelmesh serving: https://github.com/kserve/modelmesh-serving/blob/main/OWNERS
-    - models web apphttps://github.com/kserve/models-web-app/blob/master/OWNERS
+    - KServe: <https://github.com/kserve/kserve/blob/master/OWNERS>
+    - modelmesh serving: <https://github.com/kserve/modelmesh-serving/blob/main/OWNERS>
+    - models web app: <https://github.com/kserve/models-web-app/blob/master/OWNERS>
   - Doc owners:
-    - website: https://github.com/kserve/website/blob/main/OWNERS
+    - website: <https://github.com/kserve/website/blob/main/OWNERS>
 
-- [ ] **Document agreement that project will adopt CNCF Code of Conduct.**
-
-  <!-- (TOC Evaluation goes here) -->
-  KServe has documented their adoption of CNCF Code of Conduct, in [CONTRIBUTING.md#code-of-conduct](https://github.com/kserve/community/blob/main/CONTRIBUTING.md#code-of-conduct).
-
-  The TOC reviewer suggests adding this description to [KSERVE-TECHNICAL-CHARTER.md](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md)
-
-  **TODO for KServe team**: create a `CODE_OF_CONDUCT.md` file at the root level of each repository
-
-- [ ] **CNCF Code of Conduct is cross-linked from other governance documents.**
+- [x] **Document agreement that project will adopt CNCF Code of Conduct.**
 
   <!-- (TOC Evaluation goes here) -->
-  The TOC reviewer suggests placing a `CODE_OF_CONDUCT.md` file at the root level of each repository, for accessibility and clarity consideration.
-  
-  **TODO for KServe team**: create a `CODE_OF_CONDUCT.md` file at the root level of each repository
+  KServe has documented their adoption of CNCF Code of Conduct, in [CONTRIBUTING.md#code-of-conduct](https://github.com/kserve/community/blob/main/CONTRIBUTING.md#code-of-conduct) and [KSERVE-TECHNICAL-CHARTER.md#4-compliance-with-policies](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md#4-compliance-with-policies)
 
-- [ ] **All subprojects, if any, are listed.**
+  The Kserve community has also created a `CODE_OF_CONDUCT.md` file at the root level of each repository.
+  Ref: <https://github.com/kserve/community/issues/29>
+
+- [x] **CNCF Code of Conduct is cross-linked from other governance documents.**
 
   <!-- (TOC Evaluation goes here) -->
-  KServe has the following subprojects:
-  - ModelMesh: https://github.com/kserve/modelmesh-serving
-  - Open Inference Protocol: https://github.com/kserve/open-inference-protocol
+  Yes, it's cross-linked from:
+  - <https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md>
+  - <https://github.com/kserve/community/blob/main/ROLES.md>
+  - <https://github.com/kserve/community/blob/main/docs/SUBPROJECTS.md>
 
-  **TODO for KServe team**: find a place to document the list of subprojects.
+- [x] **All subprojects, if any, are listed.**
+
+  <!-- (TOC Evaluation goes here) -->
+  According to [SUBPROJECTS.md](https://github.com/kserve/community/blob/main/docs/SUBPROJECTS.md), KServe currently has the following subprojects:
+  - ModelMesh: <https://github.com/kserve/modelmesh-serving>
+  - Open Inference Protocol: <https://github.com/kserve/open-inference-protocol>
 
 ## Contributors and Community
 
@@ -233,7 +235,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [ ] **List and document all project communication channels, including subprojects (mail list/slack/etc.).  List any non-public communications channels and what their special purpose is.**
 
-  <!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
   **TODO for KServe Team:** KServe doesn't have a unified place listing and documenting all project communication channels, suggested to provide if there is, or determin a file for this purpose.
 
 - [x] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
@@ -255,7 +257,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [x] **Demonstrate contributor activity and recruitment.**
 
-  <!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
   The project [contributor guide](https://github.com/kserve/community/blob/main/CONTRIBUTING.md#project-membership) describes an activity based project membership recruitment.  
   Two examples of using the contributor activity data are:  
   - Update list of reviewers according to activities: <https://github.com/kserve/kserve/pull/3484>
@@ -267,32 +269,32 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [ ] **Roadmap change process is documented.**
 
-  <!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
   KServe 2024-2025 roadmap is captured at https://github.com/kserve/kserve/blob/master/ROADMAP.md, the [Governance document](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md) does not seem to cover how the Roadmap is created or how changes to project roadmap is handled.
 
   **TODO for KServe Team:** It is not mandatory, but recommended to document the Roadmap change process.
 
 - [x] **History of regular, quality releases.**
 
-  <!-- (TOC Evaluation goes here) --> 
-  KServe follows quarterly releases as per https://github.com/kserve/kserve/releases and https://github.com/kserve/kserve/tags. Even though the release process from a development perspective is captured under : https://github.com/kserve/kserve/blob/master/release/RELEASE_PROCESS_v2.md, it is recommended to document at a high level the frequency/type of releases and support windows also.
+  <!-- (TOC Evaluation goes here) -->
+  KServe follows quarterly releases as per <https://github.com/kserve/kserve/releases> and <https://github.com/kserve/kserve/tags>. Even though the release process from a development perspective is captured under: <https://github.com/kserve/kserve/blob/master/release/RELEASE_PROCESS_v2.md>, it is recommended to document at a high level the frequency/type of releases and support windows also.
 
 ### Required 
 
 - [x] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
 
-  <!-- (TOC Evaluation goes here) --> 
-  KServe project goals, objectives and how it fits in the Cloud Native landscape are well captured under https://github.com/kserve/kserve?tab=readme-ov-file#why-kserve  
+  <!-- (TOC Evaluation goes here) -->
+  KServe project goals, objectives and how it fits in the Cloud Native landscape are well captured under <https://github.com/kserve/kserve?tab=readme-ov-file#why-kserve>
 
 - [x] **Document what the project does, and why it does it - including viable cloud native use cases.**
 
-  <!-- (TOC Evaluation goes here) --> 
-  The high level usage of the project is captured at https://github.com/kserve/kserve?tab=readme-ov-file#kserve . The project website also contains good documentation : https://kserve.github.io/website/latest/ on usage, and administration. The project also has done a good job in capturing various KServe usages, demos and presentations at https://kserve.github.io/website/master/community/presentations/ . The project also lists adopters at https://kserve.github.io/website/latest/community/adopters.
+  <!-- (TOC Evaluation goes here) -->
+  The high level usage of the project is captured at <https://github.com/kserve/kserve?tab=readme-ov-file#kserve>. The project website also contains good documentation: <https://kserve.github.io/website/latest/> on usage, and administration. The project also has done a good job in capturing various KServe usages, demos and presentations at <https://kserve.github.io/website/master/community/presentations/>. The project also lists adopters at <https://kserve.github.io/website/latest/community/adopters>.
 
 - [x] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
 
-  <!-- (TOC Evaluation goes here) --> 
-  KServe has documented their 2024-2025 roadmap in https://github.com/kserve/kserve/blob/master/ROADMAP.md and the major highlights include:
+  <!-- (TOC Evaluation goes here) -->
+  KServe has documented their 2024-2025 roadmap in <https://github.com/kserve/kserve/blob/master/ROADMAP.md> and the major highlights include:
 
   1. Support GenAI inference
   2. Graduate core inference capability to stable/GA
@@ -301,17 +303,17 @@ Note: this section may be augmented by the completion of a Governance Review fro
   5. Secure InferenceService
   6. Improve KServe 1.0 documentation
 
-  Feature Request process is also documented clearly at : [community/CONTRIBUTING.md at main · kserve/community](https://github.com/kserve/community/blob/main/CONTRIBUTING.md#contributing-a-feature). However roadmap document is present only for 2024-2025 and not previous years. Hoping that 2024-2025 trend continues, and roadmaps are similarly published for upcoming years too to indicate a healthy project.Similarly, it is recommended to mention the roadmap change process in the Governance document.
+  Feature Request process is also documented clearly at: [community/CONTRIBUTING.md at main · kserve/community](https://github.com/kserve/community/blob/main/CONTRIBUTING.md#contributing-a-feature). However roadmap document is present only for 2024-2025 and not previous years. Hoping that 2024-2025 trend continues, and roadmaps are similarly published for upcoming years too to indicate a healthy project.Similarly, it is recommended to mention the roadmap change process in the Governance document.
 
 - [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
 
-  <!-- (TOC Evaluation goes here) --> 
-  KServe website has detailed information on the project architecture and design at the User Guide section. For eg: https://kserve.github.io/website/latest/modelserving/control_plane/ and https://kserve.github.io/website/latest/modelserving/data_plane/data_plane.
+  <!-- (TOC Evaluation goes here) -->
+  KServe website has detailed information on the project architecture and design at the User Guide section. For eg: <https://kserve.github.io/website/latest/modelserving/control_plane/> and <https://kserve.github.io/website/latest/modelserving/data_plane/data_plane>.
 
 - [ ] **Document the project's release process.**
 
-  <!-- (TOC Evaluation goes here) --> 
-  The release process for KServe is documented here: https://github.com/kserve/kserve/blob/master/release/RELEASE_PROCESS_v2.md. It is recommended to rename this to RELEASE.md, as there are no references to v1 release process in the repo, and hence the current name might be misleading. Also in the release process, it would be nice to have an initial section which is easy to follow for KServe users on – frequency of the releases, supported releases, support policy, types of releases(in case Beta support), eol announcements etc. It would be also nice to mention that the whole process outlined in the release document is performed by authorized people - ie, release managers who are chosen per release (preferably in a step outlined in the governance document). There seems to be detailed blogs about the release process upto v0.14: https://kserve.github.io/website/0.14/blog/articles/2024-12-13-KServe-0.14-release/. The same for v0.15 is missing, however assuming that to be in place soon.
+  <!-- (TOC Evaluation goes here) -->
+  The release process for KServe is documented here: <https://github.com/kserve/kserve/blob/master/release/RELEASE_PROCESS_v2.md>. It is recommended to rename this to RELEASE.md, as there are no references to v1 release process in the repo, and hence the current name might be misleading. Also in the release process, it would be nice to have an initial section which is easy to follow for KServe users on – frequency of the releases, supported releases, support policy, types of releases(in case Beta support), eol announcements etc. It would be also nice to mention that the whole process outlined in the release document is performed by authorized people - ie, release managers who are chosen per release (preferably in a step outlined in the governance document). There seems to be detailed blogs about the release process upto v0.14: <https://kserve.github.io/website/0.14/blog/articles/2024-12-13-KServe-0.14-release/>. The same for v0.15 is missing, however assuming that to be in place soon.
 
   **TODO for KServe Team:** Add information about release frequency, supported releases, support policy etc to the release process document.
 
@@ -327,7 +329,7 @@ N/A
 
 - [ ] **Clearly defined and discoverable process to report security issues.**
 
-<!-- (TOC Evaluation goes here) --> 
+<!-- (TOC Evaluation goes here) -->
 KServe’s security vulnerability reporting process is outlined at [kserve/SECURITY.md at master · kserve/kserve](https://github.com/kserve/kserve/blob/master/SECURITY.md). The mail id is currently under lfaidata foundation, it is recommended to move to a CNCF domain at the appropriate time.
 
 **TODO for KServe Team:**
