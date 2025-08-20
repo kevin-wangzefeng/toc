@@ -29,9 +29,9 @@ SAP is a multinational software corporation specializing in enterprise software 
 
 ### Compared with other products in this space (proprietary and open source), what drew you to the project?
 
-The decision to adopt KServe within SAP AI Core was made prior to my joining the team. During the evaluation phase, alternative solutions such as **BentoML** and **Seldon Core** were assessed for production-grade model serving capabilities. However, these solutions were more Docker-centric and lacked the deep Kubernetes-native integration that was essential to our platform’s architecture.
+The decision to adopt KServe within SAP AI Core was made prior to my joining the team. During the evaluation phase, alternative solutions such as BentoML and Seldon Core were also carefully assessed for their production-grade model serving capabilities. Each of these offerings had strengths, particularly in simplifying deployment and providing Docker-focused workflows.
 
-KServe distinguished itself due to its **Kubernetes-first, cloud-native design**, strong alignment with CNCF principles, and its backing by multiple established commercial organizations. Its origin within the Kubeflow project further validated its maturity and technical foundation. This made KServe a natural fit for SAP AI Core’s requirement for **multi-tenant, scalable, and standardized AI serving** capabilities.
+KServe, however, stood out for its Kubernetes-native architecture, which aligned closely with SAP AI Core’s platform requirements. Its cloud-native design, strong alignment with CNCF principles, and support from multiple established organizations gave additional confidence in its long-term sustainability. Originating from the Kubeflow project also added to its credibility and maturity. These factors made KServe a strong match for SAP AI Core’s needs around multi-tenancy, scalability, and standardized AI serving.
 
 ---
 
