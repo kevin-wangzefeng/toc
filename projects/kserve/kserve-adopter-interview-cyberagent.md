@@ -8,7 +8,7 @@ toc_sponsors:
   - Kevin Wang
   - Faseela K
 attendees:
-  - yuki.iwai.tz@gmail.com (CyberAgent, Inc.)
+  - Yuki Iwai (CyberAgent, Inc.)
   - Kevin Wang (TOC Sponsor, KServe)
   - Faseela K (TOC Sponsor, KServe)
 ---
