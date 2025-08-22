@@ -118,8 +118,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
   <!-- (TOC Evaluation goes here) -->
   [KSERVE-TECHNICAL-CHARTER.md](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md#5-vendor-neutrality) explicilty documents vendor neutrality of project direction.
 
-  **TODO for KServe Team**: "limitation on the number/percentage of seats that a single vendor/company could take", "total seats of TSC member", and "the term of office for the TSC"
-  However there's no limitation on "the number/percentage of seats that a single vendor/company could take", which is recommended to be addressed and demonstrated before applying to incubation.
+  The TOC reviewers suggest adding rules such as "a limitation on the number/percentage of seats that a single vendor/company could take," "the total number of seats for TSC members," and "the term of office for the TSC" into the governance. These rules should be demonstrated before applying for graduation.
 
 - [ ] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
@@ -129,12 +128,10 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
   **TODO for KServe team**: need evidance in the rules not just examples
 
-- [ ] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
+- [x] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
 
-  <!-- (TOC Evaluation goes here) --> 
-  KServe uses the GitHub team to manage the roles and members, for example `kserve-security` team  responses to the security issues.
-
-  **TODO for KServe team**: Provide more information, not just security
+  <!-- (TOC Evaluation goes here) -->
+  KServe documents it's community roles, associated responsibilities, and role management at <https://github.com/kserve/community/blob/main/ROLES.md>
 
 - [ ] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
 
@@ -161,7 +158,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
   - KServe ModelMesh:  Yuan Tang, [terrytangyuan@gmail.com](mailto:terrytangyuan@gmail.com)
   - KServe Open Inference Protocol: Dan Sun [dsun20@bloomberg.net](mailto:dsun20@bloomberg.net)
 
-  **TODO for KServe team**: this is not blocking but suggested to document subproject leadership, contribution, maturity status, including add/remove process.
+  The TOC reviewers suggest to document subproject leadership, contribution, maturity status, including add/remove process.
 
 ### Required
 
@@ -233,10 +230,10 @@ Note: this section may be augmented by the completion of a Governance Review fro
   <!-- (TOC Evaluation goes here) -->  
   Communication channels are documented at <https://github.com/kserve/community?tab=readme-ov-file#questions-and-issues>
 
-- [ ] **List and document all project communication channels, including subprojects (mail list/slack/etc.).  List any non-public communications channels and what their special purpose is.**
+- [x] **List and document all project communication channels, including subprojects (mail list/slack/etc.).  List any non-public communications channels and what their special purpose is.**
 
   <!-- (TOC Evaluation goes here) -->
-  **TODO for KServe Team:** KServe doesn't have a unified place listing and documenting all project communication channels, suggested to provide if there is, or determin a file for this purpose.
+  KServe community channels can be found at <https://github.com/kserve/community#questions-and-issues>.
 
 - [x] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
 
@@ -270,16 +267,16 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [ ] **Roadmap change process is documented.**
 
   <!-- (TOC Evaluation goes here) -->
-  KServe 2024-2025 roadmap is captured at https://github.com/kserve/kserve/blob/master/ROADMAP.md, the [Governance document](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md) does not seem to cover how the Roadmap is created or how changes to project roadmap is handled.
+  KServe 2024-2025 roadmap is captured at <https://github.com/kserve/kserve/blob/master/ROADMAP.md>, the [Governance document](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md) does not seem to cover how the Roadmap is created or how changes to project roadmap is handled.
 
-  **TODO for KServe Team:** It is not mandatory, but recommended to document the Roadmap change process.
+  It is not mandatory for incubation, but recommended to document the Roadmap change process.
 
 - [x] **History of regular, quality releases.**
 
   <!-- (TOC Evaluation goes here) -->
   KServe follows quarterly releases as per <https://github.com/kserve/kserve/releases> and <https://github.com/kserve/kserve/tags>. Even though the release process from a development perspective is captured under: <https://github.com/kserve/kserve/blob/master/release/RELEASE_PROCESS_v2.md>, it is recommended to document at a high level the frequency/type of releases and support windows also.
 
-### Required 
+### Required
 
 - [x] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
 
