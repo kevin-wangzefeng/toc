@@ -10,14 +10,59 @@
 
 _$TOCMEMBER conducted the due diligence of KServe who applied for $LEVEL. The project [has/has not] completed the criteria that show its maturity at $LEVEL._
 
-_The following criteria implementations are noteworthy to call out... $NOTABLES._
+### Noteworthy Implementations
 
-_The following actions were provided to the project that were considered blocking but since resolved... $BLOCKERS._
+The KServe team has demonstrated substantial progress across CNCF incubation criteria:
 
-// KServe has documented their adoption of CNCF Code of Conduct, in CONTRIBUTING.md#code-of-conduct. The TOC reviewer suggests adding this description to KSERVE-TECHNICAL-CHARTER.md, and create a CODE_OF_CONDUCT.md file at the root level of each repository
+- **Governance and Vendor Neutrality**  
+  - Clear governance documented in [KSERVE-TECHNICAL-CHARTER.md](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md) with explicit vendor neutrality commitments ([ref](https://github.com/kserve/community/issues/52)).  
+  - Maintainer list, contributor ladder, and community roles are well documented ([MAINTAINERS.md](https://github.com/kserve/community/blob/main/MAINTAINERS.md), [ROLES.md](https://github.com/kserve/community/blob/main/ROLES.md), [membership.md](https://github.com/kserve/community/blob/main/membership.md)).  
 
+- **Community Engagement**  
+  - [Bi-weekly community meetings](https://github.com/kserve/community/tree/main?tab=readme-ov-file#community-meeting) running for over five years with agendas and recordings openly published.  
+  - Contributor activity and promotion workflows demonstrated in PRs (e.g. [#3484](https://github.com/kserve/kserve/pull/3484), [#3966](https://github.com/kserve/kserve/pull/3966)).  
 
-_The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project... $RECOMMENDATIONS._
+- **Code of Conduct and CNCF Alignment**  
+  - CNCF Code of Conduct adopted across repos ([community#29](https://github.com/kserve/community/issues/29)).  
+  - Linked consistently from charter, roles, and subproject documentation.  
+
+- **Engineering Practices**  
+  - Public [roadmap](https://github.com/kserve/kserve/blob/master/ROADMAP.md) with strategic items such as GenAI inference support and secure InferenceService.  
+  - Quarterly releases with a documented [release process](https://github.com/kserve/kserve/blob/master/release/RELEASE_PROCESS_v2.md).  
+  - Security practices strengthened with OpenSSF passing badge ([badge](https://www.bestpractices.dev/en/projects/6643)), scheduled image scans, and a [security self-assessment](https://github.com/kserve/community/blob/main/security/self-assessment.md).  
+
+- **Adoption and Ecosystem**  
+  - Broad industry adoption with production deployments at CyberAgent, Nutanix, Cloudera, SAP, and others.  
+  - Adopter documentation enhanced in response to TOC request ([community#47](https://github.com/kserve/community/issues/47)).  
+
+---
+
+### Blockers (Previously Raised, Now Resolved)
+
+- **Code of Conduct**: Initially missing root-level files, resolved with `CODE_OF_CONDUCT.md` across repos ([community#29](https://github.com/kserve/community/issues/29)).  
+- **Adopter Documentation**: Expanded references and visibility in response to TOC comments ([community#47](https://github.com/kserve/community/issues/47)).  
+- **Security Self-Assessment**: Clarified SBOM and vulnerability scanning details ([community#44](https://github.com/kserve/community/issues/44)).  
+
+---
+
+### Current Blocking Tasks
+
+The following items remain open and must be completed before graduation, though some may not block incubation:
+
+- **Governance Decision Process**: Explicit documentation of leadership, contribution acceptance, and governance changes ([community#53](https://github.com/kserve/community/issues/53)).  
+- **Maintainer Lifecycle**: Full lifecycle (onboarding, offboarding, emeritus status) not yet fully documented ([community#52](https://github.com/kserve/community/issues/52)).  
+- **Subproject Governance**: Leadership and maturity status for subprojects not documented ([community#53](https://github.com/kserve/community/issues/53)).  
+- **Security Reporting Links**: `SECURITY.md` not yet linked from community repo readme ([community#42](https://github.com/kserve/community/issues/42)).  
+
+---
+
+### Recommended Enhancements (Non-Blocking)
+
+- **Roadmap Change Process**: Governance should specify how roadmap changes are proposed and approved (gap in [charter](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md)).  
+- **Release Documentation**: Clarify release frequency, support policy, and rename release doc for consistency ([community#41](https://github.com/kserve/community/issues/41)).  
+- **Security Contact Migration**: Move vulnerability reporting address from LF AI & Data to CNCF domain in future ([community#42](https://github.com/kserve/community/issues/42)).  
+- **CI & Testing Resources**: Address limited CI infrastructure, potentially via CNCF resources.  
+- **Documentation Consolidation**: Reduce fragmentation between website and GitHub sources (raised in adopter interview feedback).  
 
 ### Adoption Evaluation
 
