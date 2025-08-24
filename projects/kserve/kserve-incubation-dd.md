@@ -327,43 +327,33 @@ N/A
 - [ ] **Clearly defined and discoverable process to report security issues.**
 
 <!-- (TOC Evaluation goes here) -->
-KServe’s security vulnerability reporting process is outlined at [kserve/SECURITY.md at master · kserve/kserve](https://github.com/kserve/kserve/blob/master/SECURITY.md). The mail id is currently under lfaidata foundation, it is recommended to move to a CNCF domain at the appropriate time.
+KServe’s security vulnerability reporting process is outlined at [kserve/SECURITY.md at master · kserve/kserve](https://github.com/kserve/kserve/blob/master/SECURITY.md). The mail id is currently under lfaidata foundation, it is recommended to move to a CNCF domain at the appropriate time. As part of the TOC review process the SECURITY.md has been updated with detailed information on how to report security vulnerabilities and the file has been linked to all major repositories of KServe. See https://github.com/kserve/community/issues/42 and https://github.com/kserve/community/issues/43 for more details.
 
 **TODO for KServe Team:**
-1. Add SECURITY.md to all relevant repos and not just kserve/kserve.
-2. Link SECURITY.md from all contributor guides across github and the KServe website. For eg: https://github.com/kserve/community?tab=readme-ov-file#questions-and-issues, https://kserve.github.io/website/0.15/developer/developer/ and https://github.com/kserve/community/blob/main/CONTRIBUTING.md#issues. All of them does not seem to have uniform information and how to report security vulnerabilty should be part of them.
+2. Link SECURITY.md to https://github.com/kserve/community?tab=readme-ov-file#questions-and-issues
 
 - [ ] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
 
 <!-- (TOC Evaluation goes here) --> 
-Access control is enforced via OWNERS file [kserve/OWNERS at master · kserve/kserve](https://github.com/kserve/kserve/blob/master/OWNERS) for Kserve repo and most of the other repos. (would have been better to name this CODEOWNERS), and the respective roles are specified in https://github.com/kserve/community/blob/main/membership.md#community-membership.
+Access control is enforced via OWNERS file [kserve/OWNERS at master · kserve/kserve](https://github.com/kserve/kserve/blob/master/OWNERS) for Kserve repo, [kserve/OWNERS at master · kserve/kserve](https://github.com/kserve/community/blob/main/.github/CODEOWNERS) for community repo. (It would have been better to name this uniformly as CODEOWNERS), and the respective roles are specified in https://github.com/kserve/community/blob/main/membership.md#community-membership.
 
 Members of KServe organization are required to enable two factor authentication [community/membership.md at main · kserve/community](https://github.com/kserve/community/blob/main/membership.md#requirements) in their Github account.
-
-**TODO for KServe Team:**
-1. Add OWNERS file to kserve/community repo.
 
 - [ ] **Document assignment of security response roles and how reports are handled.**
 
 <!-- (TOC Evaluation goes here) --> 
 
-https://github.com/kserve/kserve/blob/master/SECURITY.md specifies that only active maintainers of the project has access to reported security vulnerabilities. However the SECURITY.md is very minimal without much information on Supported versions, Prevention Mechanisms, Private/Public Disclosure Process and time taken for mitigation, and Communication channels used for the disclosure.
-
-**TODO for KServe Team:**
-
-1. Enhance SECURITY.md with more information as suggested above.
+https://github.com/kserve/kserve/blob/master/SECURITY.md specifies that only active maintainers of the project has access to reported security vulnerabilities. SECURITY.md has detailed information on KServer supported versions, Prevention Mechanisms, Private/Public Disclosure Process and time taken for mitigation, and Communication channels used for the disclosure.
 
 - [ ] **Document Security Self-Assessment.**
 
 <!-- (TOC Evaluation goes here) --> 
 
-KServe Security Self Assessment is available at https://github.com/kserve/community/blob/main/security/self-assessment.md.
+KServe Security Self Assessment is available at https://github.com/kserve/community/blob/main/security/self-assessment.md. Improvements were done as part of https://github.com/kserve/community/issues/44 to improve the self-assessment documentation to clarify about SBOMs. KServe snyk scan running twice a week <https://github.com/kserve/kserve/blob/master/.github/workflows/scheduled-image-scan.yml>. There is also a scan for go source code as well. <https://github.com/kserve/kserve/blob/master/.github/workflows/scheduled-go-security-scan.yml>. https://github.com/kserve/community/blob/main/security/self-assessment.md#development-pipeline has detailed information regarding the same.
 
 **TODO for KServe Team:**
 
-1. Link to the CI/CD generated SBOMs at https://github.com/kserve/community/blob/main/security/self-assessment.md#software-bill-of-materials
-2. Clarify if the generated docker images are scanned for security vulnerabilities at https://github.com/kserve/community/blob/main/security/self-assessment.md#development-pipeline
-3. CONTRIBUTING.md should also include information about how to report security vulnerabilties at https://github.com/kserve/community/blob/main/security/self-assessment.md#development-pipeline
+1. Can the links given in https://github.com/kserve/kserve/blob/master/CONTRIBUTING.md just point to https://github.com/kserve/community/blob/main/CONTRIBUTING.md to make is easier to access?
    
 - [x] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
 
