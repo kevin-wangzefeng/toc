@@ -330,7 +330,7 @@ N/A
 KServe’s security vulnerability reporting process is outlined at [kserve/SECURITY.md at master · kserve/kserve](https://github.com/kserve/kserve/blob/master/SECURITY.md). The mail id is currently under lfaidata foundation, it is recommended to move to a CNCF domain at the appropriate time. As part of the TOC review process the SECURITY.md has been updated with detailed information on how to report security vulnerabilities and the file has been linked to all major repositories of KServe. See https://github.com/kserve/community/issues/42 and https://github.com/kserve/community/issues/43 for more details.
 
 **TODO for KServe Team:**
-2. Link SECURITY.md to https://github.com/kserve/community?tab=readme-ov-file#questions-and-issues
+1. Link SECURITY.md to https://github.com/kserve/community?tab=readme-ov-file#questions-and-issues
 
 - [ ] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
 
@@ -372,18 +372,7 @@ N/A
 - [ ] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 
 <!-- (TOC Evaluation goes here) --> 
-KServe adopters are tracked here: https://kserve.github.io/website/latest/community/adopters/. The project has done a great job collecting various KServe demos and presentations at: https://kserve.github.io/website/latest/community/presentations/. However it would be nice to have an exclusive Ecosystem section for the KServe website that talks about case-studies/blogs from adopters.
-
-**TODO for KServe Team:**
-
-1. Link the demos and presentations from https://kserve.github.io/website/latest/community/presentations/ to the right adopter at https://kserve.github.io/website/latest/community/adopters/ with a third column wherever applicable. That will give an idea on how the adopters are making use of KServe.
-2. The following links may be also useful to be highlighted, if not already done:
-- https://www.ibm.com/docs/en/watson-libraries?topic=containers-run-kubernetes-kserve-modelmesh-serving
-- https://blogs.nvidia.com/blog/kserve-nim-inference/
-- https://www.zenml.io/blog/deploy-your-ml-models-with-kserve-and-zenml
-- https://www.bloomberg.com/company/stories/the-journey-to-build-bloombergs-ml-inference-platform-using-kserve-formerly-kfserving/
-- https://www.zillow.com/tech/serving-machine-learning-models-efficiently-at-scale-at-zillow/
-- https://sourceforge.net/software/ml-model-deployment/integrates-with-naver/
+KServe adopters are tracked here: [https://kserve.github.io/website/latest/community/adopters/](https://kserve.github.io/website/docs/community/adopters). The project has done a great job collecting various KServe demos and presentations at: [https://kserve.github.io/website/latest/community/presentations/](https://kserve.github.io/website/docs/community/presentations). KServe did additional work as per the TOC review under https://github.com/kserve/community/issues/47 to enhance [https://kserve.github.io/website/latest/community/adopters/](https://kserve.github.io/website/docs/community/adopters) with the right references from various demos and presentations.
 
 - [ ] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
@@ -401,17 +390,8 @@ Refer to the Adoption portion of this document.
 
 <!-- (TOC Evaluation goes here) --> 
 
-KServe officially supports integration with CNCF projects Istio, Knative, gRPC, OpenTelemetry. KServe installation guide using Istio/Knative has been described at: https://kserve.github.io/website/latest/admin/serverless/serverless. KServe ServiceMesh guide using Istio is documented at : https://kserve.github.io/website/latest/admin/serverless/servicemesh
+KServe officially supports integration with CNCF projects Istio, Knative, gRPC, OpenTelemetry. KServe installation guide using Istio/Knative has been described at: https://kserve.github.io/website/latest/admin/serverless/serverless. KServe ServiceMesh guide using Istio is documented at : https://kserve.github.io/website/latest/admin/serverless/servicemesh. Based on TOC recommendation KServe team is working on additional enhancements as part of https://github.com/kserve/community/issues/46 to incorporate other integrations from projects like Kubeflow, minio etc.
 
-**TODO for KServe Team:**
-
-Would be great to incorporate content similar to some of the below documentation to the official KServe website:
-1. https://www.kubeflow.org/docs/external-add-ons/kserve/introduction/
-2. https://blog.min.io/deploying-models-to-kubernetes-with-aistor-mlflow-and-kserve/
-3. https://docs.vllm.ai/en/v0.8.2/deployment/integrations/kserve.html
-4. https://iter8.tools/0.14/tutorials/integrations/kserve/grpc/
-5. https://www.youtube.com/watch?v=PYB5P82kQns
-   
 #### Adoption
 
 ##### Adopter 1 - CyberAgent, Inc. (Internet Services & Entertainment)
