@@ -118,7 +118,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
   <!-- (TOC Evaluation goes here) -->
   [KSERVE-TECHNICAL-CHARTER.md](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md#5-vendor-neutrality) explicilty documents vendor neutrality of project direction.
 
-  The TOC reviewers suggest adding rules such as "a limitation on the number/percentage of seats that a single vendor/company could take," "the total number of seats for TSC members," and "the term of office for the TSC" into the governance. These rules should be demonstrated before applying for graduation.
+  The TOC reviewers suggest adding rules such as "a limitation on the number/percentage of seats that a single vendor/company could take," "the total number of seats for TSC members," and "the term of office for the TSC" into the governance. These rules should be demonstrated before applying for graduation. This is being tracked under [Provide more detailed TSC charter](https://github.com/kserve/community/issues/52)
 
 - [ ] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
@@ -126,7 +126,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
   The project decisions are discussed in open issues and we use gitvote process to make the final decision.
     For example: [requests to the CNCF](https://github.com/kserve/community/issues/10)
 
-  **TODO for KServe team**: need evidance in the rules not just examples
+  The TOC reviewers suggest specifying documented rules for the project decision process than showing just examples as above. This is being tracked under [Document how the KServe project makes decisions](https://github.com/kserve/community/issues/53)
 
 - [x] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
 
@@ -158,7 +158,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
   - KServe ModelMesh:  Yuan Tang, [terrytangyuan@gmail.com](mailto:terrytangyuan@gmail.com)
   - KServe Open Inference Protocol: Dan Sun [dsun20@bloomberg.net](mailto:dsun20@bloomberg.net)
 
-  The TOC reviewers suggest to document subproject leadership, contribution, maturity status, including add/remove process.
+  The TOC reviewers suggest to document subproject leadership, contribution, maturity status, including add/remove process. This is being tracked under [Document how KServe project makes decisions](https://github.com/kserve/community/issues/53)
 
 ### Required
 
@@ -310,9 +310,9 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [ ] **Document the project's release process.**
 
   <!-- (TOC Evaluation goes here) -->
-  The release process for KServe is documented here: <https://github.com/kserve/kserve/blob/master/release/RELEASE_PROCESS_v2.md>. It is recommended to rename this to RELEASE.md, as there are no references to v1 release process in the repo, and hence the current name might be misleading. Also in the release process, it would be nice to have an initial section which is easy to follow for KServe users on – frequency of the releases, supported releases, support policy, types of releases(in case Beta support), eol announcements etc. It would be also nice to mention that the whole process outlined in the release document is performed by authorized people - ie, release managers who are chosen per release (preferably in a step outlined in the governance document). There seems to be detailed blogs about the release process upto v0.14: <https://kserve.github.io/website/0.14/blog/articles/2024-12-13-KServe-0.14-release/>. The same for v0.15 is missing, however assuming that to be in place soon.
+  The release process for KServe is documented here: <https://github.com/kserve/kserve/blob/master/release/RELEASE_PROCESS_v2.md>. It is recommended to rename this to RELEASE.md, as there are no references to v1 release process in the repo, and hence the current name might be misleading. Also in the release process, it would be nice to have an initial section which is easy to follow for KServe users on – frequency of the releases, supported releases, support policy, types of releases(in case Beta support), eol announcements etc. It would be also nice to mention that the whole process outlined in the release document is performed by authorized people - ie, release managers who are chosen per release (preferably in a step outlined in the governance document). There seems to be detailed blogs about the release process upto v0.15: <(https://kserve.github.io/website/blog/kserve-0.15-release)/>.
 
-  **TODO for KServe Team:** Add information about release frequency, supported releases, support policy etc to the release process document.
+  The recommendations given by the TOC reviewers are being tracked under [Document history of regular, quality releases](https://github.com/kserve/community/issues/41)
 
 ## Security
 
