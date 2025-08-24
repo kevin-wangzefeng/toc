@@ -10,7 +10,7 @@
 
 _$TOCMEMBER conducted the due diligence of KServe who applied for $LEVEL. The project [has/has not] completed the criteria that show its maturity at $LEVEL._
 
-#### Noteworthy Implementations
+#### Noteworthy Implementations:
 
 The KServe team has demonstrated substantial progress across CNCF incubation criteria:
 
@@ -35,13 +35,13 @@ The KServe team has demonstrated substantial progress across CNCF incubation cri
   - Broad industry adoption with production deployments at CyberAgent, Nutanix, Cloudera, SAP, and others.  
   - Adopter documentation enhanced in response to TOC request ([community#47](https://github.com/kserve/community/issues/47)).
 
-#### Blockers (Previously Raised, Now Resolved)
+#### Blockers (Previously Raised, Now Resolved):
 
 - **Code of Conduct**: Initially missing root-level files, resolved with `CODE_OF_CONDUCT.md` across repos ([community#29](https://github.com/kserve/community/issues/29)).  
 - **Adopter Documentation**: Expanded references and visibility in response to TOC comments ([community#47](https://github.com/kserve/community/issues/47)).  
 - **Security Self-Assessment**: Clarified SBOM and vulnerability scanning details ([community#44](https://github.com/kserve/community/issues/44)).  
 
-#### Current Blocking Tasks
+#### Current Blocking Tasks:
 
 The following items remain open and must be completed before graduation, though some may not block incubation:
 
@@ -50,7 +50,7 @@ The following items remain open and must be completed before graduation, though 
 - **Subproject Governance**: Leadership and maturity status for subprojects not documented ([community#53](https://github.com/kserve/community/issues/53)).  
 - **Security Reporting Links**: `SECURITY.md` not yet linked from community repo readme ([community#42](https://github.com/kserve/community/issues/42)).  
 
-### Recommended Enhancements (Non-Blocking)
+#### Recommended Enhancements (Non-Blocking):
 
 - **Roadmap Change Process**: Governance should specify how roadmap changes are proposed and approved (gap in [charter](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md)).  
 - **Release Documentation**: Clarify release frequency, support policy, and rename release doc for consistency ([community#41](https://github.com/kserve/community/issues/41)).  
