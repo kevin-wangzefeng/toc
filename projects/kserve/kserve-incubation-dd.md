@@ -405,39 +405,40 @@ N/A
 
 - [x] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
 
-<!-- (TOC Evaluation goes here) -->
-Access control is enforced via OWNERS file [kserve/OWNERS at master · kserve/kserve](https://github.com/kserve/kserve/blob/master/OWNERS) for Kserve repo, [kserve/OWNERS at master · kserve/kserve](https://github.com/kserve/community/blob/main/.github/CODEOWNERS) for community repo. (It would have been better to name this uniformly as CODEOWNERS), and the respective roles are specified in https://github.com/kserve/community/blob/main/membership.md#community-membership.
+  <!-- (TOC Evaluation goes here) -->
+  Access control is enforced via OWNERS and CODEOWNERS files:
+  - <https://github.com/kserve/kserve/blob/master/OWNERS> for Kserve repo
+  - <https://github.com/kserve/community/blob/main/.github/CODEOWNERS> for community repo
 
-Members of KServe organization are required to enable two factor authentication [community/membership.md at main · kserve/community](https://github.com/kserve/community/blob/main/membership.md#requirements) in their Github account.
+  And the respective roles are specified in <https://github.com/kserve/community/blob/main/membership.md#community-membership>.  
+
+  Members of KServe organization are required to enable two factor authentication <https://github.com/kserve/community/blob/main/membership.md#requirements> in their Github account.
 
 - [x] **Document assignment of security response roles and how reports are handled.**
 
-<!-- (TOC Evaluation goes here) -->
-<https://github.com/kserve/kserve/blob/master/SECURITY.md> specifies that only active maintainers of the project has access to reported security vulnerabilities. SECURITY.md has detailed information on KServer supported versions, Prevention Mechanisms, Private/Public Disclosure Process and time taken for mitigation, and Communication channels used for the disclosure.
+  <!-- (TOC Evaluation goes here) -->
+  <https://github.com/kserve/kserve/blob/master/SECURITY.md> specifies that only active maintainers of the project has access to reported security vulnerabilities. SECURITY.md has detailed information on KServer supported versions, Prevention Mechanisms, Private/Public Disclosure Process and time taken for mitigation, and Communication channels used for the disclosure.
 
-<https://github.com/kserve/community/blob/main/ROLES.md> defines responcibilities of [KServe Security Team](https://github.com/kserve/community/blob/main/ROLES.md#kserve-security-team-kserve-security) and [ModelMesh Security Team](https://github.com/kserve/community/blob/main/ROLES.md#modelmesh-security-team-modelmesh-security). The assignment of security response roles is documented as the follwoing:
+  <https://github.com/kserve/community/blob/main/ROLES.md> defines responcibilities of [KServe Security Team](https://github.com/kserve/community/blob/main/ROLES.md#kserve-security-team-kserve-security) and [ModelMesh Security Team](https://github.com/kserve/community/blob/main/ROLES.md#modelmesh-security-team-modelmesh-security). The assignment of security response roles is documented as the follwoing:
 
-Ref: <https://github.com/kserve/community/blob/main/ROLES.md#role-progression>:
-> Contributor → Security Team: Based on sustained contributions to the CVE fixes and security related improvements
+  Ref: <https://github.com/kserve/community/blob/main/ROLES.md#role-progression>:
+  > Contributor → Security Team: Based on sustained contributions to the CVE fixes and security related improvements
 
 - [x] **Document Security Self-Assessment.**
 
-<!-- (TOC Evaluation goes here) -->
+  <!-- (TOC Evaluation goes here) -->
+  KServe Security Self Assessment is available at <https://github.com/kserve/community/blob/main/security/self-assessment.md>. In addition:
+  - Improvements were done as part of <https://github.com/kserve/community/issues/44> to improve the self-assessment documentation to clarify about SBOMs.
+  - KServe snyk scan running twice a week, ref: <https://github.com/kserve/kserve/blob/master/.github/workflows/scheduled-image-scan.yml>.
+  - There is also a scan for go source code as well. Ref: <https://github.com/kserve/kserve/blob/master/.github/workflows/scheduled-go-security-scan.yml>.
+  - <https://github.com/kserve/community/blob/main/security/self-assessment.md#development-pipeline> has detailed information regarding the same.
 
-KServe Security Self Assessment is available at <https://github.com/kserve/community/blob/main/security/self-assessment.md>. In addition:
-
-- Improvements were done as part of <https://github.com/kserve/community/issues/44> to improve the self-assessment documentation to clarify about SBOMs.
-- KServe snyk scan running twice a week, ref: <https://github.com/kserve/kserve/blob/master/.github/workflows/scheduled-image-scan.yml>.
-- There is also a scan for go source code as well. Ref: <https://github.com/kserve/kserve/blob/master/.github/workflows/scheduled-go-security-scan.yml>.
-- <https://github.com/kserve/community/blob/main/security/self-assessment.md#development-pipeline> has detailed information regarding the same.
-
-It's recommended that the links given in <https://github.com/kserve/kserve/blob/master/CONTRIBUTING.md> just point to <https://github.com/kserve/community/blob/main/CONTRIBUTING.md> to make is easier to access.
+  It's recommended that the links given in <https://github.com/kserve/kserve/blob/master/CONTRIBUTING.md> just point to <https://github.com/kserve/community/blob/main/CONTRIBUTING.md> to make is easier to access.
 
 - [x] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
 
-<!-- (TOC Evaluation goes here) -->
-
-KServe has obtained OpenSSF Best Practicess passing badge: https://www.bestpractices.dev/en/projects/6643
+  <!-- (TOC Evaluation goes here) -->
+  KServe has obtained OpenSSF Best Practicess passing badge: <https://www.bestpractices.dev/en/projects/6643>
 
 ## Ecosystem
 
@@ -449,81 +450,80 @@ N/A
 
 - [x] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 
-<!-- (TOC Evaluation goes here) -->
-KServe adopters are tracked at: [https://kserve.github.io/website/latest/community/adopters/](https://kserve.github.io/website/docs/community/adopters).
-The project has done a great job collecting various KServe demos and presentations at: [https://kserve.github.io/website/latest/community/presentations/](https://kserve.github.io/website/docs/community/presentations).
-KServe did additional work as per the TOC review under <https://github.com/kserve/community/issues/47> to enhance [https://kserve.github.io/website/latest/community/adopters/](https://kserve.github.io/website/docs/community/adopters) with the right references from various demos and presentations.
+  <!-- (TOC Evaluation goes here) -->
+  KServe adopters are tracked at: <https://kserve.github.io/website/docs/community/adopters>.  
+  The project has done a great job collecting various KServe demos and presentations at: <https://kserve.github.io/website/docs/community/presentations>.  
+  KServe did additional work as per the TOC review under <https://github.com/kserve/community/issues/47> to enhance <https://kserve.github.io/website/docs/community/adopters> with the right references from various demos and presentations.
 
 - [x] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
-<!-- (TOC Evaluation goes here) -->
+  <!-- (TOC Evaluation goes here) -->
+  The project provided the TOC with a list of adopters for verification of use of the project at the level expected, i.e. production use for graduation, dev/test for incubation.
 
-The project provided the TOC with a list of adopters for verification of use of the project at the level expected, i.e. production use for graduation, dev/test for incubation.
+  The adopters document about recorded 9 production grade adopters, and the TOC reviewers have interviewed 4 qulified adopters that are using KServe in production.
 
 - [x] **TOC verification of adopters.**
 
-<!-- (TOC Evaluation goes here) -->
-
-Refer to the Adoption portion of this document for more details.
+  <!-- (TOC Evaluation goes here) -->
+  Refer to the Adoption portion of this document for more details.
 
 - [x] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
 
-<!-- (TOC Evaluation goes here) -->
-
-KServe officially supports integration with CNCF projects Istio, Knative, gRPC, OpenTelemetry. KServe installation guide using Istio/Knative has been described at: <https://kserve.github.io/website/latest/admin/serverless/serverless>.
-KServe ServiceMesh guide using Istio is documented at: <https://kserve.github.io/website/latest/admin/serverless/servicemesh>.
-Based on TOC reviewers' recommendation, KServe team is working on additional enhancements as part of <https://github.com/kserve/community/issues/46> to incorporate other integrations from projects like Kubeflow, minio etc.
+  <!-- (TOC Evaluation goes here) -->
+  KServe officially supports integration with CNCF projects Istio, Knative, gRPC, OpenTelemetry. KServe installation guide using Istio/Knative has been described at: <https://kserve.github.io/website/latest/admin/serverless/serverless>.  
+  KServe ServiceMesh guide using Istio is documented at: <https://kserve.github.io/website/latest/admin/serverless/servicemesh>.  
+  Based on TOC reviewers' recommendation, KServe team is working on additional enhancements as part of <https://github.com/kserve/community/issues/46> to incorporate other integrations from projects like Kubeflow, minio etc.
 
 #### Adoption
 
 ##### Adopter 1 - CyberAgent, Inc. (Internet Services & Entertainment)
 
-CyberAgent, Inc., a leading internet and entertainment company in Japan, operates across media, advertising, and gaming. To support its diverse AI-driven business operations, CyberAgent built Cycloud, a private cloud platform with a dedicated bare-metal GPU cluster in its own Japanese data center. This cluster, hosting over 80 nodes and ~500 GPUs, powers between 1,500 and 2,500 pods, delivering GPU-as-a-Service, distributed training, and a global inference endpoint. KServe serves as the core model serving solution within Cycloud, enabling the company to offer flexible, scalable inference services across business units.
+  CyberAgent, Inc., a leading internet and entertainment company in Japan, operates across media, advertising, and gaming. To support its diverse AI-driven business operations, CyberAgent built Cycloud, a private cloud platform with a dedicated bare-metal GPU cluster in its own Japanese data center. This cluster, hosting over 80 nodes and ~500 GPUs, powers between 1,500 and 2,500 pods, delivering GPU-as-a-Service, distributed training, and a global inference endpoint. KServe serves as the core model serving solution within Cycloud, enabling the company to offer flexible, scalable inference services across business units.
 
-CyberAgent adopted KServe four years ago after evaluating multiple architectures, including a DIY approach and a Knative + Istio stack. KServe was chosen for its built-in autoscaling and zero-scale features, which optimize costly GPU usage, as well as for its deep integration with Knative and Istio that reduced operational complexity. Today, KServe supports ~80 inference services, each consuming between 1 and 8 GPUs during peak usage. Scaling is demand-driven, and zero-scale ensures idle services release resources to maximize efficiency.
+  CyberAgent adopted KServe four years ago after evaluating multiple architectures, including a DIY approach and a Knative + Istio stack. KServe was chosen for its built-in autoscaling and zero-scale features, which optimize costly GPU usage, as well as for its deep integration with Knative and Istio that reduced operational complexity. Today, KServe supports ~80 inference services, each consuming between 1 and 8 GPUs during peak usage. Scaling is demand-driven, and zero-scale ensures idle services release resources to maximize efficiency.
 
-Operationally, CyberAgent upgrades KServe annually, currently running v0.14.0 after eight successful upgrades since v0.6. Adoption was smooth thanks to strong documentation and examples, though production troubleshooting proved challenging due to limited deep-dive technical guides. Despite this, KServe’s templating mechanism (serving runtime) allowed for seamless support of multiple ML frameworks and custom containers. The platform achieved ~40% cost savings versus alternatives, and was built by just four developers in six months—highlighting KServe’s efficiency.
+  Operationally, CyberAgent upgrades KServe annually, currently running v0.14.0 after eight successful upgrades since v0.6. Adoption was smooth thanks to strong documentation and examples, though production troubleshooting proved challenging due to limited deep-dive technical guides. Despite this, KServe’s templating mechanism (serving runtime) allowed for seamless support of multiple ML frameworks and custom containers. The platform achieved ~40% cost savings versus alternatives, and was built by just four developers in six months—highlighting KServe’s efficiency.
 
-CyberAgent’s future plans include active community participation and feature requests such as Gateway API Inference Extension, zero-scale for raw deployment mode, vertical pod autoscaling, and Dynamic Resource Allocation support. While praising KServe’s governance, maintainer responsiveness, and strong technical foundations, CyberAgent noted opportunities to improve technical decision transparency and global collaboration through more asynchronous communication. KServe remains a critical component in enabling CyberAgent’s large-scale, cost-efficient AI infrastructure.
+  CyberAgent’s future plans include active community participation and feature requests such as Gateway API Inference Extension, zero-scale for raw deployment mode, vertical pod autoscaling, and Dynamic Resource Allocation support. While praising KServe’s governance, maintainer responsiveness, and strong technical foundations, CyberAgent noted opportunities to improve technical decision transparency and global collaboration through more asynchronous communication. KServe remains a critical component in enabling CyberAgent’s large-scale, cost-efficient AI infrastructure.
 
-August 2025
-Reference: [KServer Adopter Interview - CyberAgent](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-wip/projects/kserve/kserve-adopter-interview-cyberagent.md)
+  August 2025
+  Reference: [KServer Adopter Interview - CyberAgent](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-wip/projects/kserve/kserve-adopter-interview-cyberagent.md)
 
 ##### Adopter 2 - Nutanix/Cloud Service Provider
 
-A global leader in cloud software, Nutanix has integrated KServe into its production cloud platform since 2021, following extensive experimentation from the project’s early stages. Their choice of KServe over alternative solutions highlights the platform’s maturity, driven by its Kubernetes-native design, flexible and rich feature set, and robust support for both predictive and generative AI model inference.
+  A global leader in cloud software, Nutanix has integrated KServe into its production cloud platform since 2021, following extensive experimentation from the project’s early stages. Their choice of KServe over alternative solutions highlights the platform’s maturity, driven by its Kubernetes-native design, flexible and rich feature set, and robust support for both predictive and generative AI model inference.
 
-KServe’s standard inference APIs abstract away the complexity of underlying ML frameworks, making it accessible for production use. Nutanix has specifically called out features such as accelerator support and autoscaling as key differentiators that align with their enterprise-grade requirements.
+  KServe’s standard inference APIs abstract away the complexity of underlying ML frameworks, making it accessible for production use. Nutanix has specifically called out features such as accelerator support and autoscaling as key differentiators that align with their enterprise-grade requirements.
 
-In addition to technical capabilities, Nutanix reports that the KServe community is active, supportive, and well-governed with a strong commitment to vendor neutrality. They commend the project’s high-quality documentation, which has facilitated seamless adoption and upgrades. Each new KServe release is thoroughly tested by Nutanix internally, and backward compatibility is consistently upheld—demonstrating the project's engineering maturity.
+  In addition to technical capabilities, Nutanix reports that the KServe community is active, supportive, and well-governed with a strong commitment to vendor neutrality. They commend the project’s high-quality documentation, which has facilitated seamless adoption and upgrades. Each new KServe release is thoroughly tested by Nutanix internally, and backward compatibility is consistently upheld—demonstrating the project's engineering maturity.
 
-Nutanix is also an active contributor to the KServe project, with five engineers engaged, including three official reviewers. They have expressed a strong commitment to continue contributing and to deepen their collaboration with other CNCF ecosystem projects such as Envoy and components within the model inference domain. This level of production usage, community involvement, and sustained commitment from a major enterprise vendor like Nutanix reflects positively on KServe’s readiness for CNCF incubation.
+  Nutanix is also an active contributor to the KServe project, with five engineers engaged, including three official reviewers. They have expressed a strong commitment to continue contributing and to deepen their collaboration with other CNCF ecosystem projects such as Envoy and components within the model inference domain. This level of production usage, community involvement, and sustained commitment from a major enterprise vendor like Nutanix reflects positively on KServe’s readiness for CNCF incubation.
 
-July 2025
-Reference: [KServer Adopter Interview - Nutanix](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-wip/projects/kserve/kserve-adopter-interview-nutanix.md)
+  July 2025
+  Reference: [KServer Adopter Interview - Nutanix](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-wip/projects/kserve/kserve-adopter-interview-nutanix.md)
 
 ##### Adopter 3 -  Cloudera (Enterprise Data Platform Provider)
 
-Cloudera has integrated KServe as the model serving backbone of its AI Inference product within the Cloudera Data Platform (CDP). The decision followed a comprehensive evaluation of build-versus-buy options in 2022–2023, during which KServe was selected for its open governance under LF AI & Data and CNCF, enterprise-friendly licensing, active and approachable community, and vendor-neutral roadmap. KServe’s Kubernetes-native architecture, built on Knative Serving, aligned with Cloudera’s cloud-native design principles and avoided duplicating existing infrastructure capabilities.
+  Cloudera has integrated KServe as the model serving backbone of its AI Inference product within the Cloudera Data Platform (CDP). The decision followed a comprehensive evaluation of build-versus-buy options in 2022–2023, during which KServe was selected for its open governance under LF AI & Data and CNCF, enterprise-friendly licensing, active and approachable community, and vendor-neutral roadmap. KServe’s Kubernetes-native architecture, built on Knative Serving, aligned with Cloudera’s cloud-native design principles and avoided duplicating existing infrastructure capabilities.
 
-KServe has been in use for nearly two years, with approximately one year of production deployment since the product’s GA release in 2024. Current production usage spans multiple industries, including banking, government, healthcare, and oil & gas, with customers running both generative AI (GenAI) and traditional machine learning models. Cloudera primarily leverages KServe’s customizable cluster serving runtimes, traffic management, and scaling features, enabling rapid onboarding of diverse model types across hybrid and multi-cloud environments.
+  KServe has been in use for nearly two years, with approximately one year of production deployment since the product’s GA release in 2024. Current production usage spans multiple industries, including banking, government, healthcare, and oil & gas, with customers running both generative AI (GenAI) and traditional machine learning models. Cloudera primarily leverages KServe’s customizable cluster serving runtimes, traffic management, and scaling features, enabling rapid onboarding of diverse model types across hybrid and multi-cloud environments.
 
-The integration experience was smooth due to KServe’s compatibility with existing Kubernetes-based infrastructure. Documentation quality was cited as a strength, with the project’s requirement for synchronized code and documentation updates ensuring accuracy and completeness. KServe has delivered measurable value by accelerating time-to-market (estimated savings of at least two years in development effort), enabling multi-cloud operations, and supporting rapid adoption of emerging AI capabilities. Cloudera actively contributes upstream, including code, documentation, and new features such as enhanced inference logging with cloud storage backends.
+  The integration experience was smooth due to KServe’s compatibility with existing Kubernetes-based infrastructure. Documentation quality was cited as a strength, with the project’s requirement for synchronized code and documentation updates ensuring accuracy and completeness. KServe has delivered measurable value by accelerating time-to-market (estimated savings of at least two years in development effort), enabling multi-cloud operations, and supporting rapid adoption of emerging AI capabilities. Cloudera actively contributes upstream, including code, documentation, and new features such as enhanced inference logging with cloud storage backends.
 
-Cloudera views KServe’s community governance, technical quality, and growth potential positively, though it notes challenges such as a small maintainer pool, slow PR review cycles, and constrained CI infrastructure. Future plans include deepened community involvement, governance participation, and continued upstreaming of customer-driven features to avoid maintaining internal forks. Cloudera believes CNCF incubation could help address resource constraints, improve build/test infrastructure, and expand maintainer diversity across time zones.
+  Cloudera views KServe’s community governance, technical quality, and growth potential positively, though it notes challenges such as a small maintainer pool, slow PR review cycles, and constrained CI infrastructure. Future plans include deepened community involvement, governance participation, and continued upstreaming of customer-driven features to avoid maintaining internal forks. Cloudera believes CNCF incubation could help address resource constraints, improve build/test infrastructure, and expand maintainer diversity across time zones.
 
-July 2025
-Reference: [KServer Adopter Interview - Cloudera](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-wip/projects/kserve/kserve-adopter-interview-cloudera.md)
+  July 2025
+  Reference: [KServer Adopter Interview - Cloudera](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-wip/projects/kserve/kserve-adopter-interview-cloudera.md)
 
 ##### Adopter 4 – SAP (Enterprise AI Platform Provider)
 
-SAP AI Core, a multi-cloud AI execution platform within SAP’s Business Technology Platform, selected KServe in mid-2020 for its Kubernetes-native, cloud-agnostic serving capabilities. The platform placed a premium on seamless integration with their Kubernetes infrastructure, multi-tenancy, and scalability—criteria that KServe met more effectively compared to alternative solutions, particularly given its Kubeflow heritage and alignment with CNCF best practices.
+  SAP AI Core, a multi-cloud AI execution platform within SAP’s Business Technology Platform, selected KServe in mid-2020 for its Kubernetes-native, cloud-agnostic serving capabilities. The platform placed a premium on seamless integration with their Kubernetes infrastructure, multi-tenancy, and scalability—criteria that KServe met more effectively compared to alternative solutions, particularly given its Kubeflow heritage and alignment with CNCF best practices.
 
-In production since 2021, SAP AI Core currently employs KServe across thousands of internal and external tenants. The service leverages KServe’s InferenceService API to abstract model serving logistics, autoscale workloads, and interact with multi-cloud object storage. Critical features include serverless scale-to-zero for cost-efficient edge cases, as well as storage initializers supporting cross-cloud object stores, accelerating deployment and operational agility.
+  In production since 2021, SAP AI Core currently employs KServe across thousands of internal and external tenants. The service leverages KServe’s InferenceService API to abstract model serving logistics, autoscale workloads, and interact with multi-cloud object storage. Critical features include serverless scale-to-zero for cost-efficient edge cases, as well as storage initializers supporting cross-cloud object stores, accelerating deployment and operational agility.
 
-While the overall integration experience has been positive, SAP identified operational complexities arising from KServe’s dependencies—most notably Knative and Istio—during upgrades. Documentation is robust but fragmented between the website and GitHub repository, prompting a recommendation for consolidation. Nonetheless, KServe’s multi-cloud support, alignment with enterprise governance, and accelerated time-to-market have brought tangible value and reduced infrastructure burdens for SAP’s AI services.
+  While the overall integration experience has been positive, SAP identified operational complexities arising from KServe’s dependencies—most notably Knative and Istio—during upgrades. Documentation is robust but fragmented between the website and GitHub repository, prompting a recommendation for consolidation. Nonetheless, KServe’s multi-cloud support, alignment with enterprise governance, and accelerated time-to-market have brought tangible value and reduced infrastructure burdens for SAP’s AI services.
 
-SAP continues to contribute to KServe with active development and feature requests, with multiple engineers participating in the project. The community is praised for its responsiveness and diversity under CNCF governance, though meeting times favor US contributors. SAP looks forward to deeper involvement, improved adopter visibility, and reduced operational complexity in future project iterations.
+  SAP continues to contribute to KServe with active development and feature requests, with multiple engineers participating in the project. The community is praised for its responsiveness and diversity under CNCF governance, though meeting times favor US contributors. SAP looks forward to deeper involvement, improved adopter visibility, and reduced operational complexity in future project iterations.
 
-August 2025
-Reference: [KServer Adopter Interview - SAP](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-wip/projects/kserve/kserve-adopter-interview-sap.md)
+  August 2025
+  Reference: [KServer Adopter Interview - SAP](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-wip/projects/kserve/kserve-adopter-interview-sap.md)
