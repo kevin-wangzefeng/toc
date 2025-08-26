@@ -53,11 +53,6 @@ The following items remain open may not block incubation, but should be complete
 - **CI & Testing Resources**: Address limited CI infrastructure, potentially via CNCF resources.  
 - **Documentation Consolidation**: Reduce fragmentation between website and GitHub sources (raised in adopter interview feedback).  
 
-
----
-
-
-
 ### Adoption Evaluation
 
 KServe has demonstrated consistent and growing adoption across diverse industries and geographies, with production deployments ranging from large-scale multi-cloud enterprise platforms to specialized internal AI infrastructure. The project is used by major organizations including Cloudera, CyberAgent, Nutanix, SAP, and others, spanning sectors such as enterprise software, cloud infrastructure, online media, gaming, and financial services, with deployments supporting both generative and predictive AI workloads at scale. Use cases span multi-cloud enterprise AI platforms, large GPU clusters, internal developer platforms, and hyperscaler-agnostic services, serving thousands of tenants in some cases.
