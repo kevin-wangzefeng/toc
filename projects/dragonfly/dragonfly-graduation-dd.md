@@ -101,11 +101,20 @@ Maintainers share responsibilities across all project areas but often focus on s
 
 - [ ] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) --> 
+  Dragonfly community has resolved the findings and suggestions raised during [Dragonfly governance Review](https://github.com/cncf/toc/issues/1599), some noteworthy updates are:
+  - Unified and updated governance docs, fixing outdated links and redundancy between community and main repo. PRs: [dragonflyoss/community#25](https://github.com/dragonflyoss/community/pull/25), [dragonflyoss/dragonfly#4087](https://github.com/dragonflyoss/dragonfly/pull/4087)
 
-- [ ] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
+  **TODO**: provide more highligths here
 
-<!-- (TOC Evaluation goes here) --> 
+  Refer to <https://github.com/dragonflyoss/community/issues/27> for more details.
+
+- [x] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
+
+  <!-- (TOC Evaluation goes here) -->
+  Dragonfly documents its commitemnt in the [GOVERNANCE.md](https://github.com/dragonflyoss/community/blob/master/GOVERNANCE.md).  
+  And [COMMUNITY_MEBMERSHIP.md#maximum-representation](https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md#maximum-representation) explicitly documents maximum representation of maintainers from the same company:
+  > To ensure balanced representation, no more than four active Maintainers may be from the same company. If more than four candidates from one company are elected, only the top four vote-getters will serve, with additional slots filled by the next highest vote recipients from other organizations.
 
 - [ ] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
