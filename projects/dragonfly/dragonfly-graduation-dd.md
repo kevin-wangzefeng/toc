@@ -118,51 +118,88 @@ Maintainers share responsibilities across all project areas but often focus on s
 
 - [ ] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  Dragonfly documents detailed project leadership management rules at <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md#managing-membership>
 
-- [ ] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
+  THe contribution acceptance is documented in the contributing guide at <https://github.com/dragonflyoss/community/blob/master/CONTRIBUTING.md#contributing-code-and-docs>.
 
-<!-- (TOC Evaluation goes here) --> 
+  **TODO for Dragonfly team:** "requests to the CNCF, and changes to governance or project goals" not found.
+
+- [x] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
+
+  <!-- (TOC Evaluation goes here) -->
+  Dragonfly describes the basic roles, responsibilies, and how to become on the role in the [community ladder](https://github.com/dragonflyoss/community/blob/master/COMMUNITY_LADDER.md).
+
+  **TODO for Dragonfly Team:** there's duplicated definitions of "Adding New Member/Approver/Maintainer" in the community documents:
+  - location 1: <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_LADDER.md?plain=1#L164>
+  - location 2: <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md#adding-new-memberapprovermaintainer>
+  It's suggested to consolicate, and implement single source of truth.
 
 - [ ] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
 
-<!-- (TOC Evaluation goes here) -->
+  <!-- (TOC Evaluation goes here) -->
+  Repository maintainers are added by: <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md#adding-new-maintainers>
 
-- [ ] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
+  Repository maintainers are removed by: <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md#removing-inactive-maintainers>
 
-<!-- (TOC Evaluation goes here) -->
+  **TODO for Dragonfly Team:** same as above, there's a redundant location of adding maintainers, at <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_LADDER.md?plain=1#L199-L201>
+
+- [x] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
+
+  <!-- (TOC Evaluation goes here) -->
+  The Dragonfly community added a new maintainer in July following the process defined in at [COMMUNITY_MEMBERSHIP.md#adding-new-memberapprovermaintainer](https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md#adding-new-memberapprovermaintainer).
+
+  Full record of the process that time can be found at: <https://github.com/dragonflyoss/community/issues/62>
 
 - [ ] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
-<!-- (TOC Evaluation goes here) -->
+  <!-- (TOC Evaluation goes here) -->
+  Dragonfly documents current maintainers and emeritus maintainers at <https://github.com/dragonflyoss/community/blob/master/MAINTAINERS.md>. All maintainers share all domains of responsbility.
+
+  **TODO For Dragonfly Team:** The responsibilities and focus areas for each maintainer have not been documented. Even with no differentiation among maintainers, it should be explicitly stated in the MAINTAINERS.md.
+
+, refer to [maintainers](https://github.com/dragonflyoss/community/blob/master/MAINTAINERS.md).
 
 - [ ] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
-<!-- (TOC Evaluation goes here) -->   
+<!-- (TOC Evaluation goes here) -->
+In the past year we had [234 active contributors](https://insights.linuxfoundation.org/project/d7y/contributors?timeRange=past365days&start=2024-07-25&end=2025-07-25&widget=active-contributors) from [55 different organizations](https://insights.linuxfoundation.org/project/d7y/contributors?timeRange=past365days&start=2024-07-25&end=2025-07-25&widget=active-organizations).
 
 - [ ] **Project maintainers from at least 2 organizations that demonstrates survivability.**
 
-<!-- (TOC Evaluation goes here) --> 
+<!-- (TOC Evaluation goes here) -->
+There are 12 maintainers from 7 different companies.
 
 - [ ] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
 
-<!-- (TOC Evaluation goes here) --> 
-
-- [ ] **Document adoption and adherence to the CNCF Code of Conduct or the project's CoC which is based off the CNCF CoC and not in conflict with it.**
-
-<!-- (TOC Evaluation goes here) --> 
-
-- [ ] **CNCF Code of Conduct is cross-linked from other governance documents.**
-
 <!-- (TOC Evaluation goes here) -->
+This is documented in the governance process for [maintainers](https://github.com/dragonflyoss/community/blob/master/GOVERNANCE.md#maintainership). GitHub Teams for Maintainers and Approvers are managed for each repo.
+
+- [x] **Document adoption and adherence to the CNCF Code of Conduct or the project's CoC which is based off the CNCF CoC and not in conflict with it.**
+
+  <!-- (TOC Evaluation goes here) -->
+  According to <https://github.com/dragonflyoss/community/blob/master/CODE_OF_CONDUCT.md>, Dragonfly follows the CNCF Code of Conduct.
+
+- [x] **CNCF Code of Conduct is cross-linked from other governance documents.**
+
+  <!-- (TOC Evaluation goes here) -->
+  Yes, it's documented at <https://github.com/dragonflyoss/community/blob/master/CODE_OF_CONDUCT.md>.  
+  And the CNCF Code of Conduct is also cross-linked by <https://github.com/dragonflyoss/community/blob/master/GOVERNANCE.md#code-of-conduct> and <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md>
+
+  **TODO for Dragonfly team:** Missing reciever email address in case of any violation happens in the community. Suggested to add the following description:
+  > Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at {email address here}.
 
 - [ ] **All subprojects, if any, are listed.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  Dragonfly does not have formally defined "subprojects", but [all repositories](https://github.com/orgs/dragonflyoss/repositories?type=all) under the dragonflyoss adhere to the well defined governance.
+
+**TODO for Dragonfly team:** nydas looks like a subproject, if it isn't, it shall be stated as well what it is to the Dragonfly community.
 
 - [ ] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
 
-<!-- (TOC Evaluation goes here) --> 
+<!-- (TOC Evaluation goes here) -->
+**TODO for Dragonfly team:** Ref the question above
 
 ## Contributors and Community
 
