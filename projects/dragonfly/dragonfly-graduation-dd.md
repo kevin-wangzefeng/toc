@@ -158,29 +158,33 @@ Maintainers share responsibilities across all project areas but often focus on s
 
   **TODO For Dragonfly Team:** The responsibilities and focus areas for each maintainer have not been documented. Even with no differentiation among maintainers, it should be explicitly stated in the MAINTAINERS.md.
 
-, refer to [maintainers](https://github.com/dragonflyoss/community/blob/master/MAINTAINERS.md).
+- [x] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
-- [ ] **A number of active maintainers which is appropriate to the size and scope of the project.**
+  <!-- (TOC Evaluation goes here) -->
+  The project's activity level shows a reasonable distribution of maintainers. Of the top 10 contributors over the past 180 days, 5 are active maintainers.  
+  Refer to the "Contributor Leaderboard" in [LFX insights - Dragonfly](https://insights.linuxfoundation.org/project/d7y/contributors?timeRange=past180days&start=2025-03-18&end=2025-09-14&widget=contributors-leaderboard) for more details.
 
-<!-- (TOC Evaluation goes here) -->
-In the past year we had [234 active contributors](https://insights.linuxfoundation.org/project/d7y/contributors?timeRange=past365days&start=2024-07-25&end=2025-07-25&widget=active-contributors) from [55 different organizations](https://insights.linuxfoundation.org/project/d7y/contributors?timeRange=past365days&start=2024-07-25&end=2025-07-25&widget=active-organizations).
+- [x] **Project maintainers from at least 2 organizations that demonstrates survivability.**
 
-- [ ] **Project maintainers from at least 2 organizations that demonstrates survivability.**
-
-<!-- (TOC Evaluation goes here) -->
-There are 12 maintainers from 7 different companies.
+  <!-- (TOC Evaluation goes here) -->
+  According to <https://github.com/dragonflyoss/community/blob/master/MAINTAINERS.md>, Dragonfly currently has 13 maintainers from 7 different companies/organizations.
 
 - [ ] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
 
-<!-- (TOC Evaluation goes here) -->
-This is documented in the governance process for [maintainers](https://github.com/dragonflyoss/community/blob/master/GOVERNANCE.md#maintainership). GitHub Teams for Maintainers and Approvers are managed for each repo.
+  <!-- (TOC Evaluation goes here) -->
+  Only find <https://github.com/dragonflyoss/dragonfly/blob/main/.github/CODEOWNERS> in Dragonlfy main repo.
+
+  Need double check since the github teams `@dragonflyoss/dragonfly2-maintainers` and `@dragonflyoss/dragonfly2-reviewers` are not visibable.
+
+  **TODO For Dragonfly Team:** provide links wherever `CODEOWNSERS` or `OWNERS` files located. also provide the members list of `@dragonflyoss/dragonfly2-maintainers` and `@dragonflyoss/dragonfly2-reviewers`
+
 
 - [x] **Document adoption and adherence to the CNCF Code of Conduct or the project's CoC which is based off the CNCF CoC and not in conflict with it.**
 
   <!-- (TOC Evaluation goes here) -->
   According to <https://github.com/dragonflyoss/community/blob/master/CODE_OF_CONDUCT.md>, Dragonfly follows the CNCF Code of Conduct.
 
-- [x] **CNCF Code of Conduct is cross-linked from other governance documents.**
+- [ ] **CNCF Code of Conduct is cross-linked from other governance documents.**
 
   <!-- (TOC Evaluation goes here) -->
   Yes, it's documented at <https://github.com/dragonflyoss/community/blob/master/CODE_OF_CONDUCT.md>.  
@@ -194,12 +198,12 @@ This is documented in the governance process for [maintainers](https://github.co
   <!-- (TOC Evaluation goes here) -->
   Dragonfly does not have formally defined "subprojects", but [all repositories](https://github.com/orgs/dragonflyoss/repositories?type=all) under the dragonflyoss adhere to the well defined governance.
 
-**TODO for Dragonfly team:** nydas looks like a subproject, if it isn't, it shall be stated as well what it is to the Dragonfly community.
+  **TODO for Dragonfly team:** nydas looks like a subproject, if it isn't, it shall be stated as well what it is to the Dragonfly community.
 
 - [ ] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
 
-<!-- (TOC Evaluation goes here) -->
-**TODO for Dragonfly team:** Ref the question above
+  <!-- (TOC Evaluation goes here) -->
+  **TODO for Dragonfly team:** Ref the question above
 
 ## Contributors and Community
 
@@ -207,35 +211,54 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Suggested
 
-- [ ] **Contributor ladder with multiple roles for contributors.**
+- [x] **Contributor ladder with multiple roles for contributors.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  Dragonfly has the following roles for contributors that are related to code and non-code contributions:
+  - Contributor: <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_LADDER.md#contributor>
+  - Member: <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_LADDER.md#member>
+  - Approver: <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_LADDER.md#approver>
+  - Maintainer: <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_LADDER.md#maintainer>
 
 ### Required
 
-- [ ] **Clearly defined and discoverable process to submit issues or changes.**
+- [x] **Clearly defined and discoverable process to submit issues or changes.**
+
+  <!-- (TOC Evaluation goes here) -->
+  Dragonfly has a clear [CONTRIBUTING.md](https://github.com/dragonflyoss/community/blob/master/CONTRIBUTING.md), with details of the relevant process at:
+  - Reporting General Issues: <https://github.com/dragonflyoss/community/blob/master/CONTRIBUTING.md#reporting-general-issues>
+  - Reporting Security Issues: <https://github.com/dragonflyoss/community/blob/master/CONTRIBUTING.md#reporting-security-issues>
+  - Contributing Code and Docs: <https://github.com/dragonflyoss/community/blob/master/CONTRIBUTING.md#contributing-code-and-docs>
+
+
+- [x] **Project must have, and document, at least one public communications channel for users and/or contributors.**
 
 <!-- (TOC Evaluation goes here) --> 
-
-- [ ] **Project must have, and document, at least one public communications channel for users and/or contributors.**
-
-<!-- (TOC Evaluation goes here) --> 
+Dragonfly documents the communication channels at: <https://github.com/dragonflyoss/community/blob/master/README.md#community>.
 
 - [ ] **List and document all project communication channels, including subprojects (mail list/slack/etc.).  List any non-public communications channels and what their special purpose is.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The main community communication channels are documented at: <https://github.com/dragonflyoss/community/blob/master/README.md#community>.
 
-- [ ] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
+  Communication channels of Nydus subproject are documented at: <https://github.com/dragonflyoss/nydus/blob/master/README.md#community>
 
-<!-- (TOC Evaluation goes here) --> 
+  **TODO for Dragonfly Team:** The TOC reviewer suggests to document the list of subprojects and include subproject communication channels in the list.
 
-- [ ] **Documentation of how to contribute, with increasing detail as the project matures.**
+- [x] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  All meetings within the Dragonfly community and ecosystem are tracked in the [community calendar](https://calendar.google.com/calendar/embed?src=46bc5a3d67a81a55e0266b6c349a9d833de979922b1232a81bd6dd5ba571b00d%40group.calendar.google.com&ctz=Asia%2FShanghai).
+
+- [x] **Documentation of how to contribute, with increasing detail as the project matures.**
+
+<!-- (TOC Evaluation goes here) -->
+The [Contributing guide](https://github.com/dragonflyoss/community/blob/master/CONTRIBUTING.md) describes the process of how to contribute to the project, what the maintainers are expecting, and guidance for how to make a successful contribution.
 
 - [ ] **Demonstrate contributor activity and recruitment.**
 
-<!-- (TOC Evaluation goes here) --> 
+<!-- (TOC Evaluation goes here) -->
+**TODO for Dragonfly team:** provide record of recruiting contributors.
 
 ## Engineering Principles
 
