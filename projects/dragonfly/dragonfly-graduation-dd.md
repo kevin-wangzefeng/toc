@@ -230,7 +230,6 @@ Note: this section may be augmented by the completion of a Governance Review fro
   - Reporting Security Issues: <https://github.com/dragonflyoss/community/blob/master/CONTRIBUTING.md#reporting-security-issues>
   - Contributing Code and Docs: <https://github.com/dragonflyoss/community/blob/master/CONTRIBUTING.md#contributing-code-and-docs>
 
-
 - [x] **Project must have, and document, at least one public communications channel for users and/or contributors.**
 
 <!-- (TOC Evaluation goes here) --> 
@@ -268,26 +267,56 @@ N/A
 
 ### Required
 
-- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. _This requirement may also be satisfied by completing a General Technical Review._**
-  - _If applicable_ A General Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
+- [x] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. _This requirement may also be satisfied by completing a General Technical Review._**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  This is documented at the [project readme](https://github.com/dragonflyoss/dragonfly/blob/main/README.md#introduction):
+  > Dragonfly is an open source P2P-based file distribution and image acceleration system. It is hosted by the Cloud Native Computing Foundation ([CNCF](https://cncf.io/)) as an Incubating Level Project.
+  > Its goal is to tackle all distribution problems in cloud native architectures.
+  > Currently Dragonfly focuses on being:
+  > - **Simple**: Well-defined user-facing API (HTTP), non-invasive to all container engines;
+  > - **Efficient**: Seed peer support, P2P based file distribution to save enterprise bandwidth;
+  > - **Intelligent**: Host-level speed limit, intelligent flow control due to host detection;
+  > - **Secure**: Block transmission encryption, HTTPS connection support.
 
-- [ ] **Document what the project does, and why it does it - including viable cloud native use cases. _This requirement may also be satisfied by completing a General Technical Review._**
-  - _If applicable_ a General Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
+  **TODO for Kevin:** The TOC Reviewer suggests the project maintainers to maintain a GTR file and complete Domain Technical Review after the graduation DD.
 
-- [ ] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
+- [x] **Document what the project does, and why it does it - including viable cloud native use cases. _This requirement may also be satisfied by completing a General Technical Review._**
 
-<!-- (TOC Evaluation goes here) --> 
+  As described in <https://d7y.io/docs/next/#features>, major features that Dragonfly offers are:
+  > - **P2P technology**: Based on P2P technology, use the idle bandwidth of Peer to improve download speed.
+  > - **Non-intrusive**: Non-intrusive support for multiple container runtimes, download tools, AI infrastructure, etc.
+  > - **Peer configuration**: Load limit, concurrent limit, traffic limit, etc. can be configured.
+  > - **Consistency**: Ensures downloaded files are consistent even if the user does not check for consistency.
+  > - **Exception isolation**: Isolate exceptions based on Service level, Peer level and Task level to improve download stability.
+  > - **Ecosystem**: Provides simple integration with AI infrastructure, container runtimes, container registry, download tools, etc.
+
+- [x] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
+
+  <!-- (TOC Evaluation goes here) -->
+  Dragonfly documents the community roadmap at: <https://github.com/dragonflyoss/community/blob/master/ROADMAP.md>
 
 - [ ] **Roadmap change process is documented.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The expectations and process for updating the public roadmap over time is outlined in <https://github.com/dragonflyoss/community/blob/master/ROADMAP.md>.
 
-- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.  *This requirement may also be satisfied by completing a General Technical Review and capturing the output in the project's documentation.***
-  -  _If applicable_ a general Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
+  **TODO for Dragonfly Team:** Need a clear definition about how will the decisions be made, e.g. an item added to a milestone or removed from a milestone.
 
-<!-- (TOC Evaluation goes here) --> 
+- [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.  *This requirement may also be satisfied by completing a General Technical Review and capturing the output in the project's documentation.***
+
+  <!-- (TOC Evaluation goes here) -->
+  Dragonfly clearly documents the relevant information in the following locations:
+  - Architecture: <https://d7y.io/docs/next/operations/deployment/architecture/>
+  - Components introduction:
+    - manager: <https://d7y.io/docs/next/operations/deployment/applications/manager/>
+    - scheduler: <https://d7y.io/docs/next/operations/deployment/applications/scheduler/>
+    - client: <https://d7y.io/docs/next/operations/deployment/applications/client/>
+  - Quick Start(Kubernetes): <https://d7y.io/docs/next/getting-started/quick-start/kubernetes/>
+  - Integrations:
+    - containerd: <https://d7y.io/docs/next/operations/integrations/container-runtime/containerd/>
+    - cri-o: <https://d7y.io/docs/next/operations/integrations/container-runtime/cri-o/>
+    - harbor: <https://d7y.io/docs/next/operations/integrations/harbor/>
 
 - [ ] **Document the project's release process and guidelines publicly in a RELEASES.md or equivalent file that defines:** 
 
@@ -300,9 +329,10 @@ N/A
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **History of regular, quality releases.**
+- [x] **History of regular, quality releases.**
 
 <!-- (TOC Evaluation goes here) --> 
+History of Dragonfly releases can be found at <https://github.com/dragonflyoss/dragonfly/releases>.
 
 ## Security
 
