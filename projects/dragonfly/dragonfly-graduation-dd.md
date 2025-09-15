@@ -327,11 +327,12 @@ N/A
   - [ ] Artifacts included in the release.
   - Additional information on topics such as LTS and edge releases are optional. Release expectations are a social contract between the project and its end users and hence changes to these should be well thought out, discussed, socialized and as necessary agreed upon by project leadership before getting rolled out.
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  **TODO for Dragonfly Team:** need to provide supportable information for each checklist item.
 
 - [x] **History of regular, quality releases.**
 
-<!-- (TOC Evaluation goes here) --> 
+<!-- (TOC Evaluation goes here) -->
 History of Dragonfly releases can be found at <https://github.com/dragonflyoss/dragonfly/releases>.
 
 ## Security
@@ -346,31 +347,43 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
 
 ### Required
 
-- [ ] **Clearly defined and discoverable process to report security issues.**
+- [x] **Clearly defined and discoverable process to report security issues.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  Dragonfly documents security policy at <https://github.com/dragonflyoss/community/blob/master/SECURITY.md>.
 
-- [ ] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
+  **TODO for Dragonlfy TEAM:** This is not blocking, but the TOC reviewer suggests the security policy cross-linked by all the subproject repos.
 
-<!-- (TOC Evaluation goes here) --> 
+- [x] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
 
-- [ ] **Document assignment of security response roles and how reports are handled.**
+  <!-- (TOC Evaluation goes here) -->
+  The dragonflyoss organization has enabled the GitHub setting for "Require two-factor authentication for everyone in the dragonflyoss organization."
 
-<!-- (TOC Evaluation goes here) --> 
+- [x] **Document assignment of security response roles and how reports are handled.**
 
-- [ ] **Document Security Self-Assessment.**
+  <!-- (TOC Evaluation goes here) -->
+  The response process for security vulnerability disclosure reports is outlined in detail at <https://github.com/dragonflyoss/community/blob/master/SECURITY.md>.
 
-<!-- (TOC Evaluation goes here) --> 
+- [x] **Document Security Self-Assessment.**
+
+  <!-- (TOC Evaluation goes here) -->
+  Dragonlfy's Security Self-Assessment can be found at: <https://github.com/cncf/tag-security/blob/main/community/assessments/projects/dragonfly/self-assessment.md>.
+
+  The TOC reviewer suggests add a copy to [dragonflyoss/community](https://github.com/dragonflyoss/community)
 
 - [ ] **Third Party Security Review.**
 
   - [ ] Moderate and low findings from the Third Party Security Review are planned/tracked for resolution as well as overall thematic findings, such as: improving project contribution guide providing a PR review guide to look for memory leaks and other vulnerabilities the project may be susceptible to by design or language choice ensuring adequate test coverage on all PRs.
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  A third party security audit was performed by Trail of Bits, ref: <https://github.com/dragonflyoss/dragonfly/blob/main/docs/security/dragonfly-comprehensive-report-2023.pdf>
 
-- [ ] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
+  **TODO for Dragonfly Team:** need supportable evidence​ of tracking issues and fixes of the findings listed by the security audit report.
 
-<!-- (TOC Evaluation goes here) --> 
+- [x] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
+
+  <!-- (TOC Evaluation goes here) -->
+  The passing badge is currently shown as 100%, ref: <https://www.bestpractices.dev/en/projects/10432>
 
 ## Ecosystem
 
@@ -380,25 +393,40 @@ N/A
 
 ### Required
 
-- [ ] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
+- [x] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  Dragonlfy documents adopters at <https://github.com/dragonflyoss/dragonfly/blob/main/ADOPTERS.md>.
+
+  **TODO for Dragonfly Team:** Not-blocking: The TOC reviewer suggests include the adoption level for each adopter, e.g. dev/trialing, prod, etc.
 
 - [ ] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
-<!-- (TOC Evaluation goes here) --> 
-
-The project provided the TOC with a list of adopters for verification of use of the project at the level expected, i.e. production use for graduation, dev/test for incubation.
+  <!-- (TOC Evaluation goes here) -->
+  The project provided the TOC with a list of adopters for verification of use of the project at the level expected, i.e. production use for graduation, dev/test for incubation.
 
 - [ ] **TOC verification of adopters.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  **TODO for Kevin Wang:** update this when adopters interview finished
+
 
 Refer to the Adoption portion of this document.
 
-- [ ] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
+- [x] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  Dragonfly documents integrations with many CNCF projects:
+  - [Kubernetes](https://d7y.io/docs/next/getting-started/quick-start/kubernetes/) as a hosting platform with the Dragonfly.
+  - [Harbor](https://d7y.io/docs/next/operations/integrations/harbor/) preheats image and oci artifacts by Dragonfly.
+  - [containerd](https://d7y.io/docs/next/operations/integrations/container-runtime/containerd/) distributes image by Dragonfly.
+  - [cri-o](https://d7y.io/docs/next/operations/integrations/container-runtime/cri-o/) distributes image by Dragonfly.
+  - [Prometheus](https://d7y.io/docs/next/operations/best-practices/observability/monitoring/) to collect metrics.
+  - [Open Telemetry](https://d7y.io/docs/next/operations/best-practices/observability/tracing/) to generate, collect, and export telemetry data.
+  - [ArtifactHub](https://artifacthub.io/packages/helm/dragonfly/dragonfly) indexes all versions of Dragonfly's main Helm chart for installation.
+  - [gRPC](https://github.com/dragonflyoss/api) for high-performance remote procedure calls (RPC).
+  - [Helm](https://d7y.io/docs/next/getting-started/installation/helm-charts/) used to deploy Dragonfly to Kubernetes.
+  - [ModelPack](https://github.com/modelpack) distributes model artifacts by Dragonfly.
 
 #### Adoption
 
