@@ -198,12 +198,12 @@ Maintainers share responsibilities across all project areas but often focus on s
   <!-- (TOC Evaluation goes here) -->
   Dragonfly does not have formally defined "subprojects", but [all repositories](https://github.com/orgs/dragonflyoss/repositories?type=all) under the dragonflyoss adhere to the well defined governance.
 
-  **TODO for Dragonfly team:** nydas looks like a subproject, if it isn't, it shall be stated as well what it is to the Dragonfly community.
+  **TODO for Dragonfly team:** nydus looks like a subproject, if it isn't, it shall be stated as well what it is to the Dragonfly community.
 
 - [ ] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
 
   <!-- (TOC Evaluation goes here) -->
-  **TODO for Dragonfly team:** Ref the question above
+  **TODO for Dragonfly team:** Ref the issue above
 
 ## Contributors and Community
 
@@ -408,7 +408,7 @@ N/A
 - [ ] **TOC verification of adopters.**
 
   <!-- (TOC Evaluation goes here) -->
-  **TODO for Kevin Wang:** update this when adopters interview finished
+  **TODO for TOC Reviewer:** update this when adopters interview finished
 
 
 Refer to the Adoption portion of this document.
