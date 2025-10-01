@@ -8,7 +8,28 @@
 
 ### Criteria Evaluation
 
-_$TOCMEMBER conducted the due diligence of Dragonfly who applied for $LEVEL. The project [has/has not] completed the criteria that show its maturity at $LEVEL. The following criteria implementations are noteworthy to call out... $NOTABLES. The following actions were provided to the project that were considered blocking but since resolved... $BLOCKERS. The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project... $RECOMMENDATIONS._
+Kevin Wang conducted the due diligence of Dragonfly who applied for graduation. The project has completed the criteria that show its maturity at graduation.
+
+- The following criteria implementations are noteworthy to call out.
+  - NOTABLE1
+  - NOTABLE2
+  - NOTABLE3
+
+- The following actions were provided to the project that were considered blocking but since resolved.
+  - BLOCKER1
+  - BLOCKER2
+  - BLOCKER3
+
+- The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project.
+  - The temporary link used for joining Dingtalk has expired. The TOC Reviewer suggests to update the instructions with searching group number. Ref: <https://github.com/dragonflyoss/dragonfly/issues/4298>
+  - TOC Reviewer suggests to add documentation explaining how the project handles requests to the CNCF, and changes to governance or project goals. Ref: <https://github.com/dragonflyoss/dragonfly/issues/4324>
+  - There are duplicated definitions of "Adding New Member/Approver/Maintainer" in the community documents (in COMMUNITY_LADDER.md and COMMUNITY_MEMBERSHIP.md). TOC Reviewer suggests to consolidate these into a single source of truth. Ref: <https://github.com/dragonflyoss/dragonfly/issues/4325>
+  - The TOC Reviewer suggests to document the responsibilities and focus areas for each maintainer (including community wide maintainers and subproject maintainer) in MAINTAINERS.md. Even if there is no differentiation among maintainers, it should be explicitly stated to provide clarity on maintainer roles within the project.
+
+
+  - RECOMMENDATION1
+  - RECOMMENDATION2
+  - RECOMMENDATION3
 
 ### Adoption Evaluation
 
@@ -123,17 +144,17 @@ Maintainers share responsibilities across all project areas but often focus on s
 
   THe contribution acceptance is documented in the contributing guide at <https://github.com/dragonflyoss/community/blob/master/CONTRIBUTING.md#contributing-code-and-docs>.
 
-  **TODO for Dragonfly team:** "requests to the CNCF, and changes to governance or project goals" not found.
+  **TODO for Dragonfly team:** TOC Reviewer suggests to add documentation explaining how the project handles requests to the CNCF, and changes to governance or project goals.
 
-- [x] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
+- [x] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for speci fic teams (example: Security Response Committee).**
 
   <!-- (TOC Evaluation goes here) -->
   Dragonfly describes the basic roles, responsibilies, and how to become on the role in the [community ladder](https://github.com/dragonflyoss/community/blob/master/COMMUNITY_LADDER.md).
 
-  **TODO for Dragonfly Team:** there's duplicated definitions of "Adding New Member/Approver/Maintainer" in the community documents:
+  **TODO for Dragonfly Team:** There are duplicate definitions of "Adding New Member/Approver/Maintainer" in the community documents:
   - location 1: <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_LADDER.md?plain=1#L164>
   - location 2: <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md#adding-new-memberapprovermaintainer>
-  It's suggested to consolicate, and implement single source of truth.
+  It's suggested to consolicate them, and implement a single source of truth.
 
 - [ ] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
 
@@ -430,6 +451,7 @@ Refer to the Adoption portion of this document.
 
 #### Adoption
 
+
 ##### Adopter 1 - $COMPANY/$INDUSTRY
 
 _If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
@@ -440,7 +462,21 @@ MONTH YEAR
 _If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
 MONTH YEAR
 
-##### Adopter 3 - $COMPANY/$INDUSTRY
+##### Adopter 2 - $COMPANY/$INDUSTRY
 
 _If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
 MONTH YEAR
+
+##### Adopter 4 - Cloud Computing Platform
+
+This adopter started using Dragonfly in production around early 2019, implementing Dragonfly v1.0 initially and has been using the project for approximately 6 years. The organization has since evolved to Dragonfly v2.x and currently runs v2.2.0 in production. The primary motivation for adopting Dragonfly was to resolve critical stability issues with their previous Java-based P2P solution, specifically eliminating back-to-source contention caused by randomized scheduling that created substantial load on origin servers during high concurrency periods.
+
+Dragonfly has delivered significant business value across multiple dimensions. The system now supports millions of client machines with daily download volumes reaching petabyte scale, while consistently maintaining back-to-source traffic below 1% of total download volume. This translates to massive cost savings in OSS bandwidth consumption and associated cloud storage costs. Additionally, Dragonfly eliminated complex manual network configuration requirements, dramatically reducing operational staff time and labor costs. The solution has successfully supported critical peak traffic events, including multiple "Double 11" sales periods, demonstrating its enterprise-grade stability.
+
+The adopter plans to maintain active collaboration in the community, focusing on issue triage and performance optimization discussions to ensure long-term stability. They have no new major feature requests as the core P2P distribution functionality fully meets their infrastructure needs. For future development, they suggest the project could benefit from expanding influence through comprehensive best practice case studies and exploring deeper integration with AI workflows, particularly for efficient distribution of large model binaries and datasets.
+
+The adopter views Dragonfly as having significant growth potential, especially with the rise of multi-cloud, edge computing, and AI model distribution challenges. They praise the community's openness, strong governance, and timely maintainer responsiveness, while noting that enhanced security and access control mechanisms would help unlock the project's full potential across diverse enterprise environments.
+
+September, 2025
+
+Note: This adopter preferred to remain anonymous. The interview details are kept in a private file for CNCF TOC review.
