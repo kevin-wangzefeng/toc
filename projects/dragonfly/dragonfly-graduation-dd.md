@@ -16,15 +16,27 @@ Kevin Wang conducted the due diligence of Dragonfly who applied for graduation. 
   - NOTABLE3
 
 - The following actions were provided to the project that were considered blocking but since resolved.
+  - Missing process and list for subprojects, while Nydus was known as a subproject. This was fixed with the document at <https://github.com/dragonflyoss/community/blob/master/REPOSITORIES.md#core-repositories> and <https://github.com/dragonflyoss/community/blob/master/REPOSITORY-GUIDELINES.md>.
+  - Improved RELEASE.md, to define a more detailed release process and guidelines, Ref: <https://github.com/dragonflyoss/community/pull/22>.  TODO for TOC Reviewer: move this to call out?
+
+
   - BLOCKER1
   - BLOCKER2
   - BLOCKER3
 
+  **TODO for TOC Reviewer:** Update the summary
+
 - The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project.
-  - The temporary link used for joining Dingtalk has expired. The TOC Reviewer suggests to update the instructions with searching group number. Ref: <https://github.com/dragonflyoss/dragonfly/issues/4298>
-  - TOC Reviewer suggests to add documentation explaining how the project handles requests to the CNCF, and changes to governance or project goals. Ref: <https://github.com/dragonflyoss/dragonfly/issues/4324>
+  - The temporary link used for joining Dingtalk has expired. The TOC Reviewer suggests to update the instructions with searching group number. Ref: <https://github.com/dragonflyoss/dragonfly/issues/4298>  -- **TODO for TOC Reviewer**: this is already fixed
+  - TOC Reviewer suggests to add documentation explaining how the project handles requests to the CNCF, and changes to governance or project goals. Ref: <https://github.com/dragonflyoss/dragonfly/issues/4324>  -- **TODO for TOC Reviewer**: this is already fixed
   - There are duplicated definitions of "Adding New Member/Approver/Maintainer" in the community documents (in COMMUNITY_LADDER.md and COMMUNITY_MEMBERSHIP.md). TOC Reviewer suggests to consolidate these into a single source of truth. Ref: <https://github.com/dragonflyoss/dragonfly/issues/4325>
   - The TOC Reviewer suggests to document the responsibilities and focus areas for each maintainer (including community wide maintainers and subproject maintainer) in MAINTAINERS.md. Even if there is no differentiation among maintainers, it should be explicitly stated to provide clarity on maintainer roles within the project.
+  - The TOC Reviewer suggests to add the violation reporting email address to CODE_OF_CONDUCT.md to clarify how community members can report instances of unacceptable behavior. For example: "Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at {email address here}." Ref: (TODO for Kevin Add relevant GitHub Issue or PR reference here if one exists).
+  - The TOC reviewer suggests to set a unified place to document all the community channels including community wide channels and subproject, area focused channels.
+  - The TOC Reviewer suggests the project maintainers to maintain a GTR file and complete Domain Technical Review after the graduation DD.
+  - The TOC reviewer suggests the security policy cross-linked by all the subproject repos.
+  - The TOC reviewer suggests add a copy of [Security Self-Assessment](https://github.com/cncf/tag-security/blob/main/community/assessments/projects/dragonfly/self-assessment.md) to [dragonflyoss/community](https://github.com/dragonflyoss/community)
+
 
 
   - RECOMMENDATION1
@@ -66,8 +78,6 @@ N/A
     - Maintainers: <dragonfly-maintainers@googlegroups.com>
   - X: <https://x.com/dragonfly_oss>
   - Dingtalk: Group No. 22880028764
-  
-  **TODO for Dragonfly Team**: the link for joining Dingtalk group is out of date, needs fix. Ref: <https://github.com/dragonflyoss/dragonfly/issues/4298>
 
 - [x] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**  
   - [x] Met during Project's application on 27-06-2024 as a kick-off meeting.
@@ -104,7 +114,7 @@ Dragonfly has been continuously updating governance doc to reflect project growt
 Decisions are made through consensus among maintainers during regular community meetings or via mailing list discussions. Major decisions (e.g., roadmap changes, new maintainers) require a majority vote among maintainers and are documented in [GOVERNANCE.md](https://github.chttps://github.com/dragonflyoss/community/blob/master/GOVERNANCE.md). Community input is encouraged through GitHub issues and public meetings before final decisions are made.
 
 Maintainer Role Division:
-Maintainers share responsibilities across all project areas but often focus on specific sub-projects or components based on expertise (e.g., Nydus for image acceleration, console for UI). Specific roles include code review, release management, and community engagement. Detailed responsibilities and current maintainers are listed in [MAINTAINERS.md](https://github.com/dragonflyoss/dragonfly/blob/main/MAINTAINERS.md).
+Maintainers share responsibilities across all project areas but often focus on specific sub-projects or components based on expertise (e.g., Nydus for image acceleration, console for UI). Specific roles include code review, release management, and community engagement. Detailed responsibilities and current maintainers are listed in [MAINTAINERS.md](https://github.com/dragonflyoss/community/blob/master/roles/Maintainers.md).
 
 - 2018: Initial governance model established with a small group of core maintainers from Alibaba and Ant Group focusing on basic contribution and review processes.
 - 2020: Post-incubation, governance updated to include more maintainers from diverse organizations (e.g., ByteDance, Intel) and formalized sub-project leadership for Nydus.
@@ -120,7 +130,7 @@ Maintainers share responsibilities across all project areas but often focus on s
 
   Other community governance relevant content e.g. contributor ladder (COMMUNITY_LADDER.md) and contribution guide (CONTRIBUTING.md) are also cross-linked in the GOVERNANCE.md doc.
 
-- [ ] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
+- [x] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
   <!-- (TOC Evaluation goes here) --> 
   Dragonfly community has resolved the findings and suggestions raised during [Dragonfly governance Review](https://github.com/cncf/toc/issues/1599), some noteworthy updates are:
@@ -137,33 +147,26 @@ Maintainers share responsibilities across all project areas but often focus on s
   And [COMMUNITY_MEBMERSHIP.md#maximum-representation](https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md#maximum-representation) explicitly documents maximum representation of maintainers from the same company:
   > To ensure balanced representation, no more than four active Maintainers may be from the same company. If more than four candidates from one company are elected, only the top four vote-getters will serve, with additional slots filled by the next highest vote recipients from other organizations.
 
-- [ ] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
+- [x] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
   <!-- (TOC Evaluation goes here) -->
   Dragonfly documents detailed project leadership management rules at <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md#managing-membership>
 
   THe contribution acceptance is documented in the contributing guide at <https://github.com/dragonflyoss/community/blob/master/CONTRIBUTING.md#contributing-code-and-docs>.
 
-  **TODO for Dragonfly team:** TOC Reviewer suggests to add documentation explaining how the project handles requests to the CNCF, and changes to governance or project goals.
+  The process for CNCF requests is documented at <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md#cncf-requests-and-communications>
 
 - [x] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for speci fic teams (example: Security Response Committee).**
 
   <!-- (TOC Evaluation goes here) -->
   Dragonfly describes the basic roles, responsibilies, and how to become on the role in the [community ladder](https://github.com/dragonflyoss/community/blob/master/COMMUNITY_LADDER.md).
 
-  **TODO for Dragonfly Team:** There are duplicate definitions of "Adding New Member/Approver/Maintainer" in the community documents:
-  - location 1: <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_LADDER.md?plain=1#L164>
-  - location 2: <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md#adding-new-memberapprovermaintainer>
-  It's suggested to consolicate them, and implement a single source of truth.
-
-- [ ] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
+- [x] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
 
   <!-- (TOC Evaluation goes here) -->
   Repository maintainers are added by: <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md#adding-new-maintainers>
 
   Repository maintainers are removed by: <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md#removing-inactive-maintainers>
-
-  **TODO for Dragonfly Team:** same as above, there's a redundant location of adding maintainers, at <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_LADDER.md?plain=1#L199-L201>
 
 - [x] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
 
@@ -172,12 +175,10 @@ Maintainers share responsibilities across all project areas but often focus on s
 
   Full record of the process that time can be found at: <https://github.com/dragonflyoss/community/issues/62>
 
-- [ ] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
+- [x] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
   <!-- (TOC Evaluation goes here) -->
-  Dragonfly documents current maintainers and emeritus maintainers at <https://github.com/dragonflyoss/community/blob/master/MAINTAINERS.md>. All maintainers share all domains of responsbility.
-
-  **TODO For Dragonfly Team:** The responsibilities and focus areas for each maintainer have not been documented. Even with no differentiation among maintainers, it should be explicitly stated in the MAINTAINERS.md.
+  Dragonfly documents current maintainers and emeritus maintainers at <https://github.com/dragonflyoss/community/blob/master/roles/Maintainers.md>. All maintainers share all domains of responsbility.
 
 - [x] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
@@ -188,7 +189,7 @@ Maintainers share responsibilities across all project areas but often focus on s
 - [x] **Project maintainers from at least 2 organizations that demonstrates survivability.**
 
   <!-- (TOC Evaluation goes here) -->
-  According to <https://github.com/dragonflyoss/community/blob/master/MAINTAINERS.md>, Dragonfly currently has 13 maintainers from 7 different companies/organizations.
+  According to <https://github.com/dragonflyoss/community/blob/master/roles/Maintainers.md>, Dragonfly currently has 13 maintainers from 7 different companies/organizations.
 
 - [ ] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
 
@@ -205,26 +206,31 @@ Maintainers share responsibilities across all project areas but often focus on s
   <!-- (TOC Evaluation goes here) -->
   According to <https://github.com/dragonflyoss/community/blob/master/CODE_OF_CONDUCT.md>, Dragonfly follows the CNCF Code of Conduct.
 
-- [ ] **CNCF Code of Conduct is cross-linked from other governance documents.**
+- [x] **CNCF Code of Conduct is cross-linked from other governance documents.**
 
   <!-- (TOC Evaluation goes here) -->
   Yes, it's documented at <https://github.com/dragonflyoss/community/blob/master/CODE_OF_CONDUCT.md>.  
   And the CNCF Code of Conduct is also cross-linked by <https://github.com/dragonflyoss/community/blob/master/GOVERNANCE.md#code-of-conduct> and <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md>
 
-  **TODO for Dragonfly team:** Missing reciever email address in case of any violation happens in the community. Suggested to add the following description:
+  Non-blocking Suggestion: The TOC Reviewer suggests to add the violation reporting email address to CODE_OF_CONDUCT.md to clarify how community members can report instances of unacceptable behavior. For example:
   > Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at {email address here}.
 
-- [ ] **All subprojects, if any, are listed.**
+- [x] **All subprojects, if any, are listed.**
 
   <!-- (TOC Evaluation goes here) -->
-  Dragonfly does not have formally defined "subprojects", but [all repositories](https://github.com/orgs/dragonflyoss/repositories?type=all) under the dragonflyoss adhere to the well defined governance.
+  Dragonfly documents its repo types including subproject at <https://github.com/dragonflyoss/community/blob/master/REPOSITORIES.md>. And the process of creating new repos is documented at <https://github.com/dragonflyoss/community/blob/master/REPOSITORY-GUIDELINES.md>.
 
-  **TODO for Dragonfly team:** nydus looks like a subproject, if it isn't, it shall be stated as well what it is to the Dragonfly community.
+  According to the [document](https://github.com/dragonflyoss/community/blob/master/REPOSITORIES.md#core-repositories), Nydus is listed as a subproject.
 
-- [ ] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
+- [x] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
 
   <!-- (TOC Evaluation goes here) -->
-  **TODO for Dragonfly team:** Ref the issue above
+  <https://github.com/dragonflyoss/community/blob/master/REPOSITORY-GUIDELINES.md> documents the process of repos
+  According to <https://github.com/dragonflyoss/community/blob/master/roles/Maintainers.md>:
+
+  - > For details on the maintainer role and responsibilities, see [COMMUNITY_MEMBERSHIP.md](https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md#maintainer) and [COMMUNITY_LADDER.md](https://github.com/dragonflyoss/community/blob/master/COMMUNITY_LADDER.md#maintainer). For governance processes, see [GOVERNANCE.md](https://github.com/dragonflyoss/community/blob/master/GOVERNANCE.md).
+
+  - > And the Nydus maintainers are also listed in the [main repository](https://github.com/dragonflyoss/nydus/)'s [MAINTAINERS.md](https://github.com/dragonflyoss/nydus/blob/master/MAINTAINERS.md).
 
 ## Contributors and Community
 
@@ -256,14 +262,14 @@ Note: this section may be augmented by the completion of a Governance Review fro
 <!-- (TOC Evaluation goes here) --> 
 Dragonfly documents the communication channels at: <https://github.com/dragonflyoss/community/blob/master/README.md#community>.
 
-- [ ] **List and document all project communication channels, including subprojects (mail list/slack/etc.).  List any non-public communications channels and what their special purpose is.**
+- [x] **List and document all project communication channels, including subprojects (mail list/slack/etc.).  List any non-public communications channels and what their special purpose is.**
 
   <!-- (TOC Evaluation goes here) -->
   The main community communication channels are documented at: <https://github.com/dragonflyoss/community/blob/master/README.md#community>.
 
   Communication channels of Nydus subproject are documented at: <https://github.com/dragonflyoss/nydus/blob/master/README.md#community>
 
-  **TODO for Dragonfly Team:** The TOC reviewer suggests to document the list of subprojects and include subproject communication channels in the list.
+  Non-blocking Suggestion: The TOC reviewer suggests to set a unified place to document all the community channels including community wide channels and subproject, area focused channels.
 
 - [x] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
 
@@ -300,7 +306,7 @@ N/A
   > - **Intelligent**: Host-level speed limit, intelligent flow control due to host detection;
   > - **Secure**: Block transmission encryption, HTTPS connection support.
 
-  **TODO for Kevin:** The TOC Reviewer suggests the project maintainers to maintain a GTR file and complete Domain Technical Review after the graduation DD.
+  Non-blocking Suggestion: The TOC Reviewer suggests the project maintainers to maintain a GTR file and complete Domain Technical Review after the graduation DD.
 
 - [x] **Document what the project does, and why it does it - including viable cloud native use cases. _This requirement may also be satisfied by completing a General Technical Review._**
 
@@ -317,12 +323,12 @@ N/A
   <!-- (TOC Evaluation goes here) -->
   Dragonfly documents the community roadmap at: <https://github.com/dragonflyoss/community/blob/master/ROADMAP.md>
 
-- [ ] **Roadmap change process is documented.**
+- [x] **Roadmap change process is documented.**
 
   <!-- (TOC Evaluation goes here) -->
   The expectations and process for updating the public roadmap over time is outlined in <https://github.com/dragonflyoss/community/blob/master/ROADMAP.md>.
 
-  **TODO for Dragonfly Team:** Need a clear definition about how will the decisions be made, e.g. an item added to a milestone or removed from a milestone.
+  Non-blocking Suggestion: TOC Reviewer suggests to add a more explicit definition about how will the decisions be made on roadmap, e.g. an item added to a milestone or removed from a milestone.
 
 - [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.  *This requirement may also be satisfied by completing a General Technical Review and capturing the output in the project's documentation.***
 
@@ -339,22 +345,36 @@ N/A
     - cri-o: <https://d7y.io/docs/next/operations/integrations/container-runtime/cri-o/>
     - harbor: <https://d7y.io/docs/next/operations/integrations/harbor/>
 
-- [ ] **Document the project's release process and guidelines publicly in a RELEASES.md or equivalent file that defines:** 
+- [x] **Document the project's release process and guidelines publicly in a RELEASES.md or equivalent file that defines:** 
 
-  - [ ] Release expectations (scheduled or based on feature implementation)
-  - [ ] Tagging as stable, unstable, and security related releases
-  - [ ] Information on branch and tag strategies
-  - [ ] Branch and platform support and length of support
-  - [ ] Artifacts included in the release.
+  - [x] Release expectations (scheduled or based on feature implementation)
+  - [x] Tagging as stable, unstable, and security related releases
+  - [x] Information on branch and tag strategies
+  - [x] Branch and platform support and length of support
+  - [x] Artifacts included in the release.
   - Additional information on topics such as LTS and edge releases are optional. Release expectations are a social contract between the project and its end users and hence changes to these should be well thought out, discussed, socialized and as necessary agreed upon by project leadership before getting rolled out.
 
   <!-- (TOC Evaluation goes here) -->
-  **TODO for Dragonfly Team:** need to provide supportable information for each checklist item.
+  Dragonfly documents its release process and guidelines at <https://github.com/dragonflyoss/community/blob/master/RELEASE.md>.
+
+  The document clearly addresses all required elements:
+
+  - **Release expectations**: Follows a structured 26-week (6-month) release cycle with defined phases - 4 weeks for feature definition, 18 weeks for implementation, and 4 weeks for stabilization.
+
+  - **Tagging strategy**: Uses semantic versioning with clear conventions - stable releases (e.g., v2.1.0), and pre-release versions with suffixes (e.g., v2.1.0-alpha.x, v2.1.0-beta.x, v2.1.0-rc.x).
+
+  - **Branch and tag strategies**: Alpha/Beta tags are created from the main branch, while Release-Candidate and Release tags are created from stable branches following the `release-<major>.<minor>` naming convention.
+
+  - **Support lifecycle**: Provides a 6-month maintenance phase for each release, with support provided only for the immediately preceding version. Bug fixes are merged to main branch first, then cherry-picked to release branches.
+
+  - **Artifacts**: While not explicitly detailed in a dedicated section, the document references release procedures and notes that are published on GitHub releases, with container images distributed via appropriate registries.
+
+  The document also defines team responsibilities, including the release manager role, and outlines communication channels for release announcements.
 
 - [x] **History of regular, quality releases.**
 
-<!-- (TOC Evaluation goes here) -->
-History of Dragonfly releases can be found at <https://github.com/dragonflyoss/dragonfly/releases>.
+  <!-- (TOC Evaluation goes here) -->
+  History of Dragonfly releases can be found at <https://github.com/dragonflyoss/dragonfly/releases>.
 
 ## Security
 
@@ -373,7 +393,7 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
   <!-- (TOC Evaluation goes here) -->
   Dragonfly documents security policy at <https://github.com/dragonflyoss/community/blob/master/SECURITY.md>.
 
-  **TODO for Dragonlfy TEAM:** This is not blocking, but the TOC reviewer suggests the security policy cross-linked by all the subproject repos.
+  Non-blocking Suggestion: the TOC reviewer suggests the security policy cross-linked by all the subproject repos.
 
 - [x] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
 
@@ -390,16 +410,16 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
   <!-- (TOC Evaluation goes here) -->
   Dragonlfy's Security Self-Assessment can be found at: <https://github.com/cncf/tag-security/blob/main/community/assessments/projects/dragonfly/self-assessment.md>.
 
-  The TOC reviewer suggests add a copy to [dragonflyoss/community](https://github.com/dragonflyoss/community)
+  Non-blocking Suggestion: The TOC reviewer suggests add a copy to [dragonflyoss/community](https://github.com/dragonflyoss/community)
 
-- [ ] **Third Party Security Review.**
+- [x] **Third Party Security Review.**
 
-  - [ ] Moderate and low findings from the Third Party Security Review are planned/tracked for resolution as well as overall thematic findings, such as: improving project contribution guide providing a PR review guide to look for memory leaks and other vulnerabilities the project may be susceptible to by design or language choice ensuring adequate test coverage on all PRs.
+  - [x] Moderate and low findings from the Third Party Security Review are planned/tracked for resolution as well as overall thematic findings, such as: improving project contribution guide providing a PR review guide to look for memory leaks and other vulnerabilities the project may be susceptible to by design or language choice ensuring adequate test coverage on all PRs.
 
   <!-- (TOC Evaluation goes here) -->
   A third party security audit was performed by Trail of Bits, ref: <https://github.com/dragonflyoss/dragonfly/blob/main/docs/security/dragonfly-comprehensive-report-2023.pdf>
 
-  **TODO for Dragonfly Team:** need supportable evidence​ of tracking issues and fixes of the findings listed by the security audit report.
+  All the findings have been fixed, ref: <https://github.com/dragonflyoss/dragonfly/issues?q=state%3Aclosed%20label%3Asecurity>
 
 - [x] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
 
@@ -419,9 +439,9 @@ N/A
   <!-- (TOC Evaluation goes here) -->
   Dragonlfy documents adopters at <https://github.com/dragonflyoss/dragonfly/blob/main/ADOPTERS.md>.
 
-  **TODO for Dragonfly Team:** Not-blocking: The TOC reviewer suggests include the adoption level for each adopter, e.g. dev/trialing, prod, etc.
+  Non-blocking Suggestion: The TOC reviewer suggests include the adoption level for each adopter, e.g. dev/trialing, prod, etc.
 
-- [ ] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
+- [x] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
   <!-- (TOC Evaluation goes here) -->
   The project provided the TOC with a list of adopters for verification of use of the project at the level expected, i.e. production use for graduation, dev/test for incubation.
