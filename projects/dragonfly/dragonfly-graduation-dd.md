@@ -11,37 +11,28 @@
 Kevin Wang conducted the due diligence of Dragonfly who applied for graduation. The project has completed the criteria that show its maturity at graduation.
 
 - The following criteria implementations are noteworthy to call out.
-  - NOTABLE1
-  - NOTABLE2
-  - NOTABLE3
+  - Dragonfly is a mature project endorsed by multiple production adopters across diverse industries, demonstrating significant business value with reported cost reductions up to 90% and bandwidth savings up to 70% in large-scale deployments.
+  - The project demonstrates strong vendor neutrality with 13 maintainers from 7 different organizations. The governance explicitly documents a maximum representation policy ensuring no more than 4 maintainers from the same company, promoting balanced community leadership.
+  - Dragonfly has comprehensive and well-organized documentation covering architecture, deployment guides, integration tutorials for multiple CNCF projects (containerd, cri-o, Harbor, Kubernetes), and clear release processes. The documentation includes both user-facing and contributor guides.
+  - The project successfully completed a third-party security audit by Trail of Bits with all findings resolved, and achieved 100% on the OpenSSF Best Practices badge, demonstrating commitment to security best practices.
+  - Dragonfly has strong ecosystem integration with 10+ CNCF projects and is actively expanding to support emerging AI/ML workloads, showing adaptability to evolving cloud-native use cases.
+  - The project has resolved all findings and suggestions from the CNCF Governance Review (Issue #1599), including unified governance documentation and elimination of outdated links and redundancies.
 
 - The following actions were provided to the project that were considered blocking but since resolved.
   - Missing process and list for subprojects, while Nydus was known as a subproject. This was fixed with the document at <https://github.com/dragonflyoss/community/blob/master/REPOSITORIES.md#core-repositories> and <https://github.com/dragonflyoss/community/blob/master/REPOSITORY-GUIDELINES.md>.
-  - Improved RELEASE.md, to define a more detailed release process and guidelines, Ref: <https://github.com/dragonflyoss/community/pull/22>.  TODO for TOC Reviewer: move this to call out?
-
-
-  - BLOCKER1
-  - BLOCKER2
-  - BLOCKER3
-
-  **TODO for TOC Reviewer:** Update the summary
+  - Improved RELEASE.md to define a more detailed release process and guidelines, Ref: <https://github.com/dragonflyoss/community/pull/22>.
 
 - The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project.
-  - The temporary link used for joining Dingtalk has expired. The TOC Reviewer suggests to update the instructions with searching group number. Ref: <https://github.com/dragonflyoss/dragonfly/issues/4298>  -- **TODO for TOC Reviewer**: this is already fixed
-  - TOC Reviewer suggests to add documentation explaining how the project handles requests to the CNCF, and changes to governance or project goals. Ref: <https://github.com/dragonflyoss/dragonfly/issues/4324>  -- **TODO for TOC Reviewer**: this is already fixed
+  - The temporary link used for joining Dingtalk had expired. The TOC Reviewer suggested updating the instructions with the group search number. This finding was resolved before the final due diligence report completion. Ref: <https://github.com/dragonflyoss/dragonfly/issues/4298>
+  - TOC Reviewer suggested adding documentation explaining how the project handles requests to the CNCF, and changes to governance or project goals. This finding was resolved before the final due diligence report completion. Ref: <https://github.com/dragonflyoss/dragonfly/issues/4324>
   - There are duplicated definitions of "Adding New Member/Approver/Maintainer" in the community documents (in COMMUNITY_LADDER.md and COMMUNITY_MEMBERSHIP.md). TOC Reviewer suggests to consolidate these into a single source of truth. Ref: <https://github.com/dragonflyoss/dragonfly/issues/4325>
   - The TOC Reviewer suggests to document the responsibilities and focus areas for each maintainer (including community wide maintainers and subproject maintainer) in MAINTAINERS.md. Even if there is no differentiation among maintainers, it should be explicitly stated to provide clarity on maintainer roles within the project.
-  - The TOC Reviewer suggests to add the violation reporting email address to CODE_OF_CONDUCT.md to clarify how community members can report instances of unacceptable behavior. For example: "Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at {email address here}." Ref: (TODO for Kevin Add relevant GitHub Issue or PR reference here if one exists).
+  - The TOC Reviewer suggests to add the violation reporting email address to CODE_OF_CONDUCT.md to clarify how community members can report instances of unacceptable behavior. For example: "Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at {email address here}."
   - The TOC reviewer suggests to set a unified place to document all the community channels including community wide channels and subproject, area focused channels.
   - The TOC Reviewer suggests the project maintainers to maintain a GTR file and complete Domain Technical Review after the graduation DD.
   - The TOC reviewer suggests the security policy cross-linked by all the subproject repos.
   - The TOC reviewer suggests add a copy of [Security Self-Assessment](https://github.com/cncf/tag-security/blob/main/community/assessments/projects/dragonfly/self-assessment.md) to [dragonflyoss/community](https://github.com/dragonflyoss/community)
-
-
-
-  - RECOMMENDATION1
-  - RECOMMENDATION2
-  - RECOMMENDATION3
+  - The TOC reviewer suggests include the adoption level for each adopter (e.g., dev/trialing, prod, etc.) in ADOPTERS.md to provide clearer insight into how the project is being used across different organizations.
 
 ### Adoption Evaluation
 
@@ -84,9 +75,7 @@ N/A
 
 <!-- (TOC Evaluation goes here) -->
 
-- [ ] **Due Diligence Review.**
-
-  **TODO for TOC Reviewer**: update when main DD evaluation finished.
+- [x] **Due Diligence Review.**
 
   Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisfies the Due Diligence Review criteria.
 
@@ -446,13 +435,10 @@ N/A
   <!-- (TOC Evaluation goes here) -->
   The project provided the TOC with a list of adopters for verification of use of the project at the level expected, i.e. production use for graduation, dev/test for incubation.
 
-- [ ] **TOC verification of adopters.**
+- [x] **TOC verification of adopters.**
 
   <!-- (TOC Evaluation goes here) -->
-  **TODO for TOC Reviewer:** update this when adopters interview finished
-
-
-Refer to the Adoption portion of this document.
+  The Dragonfly maintainers provided the TOC with a list of adopters from different business segments who agreed to be interviewed for the Graduation Due Diligence process. 4 of these adopters were interviewed. The [adoption portion](#adoption) of this document contains interview summaries, and their (the adopters preferred remain anonymous) interview details kept in private files for CNCF TOC review. All interviewed adopters demonstrated production-level usage and commented on project maturity. Stability at scale, P2P distribution efficiency, and substantial cost savings from bandwidth reduction were common strengths identified by adopters. The cloud-native deployment model and seamless container registry integration were especially highlighted as providing significant value to adopters.
 
 - [x] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
 
