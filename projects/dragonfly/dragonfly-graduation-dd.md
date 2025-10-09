@@ -23,24 +23,30 @@ Kevin Wang conducted the due diligence of Dragonfly who applied for graduation. 
   - Improved RELEASE.md to define a more detailed release process and guidelines, Ref: <https://github.com/dragonflyoss/community/pull/22>.
 
 - The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project.
-  - The temporary link used for joining Dingtalk had expired. The TOC Reviewer suggested updating the instructions with the group search number. This finding was resolved before the final due diligence report completion. Ref: <https://github.com/dragonflyoss/dragonfly/issues/4298>
-  - TOC Reviewer suggested adding documentation explaining how the project handles requests to the CNCF, and changes to governance or project goals. This finding was resolved before the final due diligence report completion. Ref: <https://github.com/dragonflyoss/dragonfly/issues/4324>
-  - There are duplicated definitions of "Adding New Member/Approver/Maintainer" in the community documents (in COMMUNITY_LADDER.md and COMMUNITY_MEMBERSHIP.md). TOC Reviewer suggests to consolidate these into a single source of truth. Ref: <https://github.com/dragonflyoss/dragonfly/issues/4325>
+  - The TOC Reviewer suggests completing a General Technical Review post-graduation and maintaining GTR documentation. Ref: <https://github.com/cncf/toc/blob/main/.github/ISSUE_TEMPLATE/tech-review.yml>
+  - The temporary link used for joining Dingtalk had expired. The TOC Reviewer suggested updating the instructions with the group search number. This finding was resolved before the final due diligence report completion. Ref: <https://github.com/dragonflyoss/dragonfly/issues/4298>.
+  - TOC Reviewer suggested adding documentation explaining how the project handles requests to the CNCF, and changes to governance or project goals. This finding was resolved before the final due diligence report completion. Ref: <https://github.com/dragonflyoss/dragonfly/issues/4324>.
+  - There are duplicated definitions of "Adding New Member/Approver/Maintainer" in the community documents (in COMMUNITY_LADDER.md and COMMUNITY_MEMBERSHIP.md). TOC Reviewer suggests to consolidate these into a single source of truth. Ref: <https://github.com/dragonflyoss/dragonfly/issues/4325>.
   - The TOC Reviewer suggests to document the responsibilities and focus areas for each maintainer (including community wide maintainers and subproject maintainer) in MAINTAINERS.md. Even if there is no differentiation among maintainers, it should be explicitly stated to provide clarity on maintainer roles within the project.
   - The TOC Reviewer suggests to add the violation reporting email address to CODE_OF_CONDUCT.md to clarify how community members can report instances of unacceptable behavior. For example: "Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at {email address here}."
   - The TOC reviewer suggests to set a unified place to document all the community channels including community wide channels and subproject, area focused channels.
   - The TOC Reviewer suggests the project maintainers to maintain a GTR file and complete Domain Technical Review after the graduation DD.
   - The TOC reviewer suggests the security policy cross-linked by all the subproject repos.
-  - The TOC reviewer suggests add a copy of [Security Self-Assessment](https://github.com/cncf/tag-security/blob/main/community/assessments/projects/dragonfly/self-assessment.md) to [dragonflyoss/community](https://github.com/dragonflyoss/community)
+  - The TOC reviewer suggests add a copy of [Security Self-Assessment](https://github.com/cncf/tag-security/blob/main/community/assessments/projects/dragonfly/self-assessment.md) to [dragonflyoss/community](https://github.com/dragonflyoss/community).
   - The TOC reviewer suggests include the adoption level for each adopter (e.g., dev/trialing, prod, etc.) in ADOPTERS.md to provide clearer insight into how the project is being used across different organizations.
+  - The TOC Reviewer suggests the project to plan and participate the [CNCF Mentoring Programs](https://github.com/cncf/mentoring/tree/main/programs) for future contributor recruitment.
 
 ### Adoption Evaluation
 
-_The adopter interviews reflect a project [in use/too early] for the level which the project applied. They show ... $INTERVIEWSUMMARY._
+  The adopter interviews reflect production-grade usage of Dragonfly at the Graduation level. Four adopters from multiple industries were interviewed, demonstrating 1.5 to 6 years of production experience. All adopters deployed Dragonfly to solve critical challenges in large-scale distributed file and image distribution, particularly addressing bandwidth constraints, reducing infrastructure costs, and accelerating content delivery in cloud-native and AI/ML environments.
+
+  Adopters reported significant measurable benefits: bandwidth consumption reduced by 70-90%, cost savings up to 90% in image pull operations, and startup time improvements of 50% or more. Dragonfly currently supports deployments ranging from medium-scale cloud migration projects to petabyte-scale daily downloads serving millions of client machines. Use cases span container image acceleration, object storage distribution, configuration file delivery, and emerging AI model distribution workloads.
+
+  All interviewed adopters praised Dragonfly's stability at scale, P2P distribution efficiency, cloud-native deployment model, and seamless integration with container registries and runtimes. They actively engage with the community through GitHub, DingTalk, and Slack, experiencing responsive maintainer support with critical issues resolved within 2-3 business days. The adopters view Dragonfly's clean architecture, strong CNCF governance, and adaptability to evolving cloud-native and AI infrastructure requirements as key strengths that establish long-term trust and confidence in the project.
 
 ### Final Assessment
 
-_[The TOC has found the project to have satisfied the criteria for $LEVEL/ The TOC's evaluation of the project shows a needed focus to complete the outstanding blockers and reapply when the following conditions are met ... $CONDITIONS]._
+  The TOC has found the project to have satisfied the criteria for Graduation.
 
 ### Criteria
 
@@ -52,10 +58,13 @@ N/A
 
 ### Required
 
-- [ ] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
+- [x] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
   - This was completed and occurred on 09-28-2023, and can be discovered at [Tag Runtime Meeting Notes](https://docs.google.com/document/d/1k7VNetgbuDNyIs_87GLQRH2W5SLgjgOhB6pDyv89MYk/edit?tab=t.0#heading=h.r893yssi5g88).
 
   <!-- (TOC Evaluation goes here) -->
+  The TAG presentation appears dated because Dragonfly initiated the graduation process in 2024 and was not asked to repeat this step during the process.
+
+  Non-blocking Suggestion: The TOC Reviewer suggests completing a General Technical Review post-graduation and maintaining GTR documentation. Ref: <https://github.com/cncf/toc/blob/main/.github/ISSUE_TEMPLATE/tech-review.yml>.
 
 - [x]  **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 
@@ -92,23 +101,16 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Suggested
 
-- [ ]  **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
+- [x]  **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
-<!-- (TOC Evaluation goes here) --> 
-Dragonfly has been continuously updating governance doc to reflect project growth, some examples are:
+  <!-- (TOC Evaluation goes here) --> 
+  Dragonfly has been continuously updating governance doc to reflect project growth, some examples are:
+  - [update community docs with subproject references](https://github.com/dragonflyoss/community/pull/101)
+  - [consolidate community role definitions and election process](https://github.com/dragonflyoss/community/pull/89)
+  - [add contributor ladder and roles documentation](https://github.com/dragonflyoss/community/pull/38)
+  - [update and restructure community membership document](https://github.com/dragonflyoss/community/pull/33)
 
-**TODO for Dragonfly team**: provide examples of updating community governance
-
-<!-- (Project assertion goes here) -->  
-Decisions are made through consensus among maintainers during regular community meetings or via mailing list discussions. Major decisions (e.g., roadmap changes, new maintainers) require a majority vote among maintainers and are documented in [GOVERNANCE.md](https://github.chttps://github.com/dragonflyoss/community/blob/master/GOVERNANCE.md). Community input is encouraged through GitHub issues and public meetings before final decisions are made.
-
-Maintainer Role Division:
-Maintainers share responsibilities across all project areas but often focus on specific sub-projects or components based on expertise (e.g., Nydus for image acceleration, console for UI). Specific roles include code review, release management, and community engagement. Detailed responsibilities and current maintainers are listed in [MAINTAINERS.md](https://github.com/dragonflyoss/community/blob/master/roles/Maintainers.md).
-
-- 2018: Initial governance model established with a small group of core maintainers from Alibaba and Ant Group focusing on basic contribution and review processes.
-- 2020: Post-incubation, governance updated to include more maintainers from diverse organizations (e.g., ByteDance, Intel) and formalized sub-project leadership for Nydus.
-- 2021-2023: Introduced detailed contributor ladders and emeritus status for maintainers, alongside public documentation of decision-making processes to ensure transparency.
-
+  Refer to <https://github.com/dragonflyoss/community/commits/master/GOVERNANCE.md> and <https://github.com/dragonflyoss/community/pulls?q=is%3Apr+is%3Aclosed+label%3Agovernance-change> for more details.
 
 ### Required
 
@@ -121,13 +123,13 @@ Maintainers share responsibilities across all project areas but often focus on s
 
 - [x] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
-  <!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
   Dragonfly community has resolved the findings and suggestions raised during [Dragonfly governance Review](https://github.com/cncf/toc/issues/1599), some noteworthy updates are:
   - Unified and updated governance docs, fixing outdated links and redundancy between community and main repo. PRs: [dragonflyoss/community#25](https://github.com/dragonflyoss/community/pull/25), [dragonflyoss/dragonfly#4087](https://github.com/dragonflyoss/dragonfly/pull/4087)
-
-  **TODO**: provide more highligths here
-
-  Refer to <https://github.com/dragonflyoss/community/issues/27> for more details.
+  - Added detailed governance and lifecycle management rules for subprojects. PRs: [dragonflyoss/community#107](https://github.com/dragonflyoss/community/pull/107), [dragonflyoss/community#101](https://github.com/dragonflyoss/community/pull/101)
+  - Add repository guidelines and list. PRs: [dragonflyoss/community#100](https://github.com/dragonflyoss/community/pull/100)
+  - Updated community roles and responsibilities to improve clarity. PRs: [dragonflyoss/community#104](https://github.com/dragonflyoss/community/pull/104)
+  - The Dragonfly project now uses label `governance-change` in the community repo to track all governance relavant changes, to provide easier searching experieneces. [Search all "governance-change" PRs](https://github.com/dragonflyoss/community/pulls?q=is%3Apr+label%3Agovernance-change)
 
 - [x] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
@@ -180,15 +182,12 @@ Maintainers share responsibilities across all project areas but often focus on s
   <!-- (TOC Evaluation goes here) -->
   According to <https://github.com/dragonflyoss/community/blob/master/roles/Maintainers.md>, Dragonfly currently has 13 maintainers from 7 different companies/organizations.
 
-- [ ] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
+- [x] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
 
   <!-- (TOC Evaluation goes here) -->
-  Only find <https://github.com/dragonflyoss/dragonfly/blob/main/.github/CODEOWNERS> in Dragonlfy main repo.
+  Dragonfly documents [role-based member list files](https://github.com/dragonflyoss/community/tree/master/roles) to reflect the roles documented in [COMMUNITY_LADDER.md](https://github.com/dragonflyoss/community/blob/master/COMMUNITY_LADDER.md). These files are also cross linked by the legacy file [OWNERS.md](https://github.com/dragonflyoss/dragonfly/blob/main/OWNERS.md) to provide better clarity and content consistency.
 
-  Need double check since the github teams `@dragonflyoss/dragonfly2-maintainers` and `@dragonflyoss/dragonfly2-reviewers` are not visibable.
-
-  **TODO For Dragonfly Team:** provide links wherever `CODEOWNSERS` or `OWNERS` files located. also provide the members list of `@dragonflyoss/dragonfly2-maintainers` and `@dragonflyoss/dragonfly2-reviewers`
-
+  Dragonfly also setup the voters in gitvote to match these roles, ref: <https://github.com/dragonflyoss/community/blob/master/.gitvote.yml>
 
 - [x] **Document adoption and adherence to the CNCF Code of Conduct or the project's CoC which is based off the CNCF CoC and not in conflict with it.**
 
@@ -248,8 +247,8 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [x] **Project must have, and document, at least one public communications channel for users and/or contributors.**
 
-<!-- (TOC Evaluation goes here) --> 
-Dragonfly documents the communication channels at: <https://github.com/dragonflyoss/community/blob/master/README.md#community>.
+  <!-- (TOC Evaluation goes here) -->
+  Dragonfly documents the communication channels at: <https://github.com/dragonflyoss/community/blob/master/README.md#community>.
 
 - [x] **List and document all project communication channels, including subprojects (mail list/slack/etc.).  List any non-public communications channels and what their special purpose is.**
 
@@ -270,10 +269,14 @@ Dragonfly documents the communication channels at: <https://github.com/dragonfly
 <!-- (TOC Evaluation goes here) -->
 The [Contributing guide](https://github.com/dragonflyoss/community/blob/master/CONTRIBUTING.md) describes the process of how to contribute to the project, what the maintainers are expecting, and guidance for how to make a successful contribution.
 
-- [ ] **Demonstrate contributor activity and recruitment.**
+- [x] **Demonstrate contributor activity and recruitment.**
 
-<!-- (TOC Evaluation goes here) -->
-**TODO for Dragonfly team:** provide record of recruiting contributors.
+  <!-- (TOC Evaluation goes here) -->
+  The dragonfly maintainer provided some exmaples as the following:
+  - Participating OSPP 2025: <https://summer-ospp.ac.cn/org/orgdetail/72e6f975-d2b8-4fa3-a377-441c1038db10?lang=en>
+  - Participating GLCC 2025 <https://www.ccf.org.cn/kyfzwyh/wyhdt/2025-06-30/846039.shtml>
+
+  Non-blocking Suggestion: The TOC Reviewer suggests the project to plan and participate the [CNCF Mentoring Programs](https://github.com/cncf/mentoring/tree/main/programs) for future contributor recruitment.
 
 ## Engineering Principles
 
@@ -334,7 +337,7 @@ N/A
     - cri-o: <https://d7y.io/docs/next/operations/integrations/container-runtime/cri-o/>
     - harbor: <https://d7y.io/docs/next/operations/integrations/harbor/>
 
-- [x] **Document the project's release process and guidelines publicly in a RELEASES.md or equivalent file that defines:** 
+- [x] **Document the project's release process and guidelines publicly in a RELEASES.md or equivalent file that defines:**
 
   - [x] Release expectations (scheduled or based on feature implementation)
   - [x] Tagging as stable, unstable, and security related releases
@@ -344,7 +347,7 @@ N/A
   - Additional information on topics such as LTS and edge releases are optional. Release expectations are a social contract between the project and its end users and hence changes to these should be well thought out, discussed, socialized and as necessary agreed upon by project leadership before getting rolled out.
 
   <!-- (TOC Evaluation goes here) -->
-  Dragonfly documents its release process and guidelines at <https://github.com/dragonflyoss/community/blob/master/RELEASE.md>.
+  Dragonfly documents its release process and guidelines at <https://github.com/dragonflyoss/community/blob/master/RELEASE-PROCEDURE.md> and <https://github.com/dragonflyoss/community/blob/master/RELEASE.md>.
 
   The document clearly addresses all required elements:
 
@@ -373,7 +376,7 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
 
 - [ ] **Achieving OpenSSF Best Practices silver or gold badge.**
 
-<!-- (TOC Evaluation goes here) --> 
+<!-- (TOC Evaluation goes here) -->
 
 ### Required
 
@@ -459,58 +462,54 @@ N/A
 
 ##### Adopter 1 - Technology and Content Platform
 
-The adopter started using Dragonfly in production around 2021-2022 when their organization's cloud platform launched it as an official product offering. The interviewee's team began using Dragonfly in 2023 as part of a multi-year cloud migration project. The primary motivation for adopting Dragonfly was to address critical bandwidth constraints on the dedicated network link between on-premise data centers and cloud environments. During the cloud migration, the container registry remained in the internal data center with limited bandwidth (less than 20 Gbps), which frequently became saturated when cloud-based applications pulled container images. Dragonfly was selected over an internal HTTP P2P system for two key reasons: enterprise support and maintenance guarantees from the organization's cloud platform official offering, and a cloud-native deployment model using Helm Charts that significantly reduced operational overhead compared to manual deployment scripts.
+  The adopter started using Dragonfly in production around 2021-2022 when their organization's cloud platform launched it as an official product offering. The interviewee's team began using Dragonfly in 2023 as part of a multi-year cloud migration project. The primary motivation for adopting Dragonfly was to address critical bandwidth constraints on the dedicated network link between on-premise data centers and cloud environments. During the cloud migration, the container registry remained in the internal data center with limited bandwidth (less than 20 Gbps), which frequently became saturated when cloud-based applications pulled container images. Dragonfly was selected over an internal HTTP P2P system for two key reasons: enterprise support and maintenance guarantees from the organization's cloud platform official offering, and a cloud-native deployment model using Helm Charts that significantly reduced operational overhead compared to manual deployment scripts.
 
-Dragonfly has delivered substantial and measurable business value for the adopter. Most critically, it ensured operational stability during the cloud migration project by effectively addressing the bandwidth constraint problem. Without Dragonfly, the migration would have faced significant delays and reliability issues. The deployment achieved remarkable cost savings, reducing bandwidth consumption on the dedicated link from 100% saturation (causing application performance degradation) to approximately 10% utilization. This reduction covered both container image and configuration file traffic. The adopter uses two key features: container registry integration with containerd for transparent image acceleration, and HTTP proxy-based file distribution for configuration files stored in object storage. The adoption experience was smooth, with minimal integration effort required. The team developed a custom SDK using environment variables to enable applications to download files through Dragonfly while maintaining minimal impact on application code.
+  Dragonfly has delivered substantial and measurable business value for the adopter. Most critically, it ensured operational stability during the cloud migration project by effectively addressing the bandwidth constraint problem. Without Dragonfly, the migration would have faced significant delays and reliability issues. The deployment achieved remarkable cost savings, reducing bandwidth consumption on the dedicated link from 100% saturation (causing application performance degradation) to approximately 10% utilization. This reduction covered both container image and configuration file traffic. The adopter uses two key features: container registry integration with containerd for transparent image acceleration, and HTTP proxy-based file distribution for configuration files stored in object storage. The adoption experience was smooth, with minimal integration effort required. The team developed a custom SDK using environment variables to enable applications to download files through Dragonfly while maintaining minimal impact on application code.
 
-Looking forward, the adopter plans to maintain active collaboration in the community, including participation in Rust version development. They have identified two key areas for improvement: enhanced observability with additional metrics for large-scale deployments (the team has already added custom metrics internally), and improved multi-cluster support to reduce operational overhead across the adopter's many small-to-medium clusters. The adopter values the community's openness, responsive maintainers, and strong governance under CNCF. They engage actively through GitHub issues, DingTalk, and Slack, with maintainers providing fixes within 2-3 business days for critical issues. The team suggests that Dragonfly could expand beyond container image distribution with richer use case documentation, including detailed case studies showing migration paths from pilot to production, AI/ML workflow integration patterns, and performance tuning guides.
+  Looking forward, the adopter plans to maintain active collaboration in the community, including participation in Rust version development. They have identified two key areas for improvement: enhanced observability with additional metrics for large-scale deployments (the team has already added custom metrics internally), and improved multi-cluster support to reduce operational overhead across the adopter's many small-to-medium clusters. The adopter values the community's openness, responsive maintainers, and strong governance under CNCF. They engage actively through GitHub issues, DingTalk, and Slack, with maintainers providing fixes within 2-3 business days for critical issues. The team suggests that Dragonfly could expand beyond container image distribution with richer use case documentation, including detailed case studies showing migration paths from pilot to production, AI/ML workflow integration patterns, and performance tuning guides.
 
-The adopter views Dragonfly's clean architecture, cloud-native deployment model, seamless container registry integration, and strong Nydus ecosystem integration as key strengths. They believe graduating within CNCF would increase visibility and credibility, encouraging broader adoption across the industry.
+  The adopter views Dragonfly's clean architecture, cloud-native deployment model, seamless container registry integration, and strong Nydus ecosystem integration as key strengths. They believe graduating within CNCF would increase visibility and credibility, encouraging broader adoption across the industry.
 
-September, 2025
+  September, 2025
 
-Note: This adopter preferred to remain anonymous. The interview details are kept in a private file for CNCF TOC review.
+  Note: This adopter preferred to remain anonymous. The interview details are kept in a private file for CNCF TOC review.
 
-##### Adopter 2 - Name / Industry
+##### Adopter 2 - AI/Large Language Model Infrastructure
 
-Adopter 2 was skipped due to scheduling issue.
+  This adopter started using Dragonfly approximately one and a half years ago, beginning with v1.x and recently upgrading to v2.3. The primary motivation for adopting Dragonfly was to address critical challenges in large-scale image distribution for AI model training infrastructure. During their research phase, they found limited alternatives that could effectively accelerate image distribution at scale. Dragonfly stood out due to its proven track record among large companies, CNCF project reliability, cloud-native deployment capabilities, and being written in Go for potential customization. The interviewee's prior successful experience with Dragonfly at their previous company further validated the adoption decision.
+
+  Dragonfly has delivered substantial business value across multiple dimensions for this AI-focused organization. The system is deployed in production as a key infrastructure component across all computing clusters, supporting large-scale model training operations. The P2P distribution capability has generated significant bandwidth savings and cost reductions. Most importantly, Dragonfly has dramatically improved training task startup success rates by alleviating pressure on upstream registries and reducing image pull failures and timeouts - critical factors for large-scale AI training workloads. Pod startup speeds have been significantly accelerated, and the solution has reduced operational burden for the infrastructure team. The organization considers Dragonfly essential to their operations, with deployment described as very large scale, though specific metrics remain confidential.
+
+  The adopter maintains active engagement with the Dragonfly community and plans to continue this collaboration. They consistently provide feedback on issues encountered, such as network file system compatibility problems that were quickly resolved by community developers. Looking forward, they are particularly interested in AI/ML-specific acceleration features, especially capabilities for large language model distribution and accelerating model weight distribution. The organization suggests the project could further strengthen its position in the AI infrastructure space by developing technical solutions tailored to large model distribution scenarios. They emphasize the value of timely Chinese documentation synchronization and improved support for legacy container runtime interfaces.
+
+  The adopter highly values the community's openness, mature governance, maintainer diversity, and responsive communication channels. They praise the fast response times and enthusiastic developer engagement through multiple channels including DingTalk, GitHub, and biweekly meetings. The organization relies on CNCF maturity levels as a strong reference point for adoption decisions, prioritizing Graduated projects for production deployments. They view Dragonfly's community and technical capabilities as well-aligned with the growing demands of AI infrastructure, particularly for efficient distribution in large-scale model training environments.
+
+  September, 2025
+
+  Note: This adopter preferred to remain anonymous. The interview details are kept in a private file for CNCF TOC review.
 
 ##### Adopter 3 - Live Streaming and Short Video
 
-The adopter has been using Dragonfly for approximately five years, since 2020. The large-scale production deployment also began in 2020, following extensive canary testing and validation. The primary motivations for adopting Dragonfly were its active community engagement, clear and well-structured architecture design, accessible documentation and codebase, and the strategic partnership with Alibaba Cloud as the primary maintainer. These factors positioned Dragonfly as the preferred P2P distribution solution over alternatives like Kraken, which had become unmaintained by late 2019.
+  The adopter has been using Dragonfly for approximately five years, since 2020. The large-scale production deployment also began in 2020, following extensive canary testing and validation. The primary motivations for adopting Dragonfly were its active community engagement, clear and well-structured architecture design, accessible documentation and codebase, and the strategic partnership with Alibaba Cloud as the primary maintainer. These factors positioned Dragonfly as the preferred P2P distribution solution over alternatives like Kraken, which had become unmaintained by late 2019.
 
-Dragonfly has delivered substantial and measurable benefits across the adopter's infrastructure, deployed in full production to support over 80% of their internal services. The organization has publicly disclosed significant performance improvements in three key areas: reduced Harbor registry bandwidth pressure by approximately 70% on average (up to 80% during peak periods) through P2P distribution; lowered overall image pull costs by approximately 90%, including network, storage, bandwidth, and transfer resources; and accelerated instance startup times by an average of 50%. The system currently supports three primary use cases: general object storage acceleration for big data and multimedia distribution, cloud-native container image acceleration and distribution, and AI model file distribution introduced in 2025. Key features utilized include proactive image preheating, multi-tier caching from memory to SSD for enhanced P2P efficiency, and Nydus on-demand loading which has enabled approximately 60% of their services to achieve more than 50% reduction in startup time.
+  Dragonfly has delivered substantial and measurable benefits across the adopter's infrastructure, deployed in full production to support over 80% of their internal services. The organization has publicly disclosed significant performance improvements in three key areas: reduced Harbor registry bandwidth pressure by approximately 70% on average (up to 80% during peak periods) through P2P distribution; lowered overall image pull costs by approximately 90%, including network, storage, bandwidth, and transfer resources; and accelerated instance startup times by an average of 50%. The system currently supports three primary use cases: general object storage acceleration for big data and multimedia distribution, cloud-native container image acceleration and distribution, and AI model file distribution introduced in 2025. Key features utilized include proactive image preheating, multi-tier caching from memory to SSD for enhanced P2P efficiency, and Nydus on-demand loading which has enabled approximately 60% of their services to achieve more than 50% reduction in startup time.
 
-Regarding future community participation, the adopter has already achieved comprehensive deployment across its infrastructure and plans to focus on feature requests and potential community contributions. The team's approach is to first submit feature requests to understand the community's perspective and roadmap alignment, with readiness to invest engineering resources for significant implementations. A specific example includes their request for P2P distribution support for large model parameter files within Dragonfly, similar to vLLM's P2P store functionality, which would enable framework-agnostic integration and reduce development costs. The organization actively engages with the community through GitHub issues, DingTalk group discussions, and participation in community meetings. Team members have already contributed pull requests and documentation improvements, and they express preference for community collaboration over isolated internal maintenance. The adopter suggests two areas for project improvement: evolving capabilities to better address emerging AI workload requirements and adding multilingual documentation support to improve accessibility for non-English-speaking regions. They also recommend encouraging involvement from excellent international companies to broaden the community's perspective and conducting deeper academic research exploration to identify new enhancement opportunities.
+  Regarding future community participation, the adopter has already achieved comprehensive deployment across its infrastructure and plans to focus on feature requests and potential community contributions. The team's approach is to first submit feature requests to understand the community's perspective and roadmap alignment, with readiness to invest engineering resources for significant implementations. A specific example includes their request for P2P distribution support for large model parameter files within Dragonfly, similar to vLLM's P2P store functionality, which would enable framework-agnostic integration and reduce development costs. The organization actively engages with the community through GitHub issues, DingTalk group discussions, and participation in community meetings. Team members have already contributed pull requests and documentation improvements, and they express preference for community collaboration over isolated internal maintenance. The adopter suggests two areas for project improvement: evolving capabilities to better address emerging AI workload requirements and adding multilingual documentation support to improve accessibility for non-English-speaking regions. They also recommend encouraging involvement from excellent international companies to broaden the community's perspective and conducting deeper academic research exploration to identify new enhancement opportunities.
 
-September, 2025
+  September, 2025
 
-Note: Adopter 3 need to double check if they prefer remain anonymous, currently the interview details are kept in a private file for CNCF TOC review.
+  Note: This adopter preferred to remain anonymous. The interview details are kept in a private file for CNCF TOC review.
 
 ##### Adopter 4 - Cloud Computing Platform
 
-This adopter started using Dragonfly in production around early 2019, implementing Dragonfly v1.0 initially and has been using the project for approximately 6 years. The organization has since evolved to Dragonfly v2.x and currently runs v2.2.0 in production. The primary motivation for adopting Dragonfly was to resolve critical stability issues with their previous Java-based P2P solution, specifically eliminating back-to-source contention caused by randomized scheduling that created substantial load on origin servers during high concurrency periods.
+  This adopter started using Dragonfly in production around early 2019, implementing Dragonfly v1.0 initially and has been using the project for approximately 6 years. The organization has since evolved to Dragonfly v2.x and currently runs v2.2.0 in production. The primary motivation for adopting Dragonfly was to resolve critical stability issues with their previous Java-based P2P solution, specifically eliminating back-to-source contention caused by randomized scheduling that created substantial load on origin servers during high concurrency periods.
 
-Dragonfly has delivered significant business value across multiple dimensions. The system now supports millions of client machines with daily download volumes reaching petabyte scale, while consistently maintaining back-to-source traffic below 1% of total download volume. This translates to massive cost savings in OSS bandwidth consumption and associated cloud storage costs. Additionally, Dragonfly eliminated complex manual network configuration requirements, dramatically reducing operational staff time and labor costs. The solution has successfully supported critical peak traffic events, including multiple "Double 11" sales periods, demonstrating its enterprise-grade stability.
+  Dragonfly has delivered significant business value across multiple dimensions. The system now supports millions of client machines with daily download volumes reaching petabyte scale, while consistently maintaining back-to-source traffic below 1% of total download volume. This translates to massive cost savings in OSS bandwidth consumption and associated cloud storage costs. Additionally, Dragonfly eliminated complex manual network configuration requirements, dramatically reducing operational staff time and labor costs. The solution has successfully supported critical peak traffic events, including multiple "Double 11" sales periods, demonstrating its enterprise-grade stability.
 
-The adopter plans to maintain active collaboration in the community, focusing on issue triage and performance optimization discussions to ensure long-term stability. They have no new major feature requests as the core P2P distribution functionality fully meets their infrastructure needs. For future development, they suggest the project could benefit from expanding influence through comprehensive best practice case studies and exploring deeper integration with AI workflows, particularly for efficient distribution of large model binaries and datasets.
+  The adopter plans to maintain active collaboration in the community, focusing on issue triage and performance optimization discussions to ensure long-term stability. They have no new major feature requests as the core P2P distribution functionality fully meets their infrastructure needs. For future development, they suggest the project could benefit from expanding influence through comprehensive best practice case studies and exploring deeper integration with AI workflows, particularly for efficient distribution of large model binaries and datasets.
 
-The adopter views Dragonfly as having significant growth potential, especially with the rise of multi-cloud, edge computing, and AI model distribution challenges. They praise the community's openness, strong governance, and timely maintainer responsiveness, while noting that enhanced security and access control mechanisms would help unlock the project's full potential across diverse enterprise environments.
+  The adopter views Dragonfly as having significant growth potential, especially with the rise of multi-cloud, edge computing, and AI model distribution challenges. They praise the community's openness, strong governance, and timely maintainer responsiveness, while noting that enhanced security and access control mechanisms would help unlock the project's full potential across diverse enterprise environments.
 
-September, 2025
+  September, 2025
 
-Note: This adopter preferred to remain anonymous. The interview details are kept in a private file for CNCF TOC review.
-
-##### Adopter 5 - AI/Large Language Model Infrastructure
-
-This adopter started using Dragonfly approximately one and a half years ago, beginning with v1.x and recently upgrading to v2.3. The primary motivation for adopting Dragonfly was to address critical challenges in large-scale image distribution for AI model training infrastructure. During their research phase, they found limited alternatives that could effectively accelerate image distribution at scale. Dragonfly stood out due to its proven track record among large companies, CNCF project reliability, cloud-native deployment capabilities, and being written in Go for potential customization. The interviewee's prior successful experience with Dragonfly at their previous company further validated the adoption decision.
-
-Dragonfly has delivered substantial business value across multiple dimensions for this AI-focused organization. The system is deployed in production as a key infrastructure component across all computing clusters, supporting large-scale model training operations. The P2P distribution capability has generated significant bandwidth savings and cost reductions. Most importantly, Dragonfly has dramatically improved training task startup success rates by alleviating pressure on upstream registries and reducing image pull failures and timeouts - critical factors for large-scale AI training workloads. Pod startup speeds have been significantly accelerated, and the solution has reduced operational burden for the infrastructure team. The organization considers Dragonfly essential to their operations, with deployment described as very large scale, though specific metrics remain confidential.
-
-The adopter maintains active engagement with the Dragonfly community and plans to continue this collaboration. They consistently provide feedback on issues encountered, such as network file system compatibility problems that were quickly resolved by community developers. Looking forward, they are particularly interested in AI/ML-specific acceleration features, especially capabilities for large language model distribution and accelerating model weight distribution. The organization suggests the project could further strengthen its position in the AI infrastructure space by developing technical solutions tailored to large model distribution scenarios. They emphasize the value of timely Chinese documentation synchronization and improved support for legacy container runtime interfaces.
-
-The adopter highly values the community's openness, mature governance, maintainer diversity, and responsive communication channels. They praise the fast response times and enthusiastic developer engagement through multiple channels including DingTalk, GitHub, and biweekly meetings. The organization relies on CNCF maturity levels as a strong reference point for adoption decisions, prioritizing Graduated projects for production deployments. They view Dragonfly's community and technical capabilities as well-aligned with the growing demands of AI infrastructure, particularly for efficient distribution in large-scale model training environments.
-
-September, 2025
-
-Note: This adopter preferred to remain anonymous. The interview details are kept in a private file for CNCF TOC review.
+  Note: This adopter preferred to remain anonymous. The interview details are kept in a private file for CNCF TOC review.
