@@ -1,6 +1,6 @@
 # Confidential Containers Incubation Due Diligence
 
-- Link to [Incubation application issue]()
+- Link to [Incubation application issue](https://github.com/cncf/toc/issues/1504)
 
 <!-- This template provides the TOC with the outline for completing due diligence of a project to move levels. This universal template is designed to capture all criteria so the TOC may ensure prior level criteria do not regress. As part of completing the due diligence, the TOC member should update the template to convey the level the project applied for the criteria by bolding the level indicated where the criteria is relevant. -->
 
@@ -26,19 +26,24 @@ N/A
 
 ### Required
 
-- [ ] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
-  - _If applicable_ this was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
+- [x] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  - This was completed and occurred on 28-Aug-2024, and can be discovered at <https://zoom.us/rec/share/nCSdjZxN4DjxA7RopMqocddvDBPzxuO-Xpa2u-9xzB8MbumatD1Vtw0ePpNrobHy.Cby9t12K1IJfq_tk>
 
-- [ ] **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
+- [x] **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->  
+  The CoCo project uses vendor neutral resources for project host, communication etc.
+  Some examples are:
+  - CoCo Github: <https://github.com/confidential-containers>
+  - CoCo Project Website: <https://confidentialcontainers.org/>
+  - CoCo Slack: <https://cloud-native.slack.com/archives/C039JSH0807>
 
-- [ ] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**		
-- Met during Project's application on DD-MMM-YYYY.
+- [x] **Review and acknowledgement of expectations for [Sandbox](https://sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**		
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  - The project contacts and TOC Reviewers had a kick-off meeting on Jan. 16th, set expectations and discussed general steps & timelines.
 
 - [ ] **Due Diligence Review.**
 
@@ -46,7 +51,8 @@ Completion of this due diligence document, resolution of concerns raised, and pr
 
 - [ ] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The project provides approriate documents for installation and configuration, e.g.: <https://confidentialcontainers.org/docs/getting-started/>
 
 ## Governance and Maintainers
 
@@ -54,25 +60,36 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Suggested
 
-- [ ] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
+- [x] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The CoCo project has been continuously updating governance doc, some examples are:
+  - Update governance doc to include rules of removing inactive maintainers <https://github.com/confidential-containers/confidential-containers/pull/235>
+  - Add provisions to the governance document for members who move from one company to another or who become inactive or leave the project. <https://github.com/confidential-containers/confidential-containers/pull/329>
 
-- [ ] **Clear and discoverable project governance documentation.**
 
-<!-- (TOC Evaluation goes here) --> 
+- [x] **Clear and discoverable project governance documentation.**
 
-- [ ] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
+  <!-- (TOC Evaluation goes here) -->
+  - The [project governance doc](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md) is maintained in the main repository.
 
-<!-- (TOC Evaluation goes here) --> 
+  **Suggestion by Kevin:** Since CoCo has 10+ active non-fork repos, TOC reviewers suggest to consider creating a community repository and maintain governance and community relavent docs there.
+
+- [x] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
+
+  <!-- (TOC Evaluation goes here) -->
+  - Removal of inactive maintainers <https://github.com/confidential-containers/confidential-containers/pull/229>
+
 
 - [ ] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The CoCo project governance has some implicit description of vendor neutrality, from perspective of seat limitation from one company/organization on the steering committee. The TOC reviewers suggests to consider more clear description before project advancing to graduation.
 
 - [ ] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  <https://github.com/confidential-containers/confidential-containers/blob/main/governance.md#decision-making>
 
 - [ ] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
 
