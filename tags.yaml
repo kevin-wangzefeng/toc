@@ -715,6 +715,7 @@ toc_subprojects: # TOC SubProjects
       - description: Project Reviews SubProject Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-project-reviews-subproject?view=list
         recordings_url: https://www.youtube.com/@CNCFTOCProjectReviewsSubProjec
+        meeting_notes_url: https://notes.cncf.io/77OV3RVUQd-dw3YkrJ7Leg
     contact:
       slack: C08M8L74NAJ
       mailing_list: https://lists.cncf.io/g/cncf-project-reviews-subproject
