@@ -71,25 +71,31 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [x] **Clear and discoverable project governance documentation.**
 
   <!-- (TOC Evaluation goes here) -->
-  - The [project governance doc](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md) is maintained in the main repository.
+  The [project governance doc](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md) is maintained in the main repository.
 
   **Suggestion by Kevin:** Since CoCo has 10+ active non-fork repos, TOC reviewers suggest to consider creating a community repository and maintain governance and community relavent docs there.
 
 - [x] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
   <!-- (TOC Evaluation goes here) -->
-  - Removal of inactive maintainers <https://github.com/confidential-containers/confidential-containers/pull/229>
+  The project maintains an active and up-to-date governance framework that accurately reflects the current project state. The documentation is regularly updated to capture Steering Committee leadership transitions, organizational representation changes, and refinements to maintainer lifecycle processes.
 
+  Some examples are:
+  - removed AMD rep Ryan Savino from SC and added to emeritus <https://github.com/confidential-containers/confidential-containers/pull/348>
+  - Intel maintainers update <https://github.com/confidential-containers/confidential-containers/pull/339>
+  - Update Microsoft representative maintainer <https://github.com/confidential-containers/confidential-containers/pull/338>
 
-- [ ] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
+- [x] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
   <!-- (TOC Evaluation goes here) -->
-  The CoCo project governance has some implicit description of vendor neutrality, from perspective of seat limitation from one company/organization on the steering committee. The TOC reviewers suggests to consider more clear description before project advancing to graduation.
+  As outlined in [GOVERNANCE.md](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md), the CoCo project effectively operationalizes vendor neutrality through structural mechanisms, specifically the two-seat limit per organization on the Steering Committee.
 
-- [ ] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
+  **Suggestion by Kevin:** It is noted that the documentation currently lacks an explicit definition of 'vendor neutrality' as a core principle. The TOC reviewers recommend explicitly codifying a Vendor Neutrality clause to align with CNCF best practices before the project advances to graduation.
+
+- [x] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
   <!-- (TOC Evaluation goes here) -->
-  <https://github.com/confidential-containers/confidential-containers/blob/main/governance.md#decision-making>
+  [GOVERNANCE.md#decision-making](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md#decision-making) explicitly documents a consensus-driven framework. It establishes a clear voting protocol for critical decisions, specifically leadership changes and governance modifications, requiring a defined supermajority threshold (2/3rds of current SC members) when consensus is not achieved.
 
 - [ ] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
 
