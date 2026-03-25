@@ -221,8 +221,8 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation. _This requirement may also be satisfied by completing a General Technical Review._**
   -  _If applicable_ a general Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
-  <!-- (TOC Evaluation goes here) -->
-  The project website as a detailed [architecture section](https://confidentialcontainers.org/docs/architecture/).
+    <!-- (TOC Evaluation goes here) -->
+    The project maintains a detailed architectural overview on its [website](https://confidentialcontainers.org/docs/architecture/design-overview/), demonstrating a robust and viable cloud-native design. It effectively outlines key mechanisms such as Pod-Centric Virtualization, host deprivileging, and its sophisticated remote attestation (Trustee) architecture.
 
 - [ ] **Document the project's release process.**
 
