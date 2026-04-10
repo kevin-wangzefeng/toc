@@ -4,7 +4,8 @@ Interviewee: Nicolas Mäding (NMAEDING@de.ibm.com)
 
 Date: March 2, 2026
 
-Questions
+### Questions:
+
 1. How long has your organization used the project?
 
 We started to actively contribute and participated in and promoted the project since it was formed in 2021. We had some internal PoTs and PoCs based on the Confidential Containers Project (https://github.com/confidential-containers)
@@ -78,7 +79,8 @@ As stated, the contributions from so many participants across the industry and t
 
 We intend to contribute, request features for different solutions, improved user experience, and plan to continue our involvement as products depend on this project and the underlaying technology.
 
-Maturity Level Survey
+---
+### Maturity Level Survey
 
 The following set of questions goes beyond the scope of the specific project adoption. Their goal is to benefit from having access to CNCF project adopters and survey their understanding of the CNCF project maturity levels and any reliance on their meaning for decision making. This information should allow the TOC to better document maturity levels targeting adopters.
 1. Do you feel you have a good understanding on the meaning of each maturity level for CNCF projects?
