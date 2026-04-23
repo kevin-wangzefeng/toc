@@ -304,15 +304,13 @@ N/A
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
+- [x] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
-<!-- (TOC Evaluation goes here) --> 
+The project provided the TOC with a list of adopters for verification of use of the project at the level expected, dev/test for incubation. The TOC was able to verify confirm at least dev/test use with all interviewed adopters.
 
-The project provided the TOC with a list of adopters for verification of use of the project at the level expected, i.e. production use for graduation, dev/test for incubation.
+- [x] **TOC verification of adopters.**
 
-- [ ] **TOC verification of adopters.**
-
-<!-- (TOC Evaluation goes here) --> 
+The CoC maintainers provided the TOC with a list of 5-6 adopters who agreed to be interviewed for the Incubation Due Diligence process. 4 of these adopters were interviewed. The adoption portion of this document contains interview summaries from adopters who approved public attribution. All adopters are verified using CoC at the level appropriate for incubation.
 
 Refer to the Adoption portion of this document.
 
@@ -322,17 +320,54 @@ Refer to the Adoption portion of this document.
 
 #### Adoption
 
-##### Adopter 1 - $COMPANY/$INDUSTRY
+##### Adopter 1 - IBM/Technology
 
-_If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
-MONTH YEAR
+In a March 2, 2026 interview, Nicolas Mäding (IBM) says IBM has contributed and promoted Confidential Containers since 2021, with internal trials. IBM sees it as the most mature CNCF option here, driven by broad industry participation. They focus on s390x, IBM Secure Execution, and Trustee.
 
-##### Adopter 2 - $COMPANY/$INDUSTRY
+Production adoption hinges on bare metal and a standard Trustee story—work in progress after a Q4 2025 tech preview they plan to harden. They run 0.16.0, contribute to main, and intend to stay current as releases ship because it underpins their Kubernetes product. The chief tension is roadmap emphasis on x86/public cloud versus on-prem and Z/LinuxONE; they want decisions that balance architectures and deployment models.
 
-_If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
-MONTH YEAR
+Docs are adequate, especially architecture diagrams; threat models would help as the project matures. Maintainers engage daily on Slack, GitHub, and Zoom. Value: a common hybrid-cloud approach across hardware. Archiving would hurt materially. Improve: more openness to non-x86 paths and other deployments.
 
-##### Adopter 3 - $COMPANY/$INDUSTRY
+Refer to the full [interview report](IBM-interview.md) for more details.
 
-_If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
-MONTH YEAR
+##### Adopter 2 - AccuKnox/Technology
+
+In a February 10, 2026 interview, AccuKnox (Rahul Jadhav, interviewed by Lin Sun) describes using Confidential Containers (CoCo) in 5G security work: intent-based security for 5G ORAN and Core, with an example policy that pins workloads to hardware-backed security. The main driver is 5G UDR, which holds sensitive data (e.g. subscription keys) on public cloud, where the CSP admin/root threat must be assumed—CoCo is how they aim to protect such functions.
+
+AccuKnox sees CoCo as uniquely offering a full TEE-oriented path for containerized workloads, including cloud API adapters that ease hosted environments; cloud-api-adaptor helped after early AWS integration friction. Usage is pre-production; they still run v0.13.0 (~one year behind) and have not kept 5g-blueprint-controls tightly updated. Docs helped but Slack (with community members such as Pradeepta) was needed. They presented 5GSEC work to the community and were encouraged to list as adopters.
+
+Value is framed as security posture where untrusted cloud leaves TEE/CoCo as the practical option. Gaps: hardware availability, interface stability, and cost. They suggest clearer messaging and use-case awareness versus deep technical detail alone. Future plan is to fold CoCo into AccuKnox Enterprise, especially government/federal scenarios.
+
+Refer to the full [interview report](AccuKnox-interview.md) for more details.
+
+##### Adopter 3 - NVIDIA/Technology
+
+n a January 23, 2026 interview, NVIDIA’s Dan Middleton (with Lin Sun) describes ~two years in Confidential Containers (CoCo) as maintainers, ecosystem vendors, and adopters. He frames confidential computing as CPU/GPU features that carve out protected memory (e.g. VM-style isolation from other tenants), and CoCo as the path to turn that on for users in a Kubernetes-native way.
+
+Motivations split three ways: enable NVIDIA GPUs in the project so AI workloads can use these controls; ship products on top of CoCo (citing Red Hat OpenShift as a downstream); and meet security needs across NVIDIA’s internal and external datacenters via a cloud-native confidential stack.
+
+NVIDIA sees CoCo as the main cloud-native confidential computing effort, chosen for momentum, features, and contributors across clouds, hardware, and ISVs. Usage: internal pre-production; external NVIDIA offerings are early access, with GA targeted late Q1 of that year. They run 0.18 and track formal releases closely (downstream users follow OpenShift cadence). Adoption was straightforward given in-house maintainers; integration pain was mostly other CNCF pieces (e.g. agreeing on containerd versions), now improved. Docs are strong, with a unified docs site in the last year. They engage via Thursday community meetings, GitHub, and Slack.
+
+Value: stronger security, faster and less custom integration than alternatives like kubelet-in-confidential-VM, which they say does not meet all CoCo-level goals. If the project were archived, they would maintain or fork; they doubt abandoning a cloud-native confidential stack given broad hardware support. Gaps: wants more end-user feedback and visibility; ease of use and simpler per-tenant security tuning (defaults help, specifics still hard). Strengths: security-first design and diverse maintainer base. Roadmap: more product features through CoCo, e.g. multi-GPU for LLMs. On CNCF maturity, they understand levels and use them indirectly—less appetite for very early projects versus features and alternatives.
+
+Refer to the full [interview report](NVIDIA-interview.md) for more details.
+
+##### Adopter 4 - NVIDIA/Technology
+
+In a January 29, 2026 interview, TDC (Denmark)—Nino Wael, Lasse, and Martin Rasmussen, interviewed by Lin Sun—describes a small IT-security-focused group that knew CoCo earlier but seriously evaluated it from early 2025. The main pull is running AI workloads securely, then broader confidential workloads.
+
+They previously looked at Gramine (Intel SGX-centric) and moved toward CoCo for broader hardware options (including Intel TDX) and multi-vendor contributors—seen as a major advantage.
+
+Stage: pre-production / POC only, so no measurable business value yet; subjectively, CoCo is much easier than Gramine. They try to stay on the latest release (CoCo 0.18) and follow upgrade paths.
+
+Pain points: basic tutorials exist, but combining features often breaks without extra config, pushing them to read source. Docs sometimes 404, go stale, or describe removed code; some endpoints lack documentation for their small integration layer. Slack is helpful but insufficient alone. They treat community engagement as mandatory given complexity and a steep learning curve.
+
+Scope critique: they feel the project sometimes sprawls into areas better handled elsewhere (e.g. Keycloak for authz), including non-core items like a Trustee admin web UI—they’d prefer deeper CNCF integration over building everything in-tree.
+
+Improvements requested: a compatibility matrix, clearer marking of unsupported paths (e.g. Azure CSI wrapper), and cleaner, truthful documentation.
+
+Strengths: hardware flexibility, strong vendor participation, approachable contribution, and a single pane to confidential containers versus stitching per-vendor docs.
+
+Dependency / fork: one member is already a contributor; forking/maintaining would only make sense if customer value justifies limited bandwidth. Future plans exist but are customer-driven—without buy-in, engagement stays passive.
+
+Refer to the full [interview report](TDC-DK-interview.md) for more details.
