@@ -326,7 +326,7 @@ In a March 2, 2026 interview, Nicolas Mäding (IBM) says IBM has contributed and
 
 Production adoption hinges on bare metal and a standard Trustee story—work in progress after a Q4 2025 tech preview they plan to harden. They run 0.16.0, contribute to main, and intend to stay current as releases ship because it underpins their Kubernetes product. The chief tension is roadmap emphasis on x86/public cloud versus on-prem and Z/LinuxONE; they want decisions that balance architectures and deployment models.
 
-Docs are adequate, especially architecture diagrams; threat models would help as the project matures. Maintainers engage daily on Slack, GitHub, and Zoom. Value: a common hybrid-cloud approach across hardware. Archiving would hurt materially. Improve: more openness to non-x86 paths and other deployments.
+Docs are adequate, especially architecture diagrams; threat models would help as the project matures. Maintainers engage daily on Slack, GitHub, and Zoom. Value of the project is a common hybrid-cloud approach across hardware. Archiving would hurt materially. Improvement area is more openness to non-x86 paths and other deployments.
 
 Refer to the full [interview report](IBM-interview.md) for more details.
 
