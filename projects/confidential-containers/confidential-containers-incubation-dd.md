@@ -354,20 +354,12 @@ Refer to the full [interview report](NVIDIA-interview.md) for more details.
 
 ##### Adopter 4 - NVIDIA/Technology
 
-In a January 29, 2026 interview, TDC (Denmark)—Nino Wael, Lasse, and Martin Rasmussen, interviewed by Lin Sun—describes a small IT-security-focused group that knew CoCo earlier but seriously evaluated it from early 2025. The main pull is running AI workloads securely, then broader confidential workloads.
+In a January 29, 2026 interview, TDC (Denmark)—Nino Wael, Lasse, and Martin Rasmussen, interviewed by Lin Sun—describes a small IT-security-focused group that knew CoCo earlier but seriously evaluated it from early 2025. The main pull is running AI workloads securely, then broader confidential workloads. They previously looked at Gramine (Intel SGX-centric) and moved toward CoCo for broader hardware options (including Intel TDX) and multi-vendor contributors—seen as a major advantage. The current stage is pre-production / POC only, so no measurable business value yet; subjectively, CoCo is much easier than Gramine. They try to stay on the latest release (CoCo 0.18) and follow upgrade paths.
 
-They previously looked at Gramine (Intel SGX-centric) and moved toward CoCo for broader hardware options (including Intel TDX) and multi-vendor contributors—seen as a major advantage.
-
-Stage: pre-production / POC only, so no measurable business value yet; subjectively, CoCo is much easier than Gramine. They try to stay on the latest release (CoCo 0.18) and follow upgrade paths.
-
-Pain points: basic tutorials exist, but combining features often breaks without extra config, pushing them to read source. Docs sometimes 404, go stale, or describe removed code; some endpoints lack documentation for their small integration layer. Slack is helpful but insufficient alone. They treat community engagement as mandatory given complexity and a steep learning curve.
-
+Pain points is that basic tutorials exist, but combining features often breaks without extra config, pushing them to read source. Docs sometimes 404, go stale, or describe removed code; some endpoints lack documentation for their small integration layer. Slack is helpful but insufficient alone. They treat community engagement as mandatory given complexity and a steep learning curve.
 Scope critique: they feel the project sometimes sprawls into areas better handled elsewhere (e.g. Keycloak for authz), including non-core items like a Trustee admin web UI—they’d prefer deeper CNCF integration over building everything in-tree.
 
-Improvements requested: a compatibility matrix, clearer marking of unsupported paths (e.g. Azure CSI wrapper), and cleaner, truthful documentation.
-
-Strengths: hardware flexibility, strong vendor participation, approachable contribution, and a single pane to confidential containers versus stitching per-vendor docs.
-
-Dependency / fork: one member is already a contributor; forking/maintaining would only make sense if customer value justifies limited bandwidth. Future plans exist but are customer-driven—without buy-in, engagement stays passive.
+Strengths of the project is its hardware flexibility, strong vendor participation, approachable contribution, and a single pane to confidential containers versus stitching per-vendor docs.
+Improvements areas: a compatibility matrix, clearer marking of unsupported paths (e.g. Azure CSI wrapper), and cleaner, truthful documentation.
 
 Refer to the full [interview report](TDC-DK-interview.md) for more details.
