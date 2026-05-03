@@ -67,7 +67,6 @@ Note: this section may be augmented by the completion of a Governance Review fro
   - Update governance doc to include rules of removing inactive maintainers <https://github.com/confidential-containers/confidential-containers/pull/235>
   - Add provisions to the governance document for members who move from one company to another or who become inactive or leave the project. <https://github.com/confidential-containers/confidential-containers/pull/329>
 
-
 - [x] **Clear and discoverable project governance documentation.**
 
   <!-- (TOC Evaluation goes here) -->
@@ -218,15 +217,20 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
   **TODO for maintainers**: the short-term roadmap Confidential containers github board link is unavailable with outdated "view", needs to be fixed.
 
-- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation. _This requirement may also be satisfied by completing a General Technical Review._**
-  -  _If applicable_ a general Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
+- [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation. _This requirement may also be satisfied by completing a General Technical Review._**
+  - A general Technical Review was completed/updated on 25-02-2026, and can be discovered at <https://github.com/cncf/toc/pull/2051>.
 
     <!-- (TOC Evaluation goes here) -->
     The project maintains a detailed architectural overview on its [website](https://confidentialcontainers.org/docs/architecture/design-overview/), demonstrating a robust and viable cloud-native design. It effectively outlines key mechanisms such as Pod-Centric Virtualization, host deprivileging, and its sophisticated remote attestation (Trustee) architecture.
 
-- [ ] **Document the project's release process.**
+- [x] **Document the project's release process.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The project maintains a well-documented and consistent release process.
+  
+  It follows a strict [6-week release cadence](https://github.com/confidential-containers/confidential-containers/blob/main/README.md) aligned closely with the Kata Containers lifecycle.
+  
+  The community utilizes a standardized release checklist ([.github/ISSUE_TEMPLATE/release-check-list.md](https://github.com/confidential-containers/confidential-containers/blob/main/.github/ISSUE_TEMPLATE/release-check-list.md)) to ensure quality and consistency across releases.
 
 ## Security
 
