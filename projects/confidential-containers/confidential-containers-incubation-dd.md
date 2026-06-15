@@ -8,15 +8,47 @@
 
 ### Criteria Evaluation
 
-_$TOCMEMBER conducted the due diligence of Confidential Containers who applied for $LEVEL. The project [has/has not] completed the criteria that show its maturity at $LEVEL. The following criteria implementations are noteworthy to call out... $NOTABLES. The following actions were provided to the project that were considered blocking but since resolved... $BLOCKERS. The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project... $RECOMMENDATIONS._
+Kevin Wang, Faseela K, and Lin Sun conducted the due diligence of Confidential Containers, which applied for Incubation. The project has completed the criteria that show its maturity at Incubation.
+
+#### Noteworthy Implementations
+
+- **Vendor neutrality enforced on the Steering Committee**: The Steering Committee caps each organization at two seats and currently spans seven companies (Alibaba, IBM, Intel, AMD, Red Hat, NVIDIA, Microsoft), with a process to keep membership tracking the project's major contributors.
+- **Governance iterated over time**: The governance document has changed as the project has run, with examples including inactive-maintainer removal rules and provisions for members who change employer or leave ([#235](https://github.com/confidential-containers/confidential-containers/pull/235), [#329](https://github.com/confidential-containers/confidential-containers/pull/329), [#348](https://github.com/confidential-containers/confidential-containers/pull/348), [#339](https://github.com/confidential-containers/confidential-containers/pull/339), [#338](https://github.com/confidential-containers/confidential-containers/pull/338)).
+- **Alignment with its main dependency, Kata Containers**: Kata Containers contributors sit on the CoCo Steering Committee, and the 6-week release cadence follows the Kata lifecycle.
+- **Subproject-to-repository mapping**: Each subproject lives in its own repository, and the mapping of components to subprojects is documented on the project [website](https://confidentialcontainers.org/docs/architecture/design-overview/#components).
+- **Secure-by-default architecture**: The design denies the host access to container images (pulled inside the guest enclave via `image-rs`), releases secrets only after attestation through Trustee, and applies deny-by-default OPA policies on the Kata Agent API to block host interference.
+- **Signed build provenance at SLSA Build Level 2**: The project generates signed `in-toto` provenance via GitHub Actions for components such as `kata-containers`, `guest-components`, and `cloud-api-adaptor`.
+- **Consistent, well-documented release process**: The project releases on a 6-week cadence and runs each release against a standardized checklist.
+
+#### Blockers (Previously Raised, Now Resolved)
+
+- **Access Control and 2FA Enforcement**: The project was asked to document and enforce 2FA for privileged roles and make the access-control model publicly auditable. This was resolved in [confidential-containers/confidential-containers#351](https://github.com/confidential-containers/confidential-containers/pull/351), which updated `governance.md` to explicitly require 2FA for org members, maintainers, Steering Committee members, and Security Managers, and to describe how maintainer access is granted and revoked via GitHub teams.
+- **Security Response Role Documentation**: The project was asked to formally define security response roles and document how vulnerability reports are handled. This was resolved through [confidential-containers/confidential-containers#351](https://github.com/confidential-containers/confidential-containers/pull/351) and [confidential-containers/.github#25](https://github.com/confidential-containers/.github/pull/25), which introduced the Security Manager role in `governance.md`, aligned `SECURITY.md` with the governance language, and added a link from `CONTRIBUTING.md` to the security reporting guidance.
+
+#### Recommended Enhancements (Non-Blocking)
+
+- **Publish a public maintainer and team-membership list**: Maintainer and functional-role assignments are managed through private GitHub teams referenced in `CODEOWNERS`, so they are not publicly readable. The TOC reviewers recommend publishing this membership through declarative configuration using a tool such as [cilium/team-manager](https://github.com/cilium/team-manager) or [CLOWarden](https://github.com/cncf/clowarden).
+- **State vendor neutrality explicitly in governance**: Vendor neutrality is enforced through the two-seat-per-organization Steering Committee limit, but the governance documents do not state it as a principle. The reviewers recommend adding a vendor-neutrality clause before graduation.
+- **Move governance and community docs into a community repository**: With 10+ active non-fork repositories, the reviewers suggest a dedicated community repository to hold governance and community documentation.
+- **Document subproject governance details**: The subproject removal process, per-subproject maturity status, and a public per-subproject maintainer list are not yet documented and should be completed before graduation.
+- **Integrate with the official CNCF calendar**: Weekly community meetings are documented in a public Google Doc; adding them to the official CNCF calendar would make them easier to find.
+- **Keep the contributing guide current**: The contributing guide has not been updated since 2024 and should be reviewed periodically to match the current state of the project.
+- **Fix the short-term roadmap board link**: The short-term roadmap link to the Confidential Containers GitHub board in `roadmap.md` is broken (outdated "view") and should be corrected.
+- **Recruit more adopters and case studies**: Adopter verification was met through interviews; the project should keep recruiting adopters and encouraging public case studies.
 
 ### Adoption Evaluation
 
-_The adopter interviews reflect a project [in use/too early] for the level which the project applied. They show ... $INTERVIEWSUMMARY._
+The TOC interviewed four adopters of Confidential Containers — IBM, NVIDIA, AccuKnox, and TDC — spanning hardware vendors, cloud and security vendors, telecom, and enterprise IT across multiple geographies. All four reported pre-production or dev/test usage on recent releases (versions 0.13 through 0.18), which matches the level of adoption expected for Incubation. Several adopters also contribute upstream or hold maintainer roles, and most track the project closely as the foundation for downstream products.
+
+Adopters consistently described Confidential Containers as the primary cloud-native project offering a full Trusted Execution Environment pathway for containerized workloads. The most commonly cited strengths were its multi-vendor maintainer base and hardware flexibility — covering Intel TDX, IBM Secure Execution, and NVIDIA GPUs — which drew adopters away from single-vendor alternatives such as Intel SGX-based Gramine. Adopters also valued the security-first design and the active maintainer engagement through Slack, GitHub, and the weekly community meeting.
+
+Reported value centered on securing sensitive workloads in untrusted environments, a unified hybrid-cloud approach across diverse hardware, and faster integration compared with building a confidential stack in-house. Because the interviewees are still pre-production, few could quantify business value yet, though several noted that archiving the project would have a significant negative impact on their products.
+
+Common areas for improvement were documentation (stale or broken links, a missing threat model, and the lack of a compatibility matrix), ease of configuration, clearer use-case messaging over deep technical detail, and concern that the project's scope is expanding into areas already served by other CNCF projects. Overall, Confidential Containers is in active use at a level appropriate for Incubation, with a diverse and engaged adopter base and a clear path to deeper production adoption as hardware availability and documentation mature.
 
 ### Final Assessment
 
-_[The TOC has found the project to have satisfied the criteria for $LEVEL/ The TOC's evaluation of the project shows a needed focus to complete the outstanding blockers and reapply when the following conditions are met ... $CONDITIONS]._
+The TOC has found the project to have satisfied the criteria for Incubation.
 
 ## Application Process Principles
 
@@ -277,39 +309,25 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
 
   The policy instructs reporters to use GitHub’s “Report a vulnerability” (private reporting) mechanism rather than filing public issues.
 
-- [ ] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
+- [x] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
 
   <!-- (TOC Evaluation goes here) -->
-  **Maintainers’ input (from application):** The incubation application references a maintainers list as evidence that maintainers use 2FA:
-  - Maintainers list: <https://github.com/confidential-containers/confidential-containers/blob/main/MAINTAINERS>
+  This was initially found blocking but fixed by [confidential-containers/confidential-containers#351](https://github.com/confidential-containers/confidential-containers/pull/351).
 
-  **TOC reviewer assessment / gap (from confidential-containers/confidential-containers#349):**
-  - A maintainer list does **not** by itself provide auditable evidence that 2FA is **required and enforced** for GitHub org members/maintainers.
-  - Reviewers need a **clear, stable, public** reference describing:
-    - how access is granted/revoked,
-    - what controls prevent unauthorized changes (e.g., CODEOWNERS / required reviews / branch protection expectations),
-    - whether 2FA is required/enforced for privileged roles.
+  According to the updated [governance.md](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md), the project now explicitly requires 2FA for GitHub org members, maintainers, Steering Committee members, and Security Managers. It also documents that maintainer access is managed through GitHub teams referenced in each repository's `CODEOWNERS` file, while clarifying that GitHub org membership is not a formal governance tier.
 
-  **TODO for maintainers:** Document the access control model and explicitly document 2FA requirements and/or org enforcement. This is a blocking issue for incubation. Track at: <https://github.com/confidential-containers/confidential-containers/issues/349>
+  Issue [#349](https://github.com/confidential-containers/confidential-containers/issues/349) was then closed as completed on Mar 3, 2026.
 
-  Specifically, the documentation must cover: (1) how GitHub org membership and access are granted/revoked; (2) what controls prevent unauthorized changes (CODEOWNERS / required reviews / branch protection); (3) whether 2FA is required and enforced for privileged roles.
-
-- [ ] **Document assignment of security response roles and how reports are handled.**
+- [x] **Document assignment of security response roles and how reports are handled.**
 
   <!-- (TOC Evaluation goes here) -->
-  **Maintainers’ input (from application):**
-  - The project points to the org-level `SECURITY.md` as the place describing handling of reports:
-    - <https://github.com/confidential-containers/.github/blob/main/SECURITY.md>
+  This was initially found blocking but fixed by [confidential-containers/confidential-containers#351](https://github.com/confidential-containers/confidential-containers/pull/351) and [confidential-containers/.github#25](https://github.com/confidential-containers/.github/pull/25).
 
-  **TOC reviewer assessment / gap (from confidential-containers/confidential-containers#350):**
-  - While `SECURITY.md` describes the reporting mechanism, it historically referenced “maintainers and security champions” without a clearly defined, discoverable role model elsewhere (e.g., in governance/community docs).
-  - Reviewers need more explicit documentation of:
-    - who the security responders are (org-wide vs per subproject),
-    - how membership/ownership is determined and maintained (onboarding/offboarding/continuity),
-    - high-level responsibilities (triage/coordination/communication), without duplicating the mechanics already in `SECURITY.md`.
-  - Also recommended: cross-link security reporting guidance from contributing documentation (and other relevant guides), so users can easily find the security reporting process.
+  According to the updated [governance.md](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md), the project now defines the Security Manager role directly, including who holds that role, how additional Security Managers are added or removed, and how they may coordinate with affected external parties on a need-to-know basis during pending advisories.
 
-  **TODO for maintainers:** Explicitly document the security response role model in governance or community docs, covering: (1) who the security responders are (org-wide vs per subproject); (2) how membership is determined and maintained (onboarding/offboarding); (3) high-level responsibilities (triage/coordination/communication). Also cross-link security reporting guidance from CONTRIBUTING.md and other relevant guides. Track at: <https://github.com/confidential-containers/confidential-containers/issues/350>
+  In parallel, [confidential-containers/.github#25](https://github.com/confidential-containers/.github/pull/25) aligned `SECURITY.md` with the governance language, replaced the older "security champions" terminology, and added a link from `CONTRIBUTING.md` to the security reporting guidance so the reporting path is easier to find.
+
+  Taken together, these changes address the documentation gap raised in issue [#350](https://github.com/confidential-containers/confidential-containers/issues/350).
 
 - [x] **Document Security Self-Assessment.**
 
