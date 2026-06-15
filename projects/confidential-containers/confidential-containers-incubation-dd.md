@@ -139,6 +139,8 @@ Note: this section may be augmented by the completion of a Governance Review fro
   <!-- (TOC Evaluation goes here) -->
   The project uses `CODEOWNERS` files across its repositories to enforce ownership in alignment with the documented GitHub team-based governance.
 
+  **TODO for maintainers:** While `CODEOWNERS` files reference GitHub teams, the membership of those teams is only visible to members of the organization and not publicly accessible. The TOC reviewers suggest considering a tool that manages org and team membership declaratively via public configuration, such as [cilium/team-manager](https://github.com/cilium/team-manager) ([config example](https://github.com/cilium/community/tree/main/ladder)), [CLOWarden](https://github.com/cncf/clowarden) ([config example](https://github.com/cncf/people)), or a similar tool, to improve transparency and auditability of project membership.
+
 - [x] **Document adoption and adherence to the CNCF Code of Conduct or the project's CoC which is based off the CNCF CoC and not in conflict with it.**
 
   <!-- (TOC Evaluation goes here) -->
@@ -240,7 +242,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
   - short-term roadmap at the GitHub boards (including the [Confidential containers github board](https://github.com/orgs/confidential-containers/projects/6) and [Trustee github board](https://github.com/orgs/confidential-containers/projects/10)), and
   - its mid/long-term roadmap at the project's website based on use-case driven development. Ref: <https://confidentialcontainers.org/docs/use-cases/>
 
-  **TODO for maintainers**: the short-term roadmap Confidential containers github board link is unavailable with outdated "view", needs to be fixed.
+  **TODO for maintainers**: the short-term roadmap Confidential containers github board link is unavailable with outdated "view", needs to be fixed. Ref: <https://github.com/confidential-containers/confidential-containers/blob/15cbeeff8282e6cea15f66900f66b5936ab0971e/roadmap.md#L10>
 
 - [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation. _This requirement may also be satisfied by completing a General Technical Review._**
   - A general Technical Review was completed/updated on 25-02-2026, and can be discovered at <https://github.com/cncf/toc/pull/2051>.
@@ -288,8 +290,9 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
     - what controls prevent unauthorized changes (e.g., CODEOWNERS / required reviews / branch protection expectations),
     - whether 2FA is required/enforced for privileged roles.
 
-  **Action / follow-up requested:** Project to document the access control model and explicitly document 2FA requirements and/or org enforcement:
-  - <https://github.com/confidential-containers/confidential-containers/issues/349>
+  **TODO for maintainers:** Document the access control model and explicitly document 2FA requirements and/or org enforcement. This is a blocking issue for incubation. Track at: <https://github.com/confidential-containers/confidential-containers/issues/349>
+
+  Specifically, the documentation must cover: (1) how GitHub org membership and access are granted/revoked; (2) what controls prevent unauthorized changes (CODEOWNERS / required reviews / branch protection); (3) whether 2FA is required and enforced for privileged roles.
 
 - [ ] **Document assignment of security response roles and how reports are handled.**
 
@@ -306,8 +309,7 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
     - high-level responsibilities (triage/coordination/communication), without duplicating the mechanics already in `SECURITY.md`.
   - Also recommended: cross-link security reporting guidance from contributing documentation (and other relevant guides), so users can easily find the security reporting process.
 
-  **Action / follow-up requested:**
-  - <https://github.com/confidential-containers/confidential-containers/issues/350>
+  **TODO for maintainers:** Explicitly document the security response role model in governance or community docs, covering: (1) who the security responders are (org-wide vs per subproject); (2) how membership is determined and maintained (onboarding/offboarding); (3) high-level responsibilities (triage/coordination/communication). Also cross-link security reporting guidance from CONTRIBUTING.md and other relevant guides. Track at: <https://github.com/confidential-containers/confidential-containers/issues/350>
 
 - [x] **Document Security Self-Assessment.**
 
