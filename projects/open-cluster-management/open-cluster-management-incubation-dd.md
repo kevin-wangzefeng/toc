@@ -244,6 +244,7 @@ N/A
 - [ ] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 
 <!-- (TOC Evaluation goes here) -->
+Canonical adopters list: [open-cluster-management-io/ocm ADOPTERS.md](https://github.com/open-cluster-management-io/ocm/blob/main/ADOPTERS.md) — 13 named adopters with use cases (Alibaba Cloud, Ant Group, AppsCode, eBay, Guidewire, Groww, Red Hat, Spectro Cloud, VESSL AI, Xiao Hong Shu, RamenDR, KubeStellar Console), plus documented ecosystem integrations. Note: application issue cncf/toc#1884 linked an outdated `augustrh/ocm` fork; the canonical upstream file is the source of record.
 
 - [ ] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
